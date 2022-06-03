@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 8227382883433481024}
   - component: {fileID: 6481932986981350003}
   - component: {fileID: 6586900396330733136}
+  - component: {fileID: 27039415}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -149,8 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca138a03a81303842a200576ce95207b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerSpeed: 5
-  jumpVel: 10
+  PlayerSpeed: 4
+  automove: 0
+  jumpVel: 9
   fallMultiplier: 3
   lowJumpMultiplier: 5
   isGrounded: 0
@@ -158,7 +160,7 @@ MonoBehaviour:
   checkRadious: 0.3
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 6528
   standingPlatform: {fileID: 0}
   m_RunStopDust: {fileID: 7310271610845027193, guid: 39afca3c109b26049a80bc07593eb271,
     type: 3}
@@ -225,3 +227,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5625, y: 1.3125}
   m_EdgeRadius: 0
+--- !u!81 &27039415
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227382883433481030}
+  m_Enabled: 1

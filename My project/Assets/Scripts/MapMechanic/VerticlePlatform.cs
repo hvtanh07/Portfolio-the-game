@@ -24,7 +24,8 @@ public class VerticlePlatform : MonoBehaviour
         }
 
         if(Input.GetKey(KeyCode.Space)){
-            effector.rotationalOffset = 0f;
+            if(effector.rotationalOffset != 0f)
+                effector.rotationalOffset = 0f;
         }
     }
 }
