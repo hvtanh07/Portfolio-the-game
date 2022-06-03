@@ -75,10 +75,13 @@ public class PlayerController : MonoBehaviour
     }
 
     private IEnumerator DisableCollision(){
-        BoxCollider2D platformCollider = standingPlatform.GetComponent<BoxCollider2D>();
-        Physics2D.IgnoreCollision(col,platformCollider);
-        yield return new WaitForSeconds(0.5f);
-        Physics2D.IgnoreCollision(col,platformCollider, false);
+        BoxCollider2D[] platformCollider = standingPlatform.GetComponents<BoxCollider2D>();
+        foreach (BoxCollider2D platformCol in platformCollider){
+            Physics2D.IgnoreCollision(col,platformCol);
+            yield return new WaitForSeconds(0.5f);
+            Physics2D.IgnoreCollision(col,platformCol, false);
+        }
+        
     }
 
     public void Move(float speed)
