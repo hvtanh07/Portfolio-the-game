@@ -32,7 +32,6 @@ public class Sound
             int randomClip = Random.Range(0, m_clips.Length - 1);
             m_source.clip = m_clips[randomClip];
         }
-        Debug.Log(m_source);
         m_source.volume = volume * Random.Range(m_randomVolumeRange.x, m_randomVolumeRange.y);
         m_source.pitch = pitch * Random.Range(m_randomPitchRange.x, m_randomPitchRange.y);
         m_source.loop = isLoop;
@@ -76,7 +75,6 @@ public class AudioManager_PrototypeHero : MonoBehaviour
         {
             if(m_sounds[i].m_name == name)
             {
-                Debug.Log(m_sounds[i]);
                 m_sounds[i].Play();
                 return;
             }
