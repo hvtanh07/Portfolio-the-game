@@ -54,7 +54,6 @@ public class PlayerController : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.S)){
             if(standingPlatform != null){
-                Debug.Log("Called");
                 StartCoroutine(DisableCollision());
             }
         }
