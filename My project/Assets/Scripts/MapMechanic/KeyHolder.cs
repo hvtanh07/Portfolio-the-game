@@ -25,7 +25,8 @@ public class KeyHolder : MonoBehaviour
         Key key = other.GetComponent<Key>();
         if(key != null){
             AddKey(key.GetKeyType());
-            Destroy(key.gameObject);
+            key.AcquireKey();
+            
         }
 
         KeyDoor keydoor = other.GetComponent<KeyDoor>();
