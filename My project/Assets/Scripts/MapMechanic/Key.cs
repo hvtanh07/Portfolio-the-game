@@ -6,7 +6,8 @@ public class Key : MonoBehaviour
 {
     [SerializeField]
     private KeyType keyType;
-    private Animator anim;
+    private SpriteRenderer sprite;
+    private float Transparency;
     private bool Acquired;
     public enum KeyType{
         Red,
@@ -14,11 +15,12 @@ public class Key : MonoBehaviour
         Green
     }
     private void Awake() {
+        Transparency = 1;
         Acquired = false;
-        anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
     public void AcquireKey(){
-        anim.SetTrigger("gotKey");
+        
         Acquired = true;
         GetComponent<Collider2D>().enabled = false;
         Destroy(gameObject,5f);
@@ -26,8 +28,9 @@ public class Key : MonoBehaviour
     public KeyType GetKeyType(){
         return keyType;
     }
-    private void Update() {
+    private void Update() {     
         if(Acquired){
+            sprite.color = new Color(1,1,1,Transparency-=Time.deltaTime);
             transform.position += Vector3.up * Time.deltaTime;
         }
     }
