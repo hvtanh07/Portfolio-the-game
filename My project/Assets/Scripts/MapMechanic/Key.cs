@@ -9,6 +9,8 @@ public class Key : MonoBehaviour
     private SpriteRenderer sprite;
     private float Transparency;
     private bool Acquired;
+
+    public string SoundName;
     public enum KeyType{
         Red,
         Blue,
@@ -20,7 +22,7 @@ public class Key : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
     public void AcquireKey(){
-        
+        FindObjectOfType<AudioManager>().PlaySound(SoundName);
         Acquired = true;
         GetComponent<Collider2D>().enabled = false;
         Destroy(gameObject,5f);

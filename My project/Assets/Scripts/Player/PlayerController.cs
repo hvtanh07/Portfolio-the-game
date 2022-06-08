@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 		anim.SetBool("Grounded", isGrounded);
 
         
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             if(standingPlatform != null){
                 StartCoroutine(DisableCollision());
             }
