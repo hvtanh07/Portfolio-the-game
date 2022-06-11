@@ -21,17 +21,22 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-    public void DisplayNextSentence(){
-        if(sentences.Count == 0){
-            EndDialogue();
-            return;
-        }
-
-        string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+    public void StopDialogue(){
+        diaogueBG.SetActive(false);
     }
 
-    void EndDialogue(){
-        Debug.Log("End of conver");
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.E)){
+            DisplayNextSentence();
+        }
+    }
+    
+    public void DisplayNextSentence(){
+        if(sentences.Count == 0){
+            StopDialogue();
+            return;
+        }
+        string sentence = sentences.Dequeue();
+        dialogueText.text = sentence;
     }
 }
