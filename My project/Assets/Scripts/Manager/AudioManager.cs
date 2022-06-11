@@ -39,14 +39,6 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        //if(instance != null)
-        //{
-        //    Debug.LogError("More than one AudioManger in scene");
-        //}
-        //else
-        //{
-        //    instance = this;
-        //}
         foreach ( Ambient_Sound s in m_sounds){
             s.m_source = gameObject.AddComponent<AudioSource>();
             s.m_source.clip = s.clip;
