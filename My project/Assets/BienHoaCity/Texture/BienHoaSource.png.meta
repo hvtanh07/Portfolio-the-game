@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: 2a2fb7bfddba58a4aa448e41da5ecd3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6016305211874235331
+    second: FlagL_1
+  - first:
+      213: 2026176389366088793
+    second: FlagL_2
+  - first:
+      213: -8372757414094695541
+    second: FlagL_3
+  - first:
+      213: -690731753856635271
+    second: FlagL_4
+  - first:
+      213: 153588611266824494
+    second: FlagL_5
+  - first:
+      213: -5869744095917063172
+    second: FlagL_6
+  - first:
+      213: 2839162262935118608
+    second: FlagL_7
+  - first:
+      213: -3218249740690659526
+    second: Book_Store
+  - first:
+      213: -7806213124361135667
+    second: Gas_Store
+  - first:
+      213: -1687307600040292553
+    second: Drug_Store
+  - first:
+      213: -3472796351286134947
+    second: FlagR_1
+  - first:
+      213: 8561723942767982102
+    second: FlagR_2
+  - first:
+      213: -7348894754106457117
+    second: FlagR_3
+  - first:
+      213: 306228082631618781
+    second: FlagR_4
+  - first:
+      213: 1051206075924505283
+    second: FlagR_5
+  - first:
+      213: -3046690415410845407
+    second: FlagR_6
+  - first:
+      213: -391684188491784881
+    second: FlagR_7
+  - first:
+      213: -6239782627634498423
+    second: Salon
+  - first:
+      213: -5112817991886673917
+    second: Entrance
+  - first:
+      213: 2111345586045139681
+    second: BienHoaSource_19
+  - first:
+      213: 1376303494356346373
+    second: House_1
+  - first:
+      213: 3707480733232715257
+    second: Computer_Store
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlagL_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 236
+        width: 12
+        height: 26
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ca7e9194ac18ca0800000000000000
+      internalID: -6016305211874235331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 238
+        width: 15
+        height: 24
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9540374e0bc6e1c10800000000000000
+      internalID: 2026176389366088793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 241
+        width: 18
+        height: 21
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b831e5e1e7dfdcb80800000000000000
+      internalID: -8372757414094695541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 242
+        width: 19
+        height: 20
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97eea4821270a66f0800000000000000
+      internalID: -690731753856635271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 242
+        width: 20
+        height: 20
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29ca183708a12200800000000000000
+      internalID: 153588611266824494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 239
+        width: 19
+        height: 23
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3ca6018da7a8ea0800000000000000
+      internalID: -5869744095917063172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagL_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 237
+        width: 18
+        height: 25
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01321fd190bb66720800000000000000
+      internalID: 2839162262935118608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Book_Store
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 145
+        width: 136
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e3af69ea7653d0800000000000000
+      internalID: -3218249740690659526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gas_Store
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 147
+        width: 137
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc95671c582caa390800000000000000
+      internalID: -7806213124361135667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Drug_Store
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 214
+        width: 129
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f08c07daa7598e0800000000000000
+      internalID: -1687307600040292553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 188
+        width: 12
+        height: 26
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5731504e162ecfc0800000000000000
+      internalID: -3472796351286134947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 189
+        width: 13
+        height: 25
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61674a1609a51d670800000000000000
+      internalID: 8561723942767982102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 190
+        width: 17
+        height: 24
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3c0c1482b730a90800000000000000
+      internalID: -7348894754106457117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 194
+        width: 19
+        height: 21
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0b18591d0ff3400800000000000000
+      internalID: 306228082631618781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 194
+        width: 20
+        height: 20
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c266354b52a69e00800000000000000
+      internalID: 1051206075924505283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 194
+        width: 20
+        height: 20
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12969d0953bf7b5d0800000000000000
+      internalID: -3046690415410845407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlagR_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 189
+        width: 18
+        height: 25
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d5fc84e45709af0800000000000000
+      internalID: -391684188491784881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 17
+        width: 102
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984313c82c6d769a0800000000000000
+      internalID: -6239782627634498423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entrance
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 15
+        width: 412
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3086e50102f9b09b0800000000000000
+      internalID: -5112817991886673917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BienHoaSource_19
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 16
+        width: 142
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea3f46cf910d4d10800000000000000
+      internalID: 2111345586045139681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 17
+        width: 133
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5062d347cbc991310800000000000000
+      internalID: 1376303494356346373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer_Store
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 17
+        width: 152
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5d0f3751e937330800000000000000
+      internalID: 3707480733232715257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 175b6e502d08dee42b99be0baf2db365
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
