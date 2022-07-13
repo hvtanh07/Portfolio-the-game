@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8746762391861760555}
   - component: {fileID: 8746762391861760554}
+  - component: {fileID: 1575392008731293401}
   m_Layer: 0
   m_Name: PF Village Props - Pot A
   m_TagString: Untagged
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6790a2cf6464c874d8b58e568afe52f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,3 +83,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1575392008731293401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746762391861760556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 5789f82e00000000c94bc9e9
+  m_ShapePath:
+  - {x: -0.26724625, y: 0.12247754, z: 0}
+  - {x: -0.17643356, y: 0.0009261742, z: 0}
+  - {x: 0.265625, y: 0, z: 0}
+  - {x: 0.112197876, y: 0.9083662, z: 0}
+  - {x: -0.112197876, y: 0.9073081, z: 0}
+  - {x: -0.14227676, y: 0.8730635, z: 0}
+  - {x: -0.14227676, y: 0.7827814, z: 0}
+  - {x: -0.1089592, y: 0.7827814, z: 0}
+  - {x: -0.10892868, y: 0.6564994, z: 0}
+  - {x: -0.13971329, y: 0.6569999, z: 0}
+  - {x: -0.26595688, y: 0.34289467, z: 0}
+  m_ShapePathHash: 473769667
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -47284
