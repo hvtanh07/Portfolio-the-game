@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2756778543401539848}
   - component: {fileID: 2756778543401539851}
+  - component: {fileID: 1409750284}
+  - component: {fileID: 1409750283}
   m_Layer: 0
   m_Name: PF Village Props - Pot B
   m_TagString: Untagged
@@ -50,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6790a2cf6464c874d8b58e568afe52f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,3 +84,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1409750284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756778543401539849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f48a8d66b2adc46887f23a3a88ac01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+--- !u!114 &1409750283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756778543401539849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 5789f82e00000000c94bc9e9
+  m_ShapePath:
+  - {x: -0.23974991, y: 0.0011186451, z: 0}
+  - {x: 0.23606491, y: 0.00097090006, z: 0}
+  - {x: 0.32589722, y: 0.08239944, z: 0}
+  - {x: 0.3270111, y: 0.31331757, z: 0}
+  - {x: 0.23715973, y: 0.4426905, z: 0}
+  - {x: 0.26854324, y: 0.4697176, z: 0}
+  - {x: 0.2685356, y: 0.56051594, z: 0}
+  - {x: 0.24121857, y: 0.5969688, z: 0}
+  - {x: -0.24795151, y: 0.595977, z: 0}
+  - {x: -0.26593018, y: 0.56474215, z: 0}
+  - {x: -0.26847458, y: 0.46884874, z: 0}
+  - {x: -0.23878479, y: 0.44084442, z: 0}
+  - {x: -0.3304329, y: 0.31100646, z: 0}
+  - {x: -0.33046722, y: 0.08951809, z: 0}
+  m_ShapePathHash: -1311517231
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 52326

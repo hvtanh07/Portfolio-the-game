@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
-     <Compile Include="Assets\Scripts\Manager\DialogueNavigation.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\DialogueNavigation.cs" />
      <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
@@ -49,10 +49,11 @@
      <Compile Include="Assets\Scripts\MapMechanic\KeyHolder.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
-     <Compile Include="Assets\Scripts\Manager\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\AudioManager.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
-     <Compile Include="Assets\Scripts\Manager\StopAutoMove.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\StopAutoMove.cs" />
      <Compile Include="Assets\Scripts\MapMechanic\MovingPlatform.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -64,13 +65,13 @@
      <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
-     <Compile Include="Assets\Scripts\Manager\SceneTransition.cs" />
-     <Compile Include="Assets\Scripts\Manager\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\SceneTransition.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\DialogueManager.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
-     <Compile Include="Assets\Scripts\Manager\BGMmanager.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\BGMmanager.cs" />
      <Compile Include="Assets\Scripts\MapMechanic\Key.cs" />
-     <Compile Include="Assets\Scripts\Manager\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\Dialogue.cs" />
      <Compile Include="Assets\Scripts\MapMechanic\KeyDoor.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
@@ -81,11 +82,10 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
-     <Compile Include="Assets\Scripts\Manager\AudioManager_PrototypeHero.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\AudioManager_PrototypeHero.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
-     <Compile Include="Assets\Scripts\Manager\AudioManager.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\Village Props\Changelog.txt" />
