@@ -225,6 +225,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1645,6 +1646,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForegroundTileset_42: 7030654263049697070
+      ForegroundTileset_36: -5507949326458118706
+      ForegroundTileset_32: -6799065525134051235
+      ForegroundTileset_19: -350253805723296130
+      ForegroundTileset_23: -5791086369533136241
+      ForegroundTileset_49: 913598981516609390
+      ForegroundTileset_28: -8826583758845156841
+      ForegroundTileset_58: -8679686288840813824
+      ForegroundTileset_48: 6972223603819950680
+      ForegroundTileset_60: 5483809892519833767
+      ForegroundTileset_38: 8937355848983735405
+      ForegroundTileset_55: -958444513752229845
+      ForegroundTileset_61: 4288651926909086759
+      ForegroundTileset_34: 775703124784983773
+      ForegroundTileset_54: -8641693176432405546
+      ForegroundTileset_12: 5471838390326376581
+      ForegroundTileset_1: -6208485294025281735
+      ForegroundTileset_62: 539543685233685586
+      ForegroundTileset_14: -8785480238812693878
+      ForegroundTileset_11: 4673622237888500043
+      ForegroundTileset_17: 2832604513598711710
+      ForegroundTileset_24: 6111915904683036857
+      ForegroundTileset_16: 2641678111393912044
+      ForegroundTileset_40: 273537292362948660
+      ForegroundTileset_20: 489716377452430281
+      ForegroundTileset_44: 5433281416984252990
+      ForegroundTileset_4: 7187093079595917816
+      ForegroundTileset_5: 6770628590450366663
+      ForegroundTileset_50: -5836654550618146011
+      ForegroundTileset_27: 6054333978954956901
+      ForegroundTileset_6: -2532196134713013427
+      ForegroundTileset_52: 5012936590158600926
+      ForegroundTileset_46: 1931436600259037506
+      ForegroundTileset_29: -5874052605972879268
+      ForegroundTileset_59: -5859477059127737137
+      ForegroundTileset_0: 6357221640756657495
+      ForegroundTileset_15: -51574729045860465
+      ForegroundTileset_22: 371943049339012877
+      ForegroundTileset_31: 4319156196609415236
+      ForegroundTileset_30: 6633918526796357588
+      ForegroundTileset_63: -2753804245561115922
+      ForegroundTileset_35: 2901179156291839287
+      ForegroundTileset_7: 6915147631855610137
+      ForegroundTileset_41: -8156007743829010056
+      ForegroundTileset_9: 5066433474761381839
+      ForegroundTileset_57: -1880272298760765517
+      ForegroundTileset_51: -7217946906411505737
+      ForegroundTileset_25: 4494191976317488760
+      ForegroundTileset_37: 4176907199823362223
+      ForegroundTileset_45: 4443157235962849143
+      ForegroundTileset_18: -6238509415895056036
+      ForegroundTileset_26: -4093614701493595955
+      ForegroundTileset_13: -2361984932178276496
+      ForegroundTileset_2: -6037670614106427330
+      ForegroundTileset_53: 2119982995404888904
+      ForegroundTileset_21: -5524773355313669900
+      ForegroundTileset_39: 5388698390683104382
+      ForegroundTileset_43: -3991350727029226743
+      ForegroundTileset_56: -2808076479658297049
+      ForegroundTileset_10: 7333293362931407792
+      ForegroundTileset_33: 4295428415988182176
+      ForegroundTileset_8: 1610073156675747098
+      ForegroundTileset_3: 3814881374960608394
+      ForegroundTileset_47: -35569147611882316
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
