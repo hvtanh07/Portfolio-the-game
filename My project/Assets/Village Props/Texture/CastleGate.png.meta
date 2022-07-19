@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -532,6 +533,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      CastleGate_1: -2693885682533117426
+      CastleGate_7: 8384271405352084685
+      CastleGate_3: 1114650532111863106
+      CastleGate_14: -544380467743656193
+      CastleGate_11: -4877778612939555481
+      CastleGate_13: 4067763404138929546
+      CastleGate_4: 2417922024552557923
+      CastleGate_6: 3864192785242001527
+      CastleGate_12: -7747196302161355743
+      CastleGate_15: 8606413248777599818
+      CastleGate_0: 541235054793645786
+      CastleGate_16: 4620423403671077454
+      CastleGate_10: 2563256850763609760
+      CastleGate_9: -3121907137992083844
+      CastleGate_8: 4736561155172439926
+      CastleGate_2: 2618235294428381741
+      CastleGate_5: -5727237546321337150
+      CastleGate_17: -5718538011210453243
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
