@@ -4,31 +4,27 @@ using UnityEngine;
 
 public class KeyDoor : MonoBehaviour
 {
-    private AudioSource audio;
+    private AudioSource au;
     public Vector3 moveDirection;
     public bool unlocked;
     public float speed;
     private Vector3 targetDir;
     [SerializeField] private Key.KeyType keyType;
     private void Start() {
-        audio = GetComponent<AudioSource>();
+        au = GetComponent<AudioSource>();
         unlocked = false;
         targetDir = transform.position + moveDirection;
     }
     public void OpenDoor(){
         unlocked = true;
-        audio.Play();
+        LeanTween.move(this.gameObject,targetDir,speed).setOnComplete(stopAudio);
+        au.Play();
+       
+    }
+    public void stopAudio(){
+        au.Stop();
     }
     public Key.KeyType GetKeyType(){
         return keyType;
     }
-    private void Update() {
-        if (unlocked){
-            transform.position = Vector3.MoveTowards(transform.position, targetDir, speed * Time.deltaTime); 
-            if((transform.position - targetDir).magnitude < 0.1f){
-                audio.Stop();
-            }
-        }   
-    }
-    
 }
