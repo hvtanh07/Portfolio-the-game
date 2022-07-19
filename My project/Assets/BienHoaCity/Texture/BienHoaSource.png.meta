@@ -715,6 +715,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Electric_clock
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 203
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405e340239e5f1240a347d409434c397
+      internalID: -1899470250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garbage_bin
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 204
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8987a8bc356f2c4ebc22b162b589ece
+      internalID: 469634868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -749,9 +791,11 @@ TextureImporter:
       Entrance: -5112817991886673917
       Platform: -748916360097660898
       Gas_Store: -7806213124361135667
+      Electric_clock: -1899470250
       FlagR_1: -3472796351286134947
       Drug_Store: -1687307600040292553
       FlagL_2: 2026176389366088793
+      Garbage_bin: 469634868
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
