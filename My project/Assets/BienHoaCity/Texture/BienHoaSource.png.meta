@@ -820,6 +820,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Road_Fence
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 194
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dc603273a9a574f8fc4b37e0a48773
+      internalID: -1430473681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -841,6 +862,7 @@ TextureImporter:
       FlagR_3: -7348894754106457117
       FlagL_3: -8372757414094695541
       TreePot_2: -746748547655942631
+      Road_Fence: -1430473681
       FlagL_7: 2839162262935118608
       FlagL_4: -690731753856635271
       FlagR_6: -3046690415410845407
