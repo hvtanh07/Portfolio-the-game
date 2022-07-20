@@ -829,7 +829,7 @@ TextureImporter:
         width: 56
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,6 +837,48 @@ TextureImporter:
       bones: []
       spriteID: 97dc603273a9a574f8fc4b37e0a48773
       internalID: -1430473681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortorbike_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 306
+        width: 46
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ad6fb53caaf0247935a34a0a9c2338
+      internalID: -1335839647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 256
+        width: 47
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979f1301a956a7245a8e03112b7cd31c
+      internalID: 731390892
       vertices: []
       indices: 
       edges: []
@@ -860,6 +902,7 @@ TextureImporter:
       Car_2: 1944268992
       TreePot_1: -8242314896349842971
       FlagR_3: -7348894754106457117
+      Motorbike_1: 731390892
       FlagL_3: -8372757414094695541
       TreePot_2: -746748547655942631
       Road_Fence: -1430473681
@@ -875,6 +918,7 @@ TextureImporter:
       FlagR_5: 1051206075924505283
       FlagR_7: -391684188491784881
       House_1: 1376303494356346373
+      Mortorbike_2: -1335839647
       FlagR_2: 8561723942767982102
       Entrance: -5112817991886673917
       Platform: -748916360097660898
