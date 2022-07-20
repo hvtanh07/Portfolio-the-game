@@ -4,18 +4,17 @@ using UnityEngine;
 public class ReturnPool : MonoBehaviour
 {
     private Vector3 destination;
-    public float MinSpeed,Maxspeed;
-    private float speed;
+    private float moveTime;
     private void OnEnable() {
-        LeanTween.move(this.gameObject,destination,speed).setOnComplete(returnPool);
+        LeanTween.move(this.gameObject,destination,moveTime).setOnComplete(returnPool);
     }
     public void returnPool(){
         gameObject.SetActive(false);
     }
 
-    public void SetDestination(Vector3 destination, bool flip){
+    public void SetDestination(Vector3 destination, bool flip, float timetoMove){
         this.destination = destination;
-        speed = Random.Range(MinSpeed, Maxspeed);
+        moveTime = timetoMove;
          Vector3 theScale = transform.localScale;
         if (flip){        
             if(theScale.x > 0)

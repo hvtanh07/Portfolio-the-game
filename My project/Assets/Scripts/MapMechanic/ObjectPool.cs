@@ -26,8 +26,7 @@ public class ObjectPool : MonoBehaviour
             tmp = Instantiate(objectToPool);
             tmp.SetActive(false);
             tmp.transform.SetParent(this.transform);
-            //set srite
-            //tmp.GetComponent<SpriteRenderer>().sprite = getaSprite();
+            tmp.GetComponent<SpriteRenderer>().sprite = getaSprite();
             pooledObjects.Add(tmp);
         }
     }

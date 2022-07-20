@@ -757,6 +757,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Car_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 341
+        width: 102
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73615efd293c363429f1495606e0dfeb
+      internalID: -142837557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 296
+        width: 103
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dee0b2c5c133f4d85f07ffbe211b4c
+      internalID: 1944268992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 256
+        width: 95
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396adb2e1973c524a8ae476d2acff04a
+      internalID: -1070919434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -772,6 +835,8 @@ TextureImporter:
       Computer_Store: 3707480733232715257
       FlagL_5: 153588611266824494
       BienHoaSource_19: 2111345586045139681
+      Car_3: -1070919434
+      Car_2: 1944268992
       TreePot_1: -8242314896349842971
       FlagR_3: -7348894754106457117
       FlagL_3: -8372757414094695541
@@ -781,6 +846,7 @@ TextureImporter:
       FlagR_6: -3046690415410845407
       FlagL_1: -6016305211874235331
       Salon: -6239782627634498423
+      Car_1: -142837557
       ElectricBox: 4705231195173064206
       Book_Store: -3218249740690659526
       FlagR_4: 306228082631618781
