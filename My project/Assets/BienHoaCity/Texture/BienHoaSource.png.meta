@@ -946,6 +946,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Parking_Truck
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 272
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5817fd52ec7304a884f11944a359bb
+      internalID: 1022114827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -974,6 +995,7 @@ TextureImporter:
       Motorbike_3: -504049229
       FlagL_7: 2839162262935118608
       FlagL_4: -690731753856635271
+      Parking_Truck: 1022114827
       FlagR_6: -3046690415410845407
       FlagL_1: -6016305211874235331
       Salon: -6239782627634498423
