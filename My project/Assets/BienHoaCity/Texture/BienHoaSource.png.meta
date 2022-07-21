@@ -820,6 +820,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Road_Fence
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 194
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dc603273a9a574f8fc4b37e0a48773
+      internalID: -1430473681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 296
+        width: 36
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ad6fb53caaf0247935a34a0a9c2338
+      internalID: -1335839647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 256
+        width: 36
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979f1301a956a7245a8e03112b7cd31c
+      internalID: 731390892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 338
+        width: 39
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d98664058554d408faa4ca9ea69db5
+      internalID: -504049229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 256
+        width: 35
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaf419389f91bd43bc77be1ccbbed30
+      internalID: 561517770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Motorbike_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 296
+        width: 39
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e4d214c77d9ef47afd6e76b24f3af1
+      internalID: -1325069292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -839,8 +965,13 @@ TextureImporter:
       Car_2: 1944268992
       TreePot_1: -8242314896349842971
       FlagR_3: -7348894754106457117
+      Motorbike_5: -1325069292
+      Motorbike_1: 731390892
       FlagL_3: -8372757414094695541
       TreePot_2: -746748547655942631
+      Road_Fence: -1430473681
+      Motorbike_4: 561517770
+      Motorbike_3: -504049229
       FlagL_7: 2839162262935118608
       FlagL_4: -690731753856635271
       FlagR_6: -3046690415410845407
@@ -859,6 +990,7 @@ TextureImporter:
       Gas_Store: -7806213124361135667
       Electric_clock: -1899470250
       FlagR_1: -3472796351286134947
+      Motorbike_2: -1335839647
       Drug_Store: -1687307600040292553
       FlagL_2: 2026176389366088793
       Garbage_bin: 469634868
