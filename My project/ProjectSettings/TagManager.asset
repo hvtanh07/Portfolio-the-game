@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platform
+  - Sensor
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - Platform
   - DiologueTrigger
   - Velocity
-  - 
-  - 
+  - MovingPlatform
+  - GroundSensor
   - 
   - 
   - 
