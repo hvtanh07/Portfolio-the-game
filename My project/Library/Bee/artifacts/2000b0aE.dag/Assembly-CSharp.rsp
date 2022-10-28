@@ -360,6 +360,11 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Joystick Pack/Scripts/Base/Joystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs"
 "Assets/LeanTween/Examples/Archived/TestingPunch.cs"
 "Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs"
@@ -411,8 +416,10 @@
 "Assets/Scripts/SceneManager/DialogueManager.cs"
 "Assets/Scripts/SceneManager/DialogueNavigation.cs"
 "Assets/Scripts/SceneManager/DialogueTrigger.cs"
+"Assets/Scripts/SceneManager/GameManager.cs"
 "Assets/Scripts/SceneManager/SceneTransition.cs"
 "Assets/Scripts/SceneManager/StopAutoMove.cs"
+"Assets/Scripts/WebGLHandler.cs"
 -langversion:9.0
 
 /deterministic

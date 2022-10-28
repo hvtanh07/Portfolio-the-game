@@ -574,6 +574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_NotifyBeforeUpdate_m39
 	{
 		Action_1_t7797D4D8783204B10C3D28B96B049C48276C3B1B* L_3 = V_0;
 		int32_t L_4 = ___updateType0;
+		NullCheck(L_3);
 		Action_1_Invoke_m1AAB217B001E387B4424C54CFB8D5278CFBE4C65_inline(L_3, L_4, NULL);
 	}
 
@@ -611,8 +612,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_NotifyUpdate_m482599CC
 	}
 	{
 		NativeInputEventBuffer_t4EE5873AD7998E0E83C9F8585C338AB14C9101FD* L_4 = V_1;
+		NullCheck(L_4);
 		L_4->___eventCount_1 = 0;
 		NativeInputEventBuffer_t4EE5873AD7998E0E83C9F8585C338AB14C9101FD* L_5 = V_1;
+		NullCheck(L_5);
 		L_5->___sizeInBytes_2 = 0;
 		goto IL_0034;
 	}
@@ -622,6 +625,7 @@ IL_0029:
 		NativeUpdateCallback_tC5CA5A9117B79251968A4DA3758552EFE1D37495* L_6 = V_0;
 		int32_t L_7 = ___updateType0;
 		NativeInputEventBuffer_t4EE5873AD7998E0E83C9F8585C338AB14C9101FD* L_8 = V_1;
+		NullCheck(L_6);
 		NativeUpdateCallback_Invoke_mC4B7018AE8ED52FB9C6805F65C57A81812D21333_inline(L_6, L_7, L_8, NULL);
 	}
 
@@ -657,6 +661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputSystem_NotifyDeviceDiscovered
 		Action_2_t6AAF2E215E74E16A4EEF0A0749A4A325D99F5BA6* L_3 = V_0;
 		int32_t L_4 = ___deviceId0;
 		String_t* L_5 = ___deviceDescriptor1;
+		NullCheck(L_3);
 		Action_2_Invoke_mD689727D0B27507C2BBDB452C43EC087E02CE401_inline(L_3, L_4, L_5, NULL);
 	}
 
@@ -702,6 +707,7 @@ IL_000e:
 	{
 		Func_2_t880CA675AE5D39E081BEEF14DC092D82674DE4F2* L_3 = V_0;
 		int32_t L_4 = ___updateType0;
+		NullCheck(L_3);
 		bool L_5;
 		L_5 = Func_2_Invoke_m67075A0C8A50189A2501B63347177A0748FFE22C_inline(L_3, L_4, NULL);
 		G_B3_0 = ((int32_t)(L_5));

@@ -1701,6 +1701,7 @@ IL_0024:
 	{
 		// throw new System.ArgumentException("Plane must be normalized. Call Plane.Normalize() to normalize plane.");
 		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_5 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
 		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFB182D98F776AC1C061FA5C163FE7F6E7C08B5BD)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Plane_CheckPlaneIsNormalized_m6408EC4BE1D7A0ADB6832288E286D9C70404B888_RuntimeMethod_var)));
 	}

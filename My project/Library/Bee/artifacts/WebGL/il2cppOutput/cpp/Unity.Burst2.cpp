@@ -14942,8 +14942,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Sse4_2_crc32_u8_m579C03AC9095E8E72CF
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = ((Sse4_2_t40477411E6B6B2D01F3B0EA9D1B0A6281833C37C_StaticFields*)il2cpp_codegen_static_fields_for(Sse4_2_t40477411E6B6B2D01F3B0EA9D1B0A6281833C37C_il2cpp_TypeInfo_var))->___crctab_0;
 		uint32_t L_2 = ___crc0;
 		uint8_t L_3 = ___v1;
+		NullCheck(L_1);
 		int32_t L_4 = ((int32_t)(((int32_t)((int32_t)L_2^(int32_t)L_3))&((int32_t)255)));
-		uint32_t L_5 = (L_1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
+		uint32_t L_5 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		___crc0 = ((int32_t)(((int32_t)((uint32_t)L_0>>8))^(int32_t)L_5));
 		// return crc;
 		uint32_t L_6 = ___crc0;

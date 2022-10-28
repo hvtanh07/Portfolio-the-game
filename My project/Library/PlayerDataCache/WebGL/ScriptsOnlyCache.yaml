@@ -8,6 +8,8 @@ ScriptsOnlyBuild:
     - DialogueManager
     - DialogueTrigger
     - Dust_DestroyEvent
+    - FixedJoystick
+    - GameManager
     - GetfromPool
     - Key
     - KeyDoor
@@ -23,6 +25,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -137,6 +140,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerController
+    methodName: OnPointerDown
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerController
+    methodName: OnPointerUp
+  - assembly: Assembly-CSharp
+    fullTypeName: DialogueManager
+    methodName: DisplayNextSentence
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
@@ -170,6 +182,15 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerController
+    methodName: OnPointerDown
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerController
+    methodName: OnPointerUp
+  - assembly: Assembly-CSharp
+    fullTypeName: DialogueManager
+    methodName: DisplayNextSentence
   sceneClasses:
     Assets/Scenes/BienHoaScene.unity:
     - Class: 1
@@ -257,9 +278,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7620}
     - Class: 114
+      Script: {instanceID: 8074}
+    - Class: 114
       Script: {instanceID: 8572}
     - Class: 114
       Script: {instanceID: 9100}
+    - Class: 114
+      Script: {instanceID: 26306}
+    - Class: 114
+      Script: {instanceID: 27430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -447,6 +474,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9100}
     - Class: 114
       Script: {instanceID: 9104}
+    - Class: 114
+      Script: {instanceID: 26306}
+    - Class: 114
+      Script: {instanceID: 27430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -992,7 +1023,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 1ee5bfc96e1947c10d058b2e574f87ce
+      Hash: 8a67dbb0fd1bec01690d2eb0943ab836
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1776,6 +1807,48 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Following
+  - hash:
+      serializedVersion: 2
+      Hash: f7362a5d37c1d4245e776907e693e76c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WebGLHandler
   platform: 20
   scenePathNames:
   - Assets/Scenes/IntroScene.unity

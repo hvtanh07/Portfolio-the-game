@@ -4681,6 +4681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 IL_000c:
 	{
 		bool L_2 = ___persistent0;
+		NullCheck(G_B2_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Func_2_Invoke_m689B4C378CD71FCA62ACAC0C89CEBD041ACF097B_inline(G_B2_0, L_2, NULL);
 		return L_3;
@@ -4708,6 +4709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E
 
 IL_000c:
 	{
+		NullCheck(G_B2_0);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
 		L_2 = Func_1_Invoke_m5F9C33EDA14111566A936E6203BF7E6EBF9872FE_inline(G_B2_0, NULL);
 		return L_2;
@@ -4735,6 +4737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Light_t1E68479B7782AF2050FAA02A5DC612FD034F18
 
 IL_000c:
 	{
+		NullCheck(G_B2_0);
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_2;
 		L_2 = Func_1_Invoke_mC6B8F2E81189C05C4635E44A87B16833BFB52CE8_inline(G_B2_0, NULL);
 		return L_2;
@@ -4801,13 +4804,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_SetWidget_mC9A7F8
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_4 = __this->___m_Field_13;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// int toggleIndex = 0;
 		V_0 = 0;
 		// foreach (var enumName in m_Field.enumNames)
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_6 = __this->___m_Field_13;
+		NullCheck(L_6);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_7;
 		L_7 = BitField_get_enumNames_m3518C9A0F352E7390CABA60F16E5C2246F12634C_inline(L_6, NULL);
 		V_1 = L_7;
@@ -4820,12 +4826,14 @@ IL_004a:
 		// foreach (var enumName in m_Field.enumNames)
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_8 = V_1;
 		int32_t L_9 = V_2;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		V_3 = L_11;
 		// if (toggleIndex >= toggles.Count)
 		int32_t L_12 = V_0;
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_13 = __this->___toggles_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = List_1_get_Count_m10EB5CB09197068FDC273D602651C38F11143E3C_inline(L_13, List_1_get_Count_m10EB5CB09197068FDC273D602651C38F11143E3C_RuntimeMethod_var);
 		if ((((int32_t)L_12) >= ((int32_t)L_14)))
@@ -4837,26 +4845,33 @@ IL_004a:
 		// var toggle = toggles[toggleIndex];
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_15 = __this->___toggles_12;
 		int32_t L_16 = V_0;
+		NullCheck(L_15);
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_17;
 		L_17 = List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA(L_15, L_16, List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA_RuntimeMethod_var);
 		// toggle.getter = GetValue;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_18 = L_17;
 		Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA* L_19 = (Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA*)il2cpp_codegen_object_new(Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA_il2cpp_TypeInfo_var);
+		NullCheck(L_19);
 		Func_2__ctor_mF0ABAE563501FB4B795991365F3011147BE07E2E(L_19, __this, (intptr_t)((void*)DebugUIHandlerBitField_GetValue_m83486BB1A30BD81A1BC807D8CCD979FB7009306A_RuntimeMethod_var), NULL);
+		NullCheck(L_18);
 		L_18->___getter_13 = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___getter_13), (void*)L_19);
 		// toggle.setter = SetValue;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_20 = L_18;
 		Action_2_t9CCF9E751EBE923D11BC558BD78BB0B1709C733D* L_21 = (Action_2_t9CCF9E751EBE923D11BC558BD78BB0B1709C733D*)il2cpp_codegen_object_new(Action_2_t9CCF9E751EBE923D11BC558BD78BB0B1709C733D_il2cpp_TypeInfo_var);
+		NullCheck(L_21);
 		Action_2__ctor_m4C35233BEC41AA19D1AFC7620C4ACDFFE2FF1B8E(L_21, __this, (intptr_t)((void*)DebugUIHandlerBitField_SetValue_mE5AF66449A807CD3704C70057C54662FE1F9B5A2_RuntimeMethod_var), NULL);
+		NullCheck(L_20);
 		L_20->___setter_14 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_20->___setter_14), (void*)L_21);
 		// toggle.nextUIHandler = toggleIndex < (m_Field.enumNames.Length - 1) ? toggles[toggleIndex + 1] : null;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_22 = L_20;
 		int32_t L_23 = V_0;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_24 = __this->___m_Field_13;
+		NullCheck(L_24);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_25;
 		L_25 = BitField_get_enumNames_m3518C9A0F352E7390CABA60F16E5C2246F12634C_inline(L_24, NULL);
+		NullCheck(L_25);
 		G_B3_0 = L_22;
 		G_B3_1 = L_22;
 		if ((((int32_t)L_23) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_25)->max_length)), 1)))))
@@ -4877,6 +4892,7 @@ IL_00a5:
 	{
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_26 = __this->___toggles_12;
 		int32_t L_27 = V_0;
+		NullCheck(L_26);
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_28;
 		L_28 = List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA(L_26, ((int32_t)il2cpp_codegen_add(L_27, 1)), List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA_RuntimeMethod_var);
 		G_B5_0 = L_28;
@@ -4886,6 +4902,7 @@ IL_00a5:
 
 IL_00b3:
 	{
+		NullCheck(G_B5_1);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(G_B5_1, G_B5_0, NULL);
 		// toggle.previousUIHandler = toggleIndex > 0 ? toggles[toggleIndex - 1] : null;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_29 = G_B5_2;
@@ -4910,6 +4927,7 @@ IL_00c0:
 	{
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_31 = __this->___toggles_12;
 		int32_t L_32 = V_0;
+		NullCheck(L_31);
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_33;
 		L_33 = List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA(L_31, ((int32_t)il2cpp_codegen_subtract(L_32, 1)), List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA_RuntimeMethod_var);
 		G_B8_0 = L_33;
@@ -4919,22 +4937,29 @@ IL_00c0:
 
 IL_00ce:
 	{
+		NullCheck(G_B8_1);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(G_B8_1, G_B8_0, NULL);
 		// toggle.parentUIHandler = this;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_34 = G_B8_2;
+		NullCheck(L_34);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_34, __this, NULL);
 		// toggle.index = toggleIndex;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_35 = L_34;
 		int32_t L_36 = V_0;
+		NullCheck(L_35);
 		L_35->___index_15 = L_36;
 		// toggle.nameLabel.text = enumName.text;
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_37 = L_35;
+		NullCheck(L_37);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_38 = L_37->___nameLabel_10;
 		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_39 = V_3;
+		NullCheck(L_39);
 		String_t* L_40;
 		L_40 = GUIContent_get_text_mC6D7981351923AD7F802AC659314BA56DF7F3ED6(L_39, NULL);
+		NullCheck(L_38);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_38, L_40);
 		// toggle.Init();
+		NullCheck(L_37);
 		DebugUIHandlerIndirectToggle_Init_mFB2213D89BCF29671F255C37E862F94F31F12506(L_37, NULL);
 		// toggleIndex++;
 		int32_t L_41 = V_0;
@@ -4952,6 +4977,7 @@ IL_00ff:
 		// foreach (var enumName in m_Field.enumNames)
 		int32_t L_43 = V_2;
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_44 = V_1;
+		NullCheck(L_44);
 		if ((((int32_t)L_43) < ((int32_t)((int32_t)(((RuntimeArray*)L_44)->max_length)))))
 		{
 			goto IL_004a;
@@ -4966,8 +4992,10 @@ IL_010a:
 		// CoreUtils.Destroy(toggles[toggleIndex].gameObject);
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_45 = __this->___toggles_12;
 		int32_t L_46 = V_0;
+		NullCheck(L_45);
 		DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_47;
 		L_47 = List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA(L_45, L_46, List_1_get_Item_m37FFA8C9F52EDDFD9EE56DE6B12954C3FD4CB5BA_RuntimeMethod_var);
+		NullCheck(L_47);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_48;
 		L_48 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_47, NULL);
 		il2cpp_codegen_runtime_class_init_inline(CoreUtils_tEE57AB2B0DAE9561F4954B08800A8F957850B038_il2cpp_TypeInfo_var);
@@ -4975,6 +5003,7 @@ IL_010a:
 		// toggles[toggleIndex] = null;
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_49 = __this->___toggles_12;
 		int32_t L_50 = V_0;
+		NullCheck(L_49);
 		List_1_set_Item_m011023A908CBCCA66DF0D8BBC6DBC5088AE58998(L_49, L_50, (DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6*)NULL, List_1_set_Item_m011023A908CBCCA66DF0D8BBC6DBC5088AE58998_RuntimeMethod_var);
 		// for (; toggleIndex < toggles.Count; ++toggleIndex)
 		int32_t L_51 = V_0;
@@ -4986,6 +5015,7 @@ IL_0131:
 		// for (; toggleIndex < toggles.Count; ++toggleIndex)
 		int32_t L_52 = V_0;
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_53 = __this->___toggles_12;
+		NullCheck(L_53);
 		int32_t L_54;
 		L_54 = List_1_get_Count_m10EB5CB09197068FDC273D602651C38F11143E3C_inline(L_53, List_1_get_Count_m10EB5CB09197068FDC273D602651C38F11143E3C_RuntimeMethod_var);
 		if ((((int32_t)L_52) < ((int32_t)L_54)))
@@ -5028,6 +5058,7 @@ IL_0005:
 		___index0 = ((int32_t)il2cpp_codegen_subtract(L_1, 1));
 		// int intValue = System.Convert.ToInt32(m_Field.GetValue());
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_2 = __this->___m_Field_13;
+		NullCheck(L_2);
 		Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2* L_3;
 		L_3 = Field_1_GetValue_m63C85D59086D8D84ABD4AF774835831CCE700C7C(L_2, Field_1_GetValue_m63C85D59086D8D84ABD4AF774835831CCE700C7C_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
@@ -5070,14 +5101,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_SetValue_mE5AF664
 		// m_Field.SetValue(System.Enum.ToObject(m_Field.enumType, 0));
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_1 = __this->___m_Field_13;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_2 = __this->___m_Field_13;
+		NullCheck(L_2);
 		Type_t* L_3;
 		L_3 = BitField_get_enumType_m579A37FEF96B7B00BD32858A935EB6BE21FC9203_inline(L_2, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
 		RuntimeObject* L_4;
 		L_4 = Enum_ToObject_m7952B7BD43E48BBF79BB973BD31E7FF9E62B948E(L_3, 0, NULL);
+		NullCheck(L_1);
 		Field_1_SetValue_mE2EDC8A71D590A82B80FEC3DE50A080215891350(L_1, L_4, Field_1_SetValue_mE2EDC8A71D590A82B80FEC3DE50A080215891350_RuntimeMethod_var);
 		// foreach (var toggle in toggles)
 		List_1_t40BC47FA2B9AF8634F886A1F8DC0EBEB8CA7ACBC* L_5 = __this->___toggles_12;
+		NullCheck(L_5);
 		Enumerator_tBD6CCEFF2A49D89AD7FA0FFAD05836DB4820EBA0 L_6;
 		L_6 = List_1_GetEnumerator_m73E89F32F2125608A2EEC2E36131D56B65CABC2A(L_5, List_1_GetEnumerator_m73E89F32F2125608A2EEC2E36131D56B65CABC2A_RuntimeMethod_var);
 		V_0 = L_6;
@@ -5113,6 +5147,7 @@ IL_002d_1:
 			}
 			{
 				DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_9 = V_1;
+				NullCheck(L_9);
 				Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA* L_10 = L_9->___getter_13;
 				if (!L_10)
 				{
@@ -5122,6 +5157,7 @@ IL_002d_1:
 			{
 				// toggle.UpdateValueLabel();
 				DebugUIHandlerIndirectToggle_tBC08AC2BCF26294B5A75071B5B4EA3446F8F77E6* L_11 = V_1;
+				NullCheck(L_11);
 				DebugUIHandlerIndirectToggle_UpdateValueLabel_mECFCCF09947AA410A2D6F756F08BB6CDDCD05AAC(L_11, NULL);
 			}
 
@@ -5149,6 +5185,7 @@ IL_005f:
 	{
 		// int intValue = System.Convert.ToInt32(m_Field.GetValue());
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_13 = __this->___m_Field_13;
+		NullCheck(L_13);
 		Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2* L_14;
 		L_14 = Field_1_GetValue_m63C85D59086D8D84ABD4AF774835831CCE700C7C(L_13, Field_1_GetValue_m63C85D59086D8D84ABD4AF774835831CCE700C7C_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
@@ -5166,11 +5203,13 @@ IL_005f:
 		// intValue |= m_Field.enumValues[index];
 		int32_t L_17 = V_2;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_18 = __this->___m_Field_13;
+		NullCheck(L_18);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_19;
 		L_19 = BitField_get_enumValues_m5CBA7136A37EBDD8845BF4CE47261201601F9527_inline(L_18, NULL);
 		int32_t L_20 = ___index0;
+		NullCheck(L_19);
 		int32_t L_21 = L_20;
-		int32_t L_22 = (L_19)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_21));
+		int32_t L_22 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
 		V_2 = ((int32_t)(L_17|L_22));
 		goto IL_0096;
 	}
@@ -5180,11 +5219,13 @@ IL_0085:
 		// intValue &= ~m_Field.enumValues[index];
 		int32_t L_23 = V_2;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_24 = __this->___m_Field_13;
+		NullCheck(L_24);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25;
 		L_25 = BitField_get_enumValues_m5CBA7136A37EBDD8845BF4CE47261201601F9527_inline(L_24, NULL);
 		int32_t L_26 = ___index0;
+		NullCheck(L_25);
 		int32_t L_27 = L_26;
-		int32_t L_28 = (L_25)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_27));
+		int32_t L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
 		V_2 = ((int32_t)(L_23&((~L_28))));
 	}
 
@@ -5193,12 +5234,14 @@ IL_0096:
 		// m_Field.SetValue(System.Enum.ToObject(m_Field.enumType, intValue));
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_29 = __this->___m_Field_13;
 		BitField_t4178A9AD81C436DBE57F464343BA996642134062* L_30 = __this->___m_Field_13;
+		NullCheck(L_30);
 		Type_t* L_31;
 		L_31 = BitField_get_enumType_m579A37FEF96B7B00BD32858A935EB6BE21FC9203_inline(L_30, NULL);
 		int32_t L_32 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
 		RuntimeObject* L_33;
 		L_33 = Enum_ToObject_m7952B7BD43E48BBF79BB973BD31E7FF9E62B948E(L_31, L_32, NULL);
+		NullCheck(L_29);
 		Field_1_SetValue_mE2EDC8A71D590A82B80FEC3DE50A080215891350(L_29, L_33, Field_1_SetValue_mE2EDC8A71D590A82B80FEC3DE50A080215891350_RuntimeMethod_var);
 	}
 
@@ -5228,6 +5271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerBitField_OnSelection_m11DE
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -5241,6 +5285,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -5249,6 +5294,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -5260,6 +5306,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_14;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -5271,6 +5318,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -5279,6 +5327,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_14;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -5287,6 +5336,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -5303,6 +5353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_OnDeselection_m65
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -5314,6 +5365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_OnIncrement_m4C54
 	{
 		// valueToggle.isOn = true;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)1, NULL);
 		// }
 		return;
@@ -5325,6 +5377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_OnDecrement_m7A75
 	{
 		// valueToggle.isOn = false;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)0, NULL);
 		// }
 		return;
@@ -5337,8 +5390,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerBitField_OnAction_m05B63A9
 		// valueToggle.isOn = !valueToggle.isOn;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0), NULL);
 		// }
 		return;
@@ -5357,6 +5412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!valueToggle.isOn || m_Container == null)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_0, NULL);
 		if (!L_1)
@@ -5387,6 +5443,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_14;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -5451,8 +5508,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerButton_SetWidget_mB1AEC777
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		Button_t94987D29C31193E49E17586BF7642576A0F6CE7A* L_3 = __this->___m_Field_11;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// }
 		return;
@@ -5465,6 +5524,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerButton_OnSelection_mDB94CC
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// return true;
 		return (bool)1;
@@ -5477,6 +5537,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerButton_OnDeselection_m0629
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -5488,6 +5549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerButton_OnAction_m2B245BDA7
 	{
 		// if (m_Field.action != null)
 		Button_t94987D29C31193E49E17586BF7642576A0F6CE7A* L_0 = __this->___m_Field_11;
+		NullCheck(L_0);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1;
 		L_1 = Button_get_action_m5796CC1DF3A5C10D2538EA5ACF4EEF0DF68DFB13_inline(L_0, NULL);
 		if (!L_1)
@@ -5498,8 +5560,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerButton_OnAction_m2B245BDA7
 	{
 		// m_Field.action();
 		Button_t94987D29C31193E49E17586BF7642576A0F6CE7A* L_2 = __this->___m_Field_11;
+		NullCheck(L_2);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3;
 		L_3 = Button_get_action_m5796CC1DF3A5C10D2538EA5ACF4EEF0DF68DFB13_inline(L_2, NULL);
+		NullCheck(L_3);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_3, NULL);
 	}
 
@@ -5567,6 +5631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_OnEnable_mEDB288287
 	{
 		// prefabs = new List<DebugUIPrefabBundle>();
 		List_1_t60729D90EC5710C8B2774D6941E86786A2382626* L_1 = (List_1_t60729D90EC5710C8B2774D6941E86786A2382626*)il2cpp_codegen_object_new(List_1_t60729D90EC5710C8B2774D6941E86786A2382626_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
 		List_1__ctor_mFFB9A5E69D3E1F9E380ED3341A850E5D077BE20D(L_1, List_1__ctor_mFFB9A5E69D3E1F9E380ED3341A850E5D077BE20D_RuntimeMethod_var);
 		__this->___prefabs_7 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabs_7), (void*)L_1);
@@ -5584,6 +5649,7 @@ IL_0013:
 	{
 		// m_PrefabsMap = new Dictionary<Type, Transform>();
 		Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554* L_3 = (Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554*)il2cpp_codegen_object_new(Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
 		Dictionary_2__ctor_m5B6B55E8F53628DB82462FB6F1C7C5A381F347F9(L_3, Dictionary_2__ctor_m5B6B55E8F53628DB82462FB6F1C7C5A381F347F9_RuntimeMethod_var);
 		__this->___m_PrefabsMap_5 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PrefabsMap_5), (void*)L_3);
@@ -5601,6 +5667,7 @@ IL_0026:
 	{
 		// m_UIPanels = new List<DebugUIHandlerPanel>();
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_5 = (List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA*)il2cpp_codegen_object_new(List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
 		List_1__ctor_m7569D96D15A4EA74ECE1B5EF453D0463A04B099A(L_5, List_1__ctor_m7569D96D15A4EA74ECE1B5EF453D0463A04B099A_RuntimeMethod_var);
 		__this->___m_UIPanels_8 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_UIPanels_8), (void*)L_5);
@@ -5612,6 +5679,7 @@ IL_0039:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_6;
 		L_6 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_6);
 		DebugManager_RegisterRootCanvas_m17796C585AB91ADE0FA5901FD3B800B75A0C1A18(L_6, __this, NULL);
 		// }
 		return;
@@ -5635,6 +5703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_Update_m824889AC556
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_0;
 		L_0 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = DebugManager_GetState_mA45CEE821FEFFF5A7546DA822FD046F63FEF37CF(L_0, NULL);
 		V_0 = L_1;
@@ -5665,6 +5734,7 @@ IL_001a:
 	{
 		int32_t L_5 = __this->___m_SelectedPanel_9;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_6 = __this->___m_UIPanels_8;
+		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_6, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		if ((((int32_t)L_5) >= ((int32_t)L_7)))
@@ -5675,6 +5745,7 @@ IL_001a:
 	{
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_8 = __this->___m_UIPanels_8;
 		int32_t L_9 = __this->___m_SelectedPanel_9;
+		NullCheck(L_8);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_10;
 		L_10 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_8, L_9, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -5689,8 +5760,10 @@ IL_001a:
 		// m_UIPanels[m_SelectedPanel].UpdateScroll();
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_12 = __this->___m_UIPanels_8;
 		int32_t L_13 = __this->___m_SelectedPanel_9;
+		NullCheck(L_12);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_14;
 		L_14 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_12, L_13, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
+		NullCheck(L_14);
 		DebugUIHandlerPanel_UpdateScroll_m09894F7991090ADDF2CA28D1427902B13315E2AD(L_14, NULL);
 	}
 
@@ -5728,6 +5801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_ResetAllHierarchy_m
 		// foreach (Transform t in transform)
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
 		RuntimeObject* L_1;
 		L_1 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_0, NULL);
 		V_0 = L_1;
@@ -5749,6 +5823,7 @@ FINALLY_002d:
 				}
 				{
 					RuntimeObject* L_4 = V_1;
+					NullCheck(L_4);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
 				}
 
@@ -5768,9 +5843,11 @@ IL_000e_1:
 			{
 				// foreach (Transform t in transform)
 				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
 				RuntimeObject* L_6;
 				L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_5);
 				// CoreUtils.Destroy(t.gameObject);
+				NullCheck(((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_6, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var)));
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
 				L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_6, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var)), NULL);
 				il2cpp_codegen_runtime_class_init_inline(CoreUtils_tEE57AB2B0DAE9561F4954B08800A8F957850B038_il2cpp_TypeInfo_var);
@@ -5781,6 +5858,7 @@ IL_0023_1:
 			{
 				// foreach (Transform t in transform)
 				RuntimeObject* L_8 = V_0;
+				NullCheck(L_8);
 				bool L_9;
 				L_9 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_8);
 				if (L_9)
@@ -5855,9 +5933,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_Rebuild_m035E60DC55
 	{
 		// m_PrefabsMap.Clear();
 		Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554* L_0 = __this->___m_PrefabsMap_5;
+		NullCheck(L_0);
 		Dictionary_2_Clear_m6B2DCDDD73719AE684C19A25C591DD319684C639(L_0, Dictionary_2_Clear_m6B2DCDDD73719AE684C19A25C591DD319684C639_RuntimeMethod_var);
 		// foreach (var bundle in prefabs)
 		List_1_t60729D90EC5710C8B2774D6941E86786A2382626* L_1 = __this->___prefabs_7;
+		NullCheck(L_1);
 		Enumerator_tE48FE2D8152C9B38349AB8B5B9B921D1FFDD68AF L_2;
 		L_2 = List_1_GetEnumerator_mCC882C2B3AAC836DBF9545F7402C9AF8043BCCB9(L_1, List_1_GetEnumerator_mCC882C2B3AAC836DBF9545F7402C9AF8043BCCB9_RuntimeMethod_var);
 		V_1 = L_2;
@@ -5886,6 +5966,7 @@ IL_0019_1:
 				V_2 = L_3;
 				// var type = Type.GetType(bundle.type);
 				DebugUIPrefabBundle_t9CBD16AF01B2AF5EC5E4937C1DFDBEFF3F1304A8* L_4 = V_2;
+				NullCheck(L_4);
 				String_t* L_5 = L_4->___type_0;
 				il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 				Type_t* L_6;
@@ -5902,6 +5983,7 @@ IL_0019_1:
 			}
 			{
 				DebugUIPrefabBundle_t9CBD16AF01B2AF5EC5E4937C1DFDBEFF3F1304A8* L_9 = V_2;
+				NullCheck(L_9);
 				RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = L_9->___prefab_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				bool L_11;
@@ -5916,7 +5998,9 @@ IL_0019_1:
 				Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554* L_12 = __this->___m_PrefabsMap_5;
 				Type_t* L_13 = V_3;
 				DebugUIPrefabBundle_t9CBD16AF01B2AF5EC5E4937C1DFDBEFF3F1304A8* L_14 = V_2;
+				NullCheck(L_14);
 				RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_15 = L_14->___prefab_1;
+				NullCheck(L_12);
 				Dictionary_2_Add_mE011C009035AB613DD1DEDC9CAF8D23502629199(L_12, L_13, L_15, Dictionary_2_Add_mE011C009035AB613DD1DEDC9CAF8D23502629199_RuntimeMethod_var);
 			}
 
@@ -5944,22 +6028,26 @@ IL_006f:
 	{
 		// m_UIPanels.Clear();
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_17 = __this->___m_UIPanels_8;
+		NullCheck(L_17);
 		List_1_Clear_m284371DF436C6C0DC689FDD377CD136FE4FF569A_inline(L_17, List_1_Clear_m284371DF436C6C0DC689FDD377CD136FE4FF569A_RuntimeMethod_var);
 		// m_DebugTreeState = DebugManager.instance.GetState();
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_18;
 		L_18 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_18);
 		int32_t L_19;
 		L_19 = DebugManager_GetState_mA45CEE821FEFFF5A7546DA822FD046F63FEF37CF(L_18, NULL);
 		__this->___m_DebugTreeState_4 = L_19;
 		// var panels = DebugManager.instance.panels;
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_20;
 		L_20 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_20);
 		ReadOnlyCollection_1_tF0FFDCC1E1E5FFF308EA742DAB59C57038E63299* L_21;
 		L_21 = DebugManager_get_panels_m6D2F1002F12979053200CD6A29CCED2635F12F6E(L_20, NULL);
 		// DebugUIHandlerWidget selectedWidget = null;
 		V_0 = (DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)NULL;
 		// foreach (var panel in panels)
+		NullCheck(L_21);
 		RuntimeObject* L_22;
 		L_22 = ReadOnlyCollection_1_GetEnumerator_m1AE8DC2B2BFE5954850FC2AFAC1D09B751F1BDA7(L_21, ReadOnlyCollection_1_GetEnumerator_m1AE8DC2B2BFE5954850FC2AFAC1D09B751F1BDA7_RuntimeMethod_var);
 		V_4 = L_22;
@@ -5979,6 +6067,7 @@ FINALLY_0182:
 				}
 				{
 					RuntimeObject* L_24 = V_4;
+					NullCheck(L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_24);
 				}
 
@@ -5998,11 +6087,13 @@ IL_00a2_1:
 			{
 				// foreach (var panel in panels)
 				RuntimeObject* L_25 = V_4;
+				NullCheck(L_25);
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_26;
 				L_26 = InterfaceFuncInvoker0< Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<UnityEngine.Rendering.DebugUI/Panel>::get_Current() */, IEnumerator_1_tA2A0171F4D8D4B815DB1910FC01B4E7E4A30E759_il2cpp_TypeInfo_var, L_25);
 				V_5 = L_26;
 				// if (panel.isEditorOnly || panel.children.Count(x => !x.isEditorOnly && !x.isHidden) == 0)
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_27 = V_5;
+				NullCheck(L_27);
 				bool L_28;
 				L_28 = Panel_get_isEditorOnly_m739F502972100D4683F8ED121870319543957E41(L_27, NULL);
 				if (L_28)
@@ -6012,6 +6103,7 @@ IL_00a2_1:
 			}
 			{
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_29 = V_5;
+				NullCheck(L_29);
 				ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_30;
 				L_30 = Panel_get_children_m42233087374A0F3438E9F666F0EBD00922D3018A_inline(L_29, NULL);
 				il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var);
@@ -6030,6 +6122,7 @@ IL_00a2_1:
 				il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var);
 				U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B* L_33 = ((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9_0;
 				Func_2_t2910ADB122D2537FF3B819DDFE4BF1A86E5E9A33* L_34 = (Func_2_t2910ADB122D2537FF3B819DDFE4BF1A86E5E9A33*)il2cpp_codegen_object_new(Func_2_t2910ADB122D2537FF3B819DDFE4BF1A86E5E9A33_il2cpp_TypeInfo_var);
+				NullCheck(L_34);
 				Func_2__ctor_m46D3ABD0DF926BF9127091FC39D31D3B6809A55C(L_34, L_33, (intptr_t)((void*)U3CU3Ec_U3CRebuildU3Eb__12_0_m0B768BF30ADC6380A48FEBAAE47297DE18E12394_RuntimeMethod_var), NULL);
 				Func_2_t2910ADB122D2537FF3B819DDFE4BF1A86E5E9A33* L_35 = L_34;
 				((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9__12_0_1 = L_35;
@@ -6055,32 +6148,40 @@ IL_00dd_1:
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39;
 				L_39 = Object_Instantiate_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_mFA0A9526C594CA4BECA6A8384DF6A66121127019(L_37, L_38, (bool)0, Object_Instantiate_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_mFA0A9526C594CA4BECA6A8384DF6A66121127019_RuntimeMethod_var);
+				NullCheck(L_39);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40;
 				L_40 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_39, NULL);
 				// go.name = panel.displayName;
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41 = L_40;
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_42 = V_5;
+				NullCheck(L_42);
 				String_t* L_43;
 				L_43 = Panel_get_displayName_m186C10E927B2800035B328BD9A40D8B5FB3D4EE4_inline(L_42, NULL);
+				NullCheck(L_41);
 				Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_41, L_43, NULL);
 				// var uiPanel = go.GetComponent<DebugUIHandlerPanel>();
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_44 = L_41;
+				NullCheck(L_44);
 				DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_45;
 				L_45 = GameObject_GetComponent_TisDebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1_mE5A861A527E7E300EAB7A5B188492162C012104E(L_44, GameObject_GetComponent_TisDebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1_mE5A861A527E7E300EAB7A5B188492162C012104E_RuntimeMethod_var);
 				V_6 = L_45;
 				// uiPanel.SetPanel(panel);
 				DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_46 = V_6;
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_47 = V_5;
+				NullCheck(L_46);
 				DebugUIHandlerPanel_SetPanel_mC9EE00598AED6937770AE24C09F5305B7EBDE271(L_46, L_47, NULL);
 				// uiPanel.Canvas = this;
 				DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_48 = V_6;
+				NullCheck(L_48);
 				L_48->___Canvas_7 = __this;
 				Il2CppCodeGenWriteBarrier((void**)(&L_48->___Canvas_7), (void*)__this);
 				// m_UIPanels.Add(uiPanel);
 				List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_49 = __this->___m_UIPanels_8;
 				DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_50 = V_6;
+				NullCheck(L_49);
 				List_1_Add_m88954D8FE05E5DD400224837CA8B93161706B145_inline(L_49, L_50, List_1_Add_m88954D8FE05E5DD400224837CA8B93161706B145_RuntimeMethod_var);
 				// var container = go.GetComponent<DebugUIHandlerContainer>();
+				NullCheck(L_44);
 				DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_51;
 				L_51 = GameObject_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m6A57E4E0B2D805BCF09A1034F743FF4EB223CC7F(L_44, GameObject_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m6A57E4E0B2D805BCF09A1034F743FF4EB223CC7F_RuntimeMethod_var);
 				V_7 = L_51;
@@ -6089,6 +6190,7 @@ IL_00dd_1:
 				// Traverse(panel, container.contentHolder, null, ref selected);
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_52 = V_5;
 				DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_53 = V_7;
+				NullCheck(L_53);
 				RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_54 = L_53->___contentHolder_4;
 				DebugUIHandlerCanvas_Traverse_m7C1AB7935DE310A3493083E3B42DABECD756907D(__this, L_52, L_54, (DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)NULL, (&V_8), NULL);
 				// if (selected != null && selected.GetWidget().queryPath.Contains(panel.queryPath))
@@ -6102,13 +6204,17 @@ IL_00dd_1:
 			}
 			{
 				DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_57 = V_8;
+				NullCheck(L_57);
 				Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_58;
 				L_58 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_57, NULL);
+				NullCheck(L_58);
 				String_t* L_59;
 				L_59 = Widget_get_queryPath_mB3729532CECC96E1EC3F3D8BF51ABA50BAEA84C9_inline(L_58, NULL);
 				Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_60 = V_5;
+				NullCheck(L_60);
 				String_t* L_61;
 				L_61 = Panel_get_queryPath_mF5E2D5B66591223DC7A17817CB8A881396066B4A(L_60, NULL);
+				NullCheck(L_59);
 				bool L_62;
 				L_62 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_59, L_61, NULL);
 				if (!L_62)
@@ -6126,6 +6232,7 @@ IL_0174_1:
 			{
 				// foreach (var panel in panels)
 				RuntimeObject* L_64 = V_4;
+				NullCheck(L_64);
 				bool L_65;
 				L_65 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_64);
 				if (L_65)
@@ -6204,14 +6311,17 @@ IL_0009:
 	{
 		// var child = container.children[i];
 		RuntimeObject* L_0 = ___container0;
+		NullCheck(L_0);
 		ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_1;
 		L_1 = InterfaceFuncInvoker0< ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* >::Invoke(0 /* UnityEngine.Rendering.ObservableList`1<UnityEngine.Rendering.DebugUI/Widget> UnityEngine.Rendering.DebugUI/IContainer::get_children() */, IContainer_tBD9F21C42D4253E306C4EF7CFC72480E0C7C89B5_il2cpp_TypeInfo_var, L_0);
 		int32_t L_2 = V_1;
+		NullCheck(L_1);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_3;
 		L_3 = ObservableList_1_get_Item_m1F4A7F428EB3A3A76BCCFB658764160578DA7719(L_1, L_2, ObservableList_1_get_Item_m1F4A7F428EB3A3A76BCCFB658764160578DA7719_RuntimeMethod_var);
 		V_2 = L_3;
 		// if (child.isEditorOnly || child.isHidden)
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_4 = V_2;
+		NullCheck(L_4);
 		bool L_5;
 		L_5 = Widget_get_isEditorOnly_m06E01DE2267BB52DB8C4E52ED2EBBF8DC9EE05AE(L_4, NULL);
 		if (L_5)
@@ -6221,6 +6331,7 @@ IL_0009:
 	}
 	{
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_6 = V_2;
+		NullCheck(L_6);
 		bool L_7;
 		L_7 = Widget_get_isHidden_m16EEAA4800FE8ADD122631636B01FBEFBFA95DAB(L_6, NULL);
 		if (L_7)
@@ -6232,8 +6343,10 @@ IL_0009:
 		// if (!m_PrefabsMap.TryGetValue(child.GetType(), out prefab))
 		Dictionary_2_t0DF082D543936AF873C34E8274B97120CB396554* L_8 = __this->___m_PrefabsMap_5;
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_9 = V_2;
+		NullCheck(L_9);
 		Type_t* L_10;
 		L_10 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_9, NULL);
+		NullCheck(L_8);
 		bool L_11;
 		L_11 = Dictionary_2_TryGetValue_m7C11BF81531E53826B8D0331366C3676045C8B8F(L_8, L_10, (&V_3), Dictionary_2_TryGetValue_m7C11BF81531E53826B8D0331366C3676045C8B8F_RuntimeMethod_var);
 		if (L_11)
@@ -6244,6 +6357,7 @@ IL_0009:
 	{
 		// Debug.LogWarning("DebugUI widget doesn't have a prefab: " + child.GetType());
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_12 = V_2;
+		NullCheck(L_12);
 		Type_t* L_13;
 		L_13 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_12, NULL);
 		Type_t* L_14 = L_13;
@@ -6264,6 +6378,7 @@ IL_0009:
 
 IL_0053:
 	{
+		NullCheck(G_B6_0);
 		String_t* L_15;
 		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B6_0);
 		G_B7_0 = L_15;
@@ -6288,17 +6403,21 @@ IL_0067:
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = Object_Instantiate_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_mFA0A9526C594CA4BECA6A8384DF6A66121127019(L_17, L_18, (bool)0, Object_Instantiate_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_mFA0A9526C594CA4BECA6A8384DF6A66121127019_RuntimeMethod_var);
+		NullCheck(L_19);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20;
 		L_20 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_19, NULL);
 		V_4 = L_20;
 		// go.name = child.displayName;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = V_4;
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_22 = V_2;
+		NullCheck(L_22);
 		String_t* L_23;
 		L_23 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_22, NULL);
+		NullCheck(L_21);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_21, L_23, NULL);
 		// var uiHandler = go.GetComponent<DebugUIHandlerWidget>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_4;
+		NullCheck(L_24);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_25;
 		L_25 = GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D(L_24, GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -6314,6 +6433,7 @@ IL_0067:
 	{
 		// Debug.LogWarning("DebugUI prefab is missing a DebugUIHandler for: " + child.GetType());
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_28 = V_2;
+		NullCheck(L_28);
 		Type_t* L_29;
 		L_29 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_28, NULL);
 		Type_t* L_30 = L_29;
@@ -6334,6 +6454,7 @@ IL_0067:
 
 IL_00a8:
 	{
+		NullCheck(G_B11_0);
 		String_t* L_31;
 		L_31 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B11_0);
 		G_B12_0 = L_31;
@@ -6363,9 +6484,11 @@ IL_00bc:
 	}
 	{
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_35 = V_2;
+		NullCheck(L_35);
 		String_t* L_36;
 		L_36 = Widget_get_queryPath_mB3729532CECC96E1EC3F3D8BF51ABA50BAEA84C9_inline(L_35, NULL);
 		String_t* L_37 = __this->___m_CurrentQueryPath_11;
+		NullCheck(L_36);
 		bool L_38;
 		L_38 = String_Equals_mCD5F35DEDCAFE51ACD4E033726FC2EF8DF7E9B4D(L_36, L_37, NULL);
 		if (!L_38)
@@ -6397,6 +6520,7 @@ IL_00e1:
 		// if (previousUIHandler != null) previousUIHandler.nextUIHandler = uiHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_43 = V_0;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_44 = V_5;
+		NullCheck(L_43);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_43, L_44, NULL);
 	}
 
@@ -6405,6 +6529,7 @@ IL_00f2:
 		// uiHandler.previousUIHandler = previousUIHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_45 = V_5;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_46 = V_0;
+		NullCheck(L_45);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_45, L_46, NULL);
 		// previousUIHandler = uiHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_47 = V_5;
@@ -6412,13 +6537,16 @@ IL_00f2:
 		// uiHandler.parentUIHandler = parentUIHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_48 = V_5;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_49 = ___parentUIHandler2;
+		NullCheck(L_48);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_48, L_49, NULL);
 		// uiHandler.SetWidget(child);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_50 = V_5;
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_51 = V_2;
+		NullCheck(L_50);
 		VirtualActionInvoker1< Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* >::Invoke(5 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::SetWidget(UnityEngine.Rendering.DebugUI/Widget) */, L_50, L_51);
 		// var childContainer = go.GetComponent<DebugUIHandlerContainer>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52 = V_4;
+		NullCheck(L_52);
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_53;
 		L_53 = GameObject_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m6A57E4E0B2D805BCF09A1034F743FF4EB223CC7F(L_52, GameObject_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m6A57E4E0B2D805BCF09A1034F743FF4EB223CC7F_RuntimeMethod_var);
 		V_6 = L_53;
@@ -6445,6 +6573,7 @@ IL_00f2:
 		// Traverse(childAsContainer, childContainer.contentHolder, uiHandler, ref selectedHandler);
 		RuntimeObject* L_58 = V_7;
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_59 = V_6;
+		NullCheck(L_59);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_60 = L_59->___contentHolder_4;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_61 = V_5;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1** L_62 = ___selectedHandler3;
@@ -6463,8 +6592,10 @@ IL_0143:
 		// for (int i = 0; i < container.children.Count; i++)
 		int32_t L_64 = V_1;
 		RuntimeObject* L_65 = ___container0;
+		NullCheck(L_65);
 		ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_66;
 		L_66 = InterfaceFuncInvoker0< ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* >::Invoke(0 /* UnityEngine.Rendering.ObservableList`1<UnityEngine.Rendering.DebugUI/Widget> UnityEngine.Rendering.DebugUI/IContainer::get_children() */, IContainer_tBD9F21C42D4253E306C4EF7CFC72480E0C7C89B5_il2cpp_TypeInfo_var, L_65);
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F(L_66, ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F_RuntimeMethod_var);
 		if ((((int32_t)L_64) < ((int32_t)L_67)))
@@ -6494,14 +6625,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01* V_0 = NULL;
 	{
 		U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01* L_0 = (U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CU3Ec__DisplayClass14_0__ctor_m861EA10CA07D6929E70405A3BA2BA284C590C739(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01* L_1 = V_0;
 		String_t* L_2 = ___queryPath0;
+		NullCheck(L_1);
 		L_1->___queryPath_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___queryPath_0), (void*)L_2);
 		// if (string.IsNullOrEmpty(queryPath))
 		U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01* L_3 = V_0;
+		NullCheck(L_3);
 		String_t* L_4 = L_3->___queryPath_0;
 		bool L_5;
 		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_4, NULL);
@@ -6520,15 +6654,18 @@ IL_001c:
 		// var panel = m_UIPanels[m_SelectedPanel];
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_6 = __this->___m_UIPanels_8;
 		int32_t L_7 = __this->___m_SelectedPanel_9;
+		NullCheck(L_6);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_8;
 		L_8 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_6, L_7, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
 		// return panel
 		//     .GetComponentsInChildren<DebugUIHandlerWidget>()
 		//     .FirstOrDefault(w => w.GetWidget().queryPath == queryPath);
+		NullCheck(L_8);
 		DebugUIHandlerWidgetU5BU5D_t201B9DAEA939E2253E4F4DCDCBF3286615907657* L_9;
 		L_9 = Component_GetComponentsInChildren_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m8DC8E8D539CB09D076002E589AED18D8C8F142ED(L_8, Component_GetComponentsInChildren_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m8DC8E8D539CB09D076002E589AED18D8C8F142ED_RuntimeMethod_var);
 		U3CU3Ec__DisplayClass14_0_t37CE54F4C65A211F186E0F6CB422A8F64326CB01* L_10 = V_0;
 		Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A* L_11 = (Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A*)il2cpp_codegen_object_new(Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
 		Func_2__ctor_mAE687AF40F7DC0FA560FEECF1AF658EA729D07E5(L_11, L_10, (intptr_t)((void*)U3CU3Ec__DisplayClass14_0_U3CGetWidgetFromPathU3Eb__0_mF4214EF157153DCDF6CDE37D01DD63581EF7AF63_RuntimeMethod_var), NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_12;
 		L_12 = Enumerable_FirstOrDefault_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m6035843E15ED5F08331720597B34142338E3F979((RuntimeObject*)L_9, L_11, Enumerable_FirstOrDefault_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m6035843E15ED5F08331720597B34142338E3F979_RuntimeMethod_var);
@@ -6557,6 +6694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_ActivatePanel_mA608
 	{
 		// if (m_UIPanels.Count == 0)
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_0 = __this->___m_UIPanels_8;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_0, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		if (L_1)
@@ -6574,6 +6712,7 @@ IL_000e:
 		// if (index >= m_UIPanels.Count)
 		int32_t L_2 = ___index0;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_3 = __this->___m_UIPanels_8;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_3, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		if ((((int32_t)L_2) < ((int32_t)L_4)))
@@ -6584,6 +6723,7 @@ IL_000e:
 	{
 		// index = m_UIPanels.Count - 1;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_5 = __this->___m_UIPanels_8;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_5, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		___index0 = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
@@ -6609,6 +6749,7 @@ IL_002b:
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var);
 		U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B* L_10 = ((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9_0;
 		Action_1_t566FF172AF42BE1A3BD0D13A9DD36E450CB186E9* L_11 = (Action_1_t566FF172AF42BE1A3BD0D13A9DD36E450CB186E9*)il2cpp_codegen_object_new(Action_1_t566FF172AF42BE1A3BD0D13A9DD36E450CB186E9_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
 		Action_1__ctor_mEBE8341CD26EE82A49B406A9BA89737EB7729848(L_11, L_10, (intptr_t)((void*)U3CU3Ec_U3CActivatePanelU3Eb__15_0_m178DE0B54B076B42EE28B1256BC18545966CA344_RuntimeMethod_var), NULL);
 		Action_1_t566FF172AF42BE1A3BD0D13A9DD36E450CB186E9* L_12 = L_11;
 		((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9__15_0_2 = L_12;
@@ -6619,14 +6760,18 @@ IL_002b:
 
 IL_0050:
 	{
+		NullCheck(G_B6_1);
 		List_1_ForEach_m5E00B4FE42A8A6E2D9BFF9CD3404025EC247BD4C(G_B6_1, G_B6_0, List_1_ForEach_m5E00B4FE42A8A6E2D9BFF9CD3404025EC247BD4C_RuntimeMethod_var);
 		// m_UIPanels[index].gameObject.SetActive(true);
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_13 = __this->___m_UIPanels_8;
 		int32_t L_14 = ___index0;
+		NullCheck(L_13);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_15;
 		L_15 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_13, L_14, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
+		NullCheck(L_15);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
 		L_16 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_15, NULL);
+		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)1, NULL);
 		// m_SelectedPanel = index;
 		int32_t L_17 = ___index0;
@@ -6645,8 +6790,10 @@ IL_0050:
 		// selectedWidget = m_UIPanels[index].GetFirstItem();
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_20 = __this->___m_UIPanels_8;
 		int32_t L_21 = ___index0;
+		NullCheck(L_20);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_22;
 		L_22 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_20, L_21, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
+		NullCheck(L_22);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_23;
 		L_23 = DebugUIHandlerPanel_GetFirstItem_mABA1E55122FE52BB4A783346971540AC19CF37A0(L_22, NULL);
 		___selectedWidget1 = L_23;
@@ -6703,6 +6850,7 @@ IL_000a:
 	{
 		// m_SelectedWidget.OnDeselection();
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_4 = __this->___m_SelectedWidget_10;
+		NullCheck(L_4);
 		VirtualActionInvoker0::Invoke(7 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::OnDeselection() */, L_4);
 	}
 
@@ -6722,6 +6870,7 @@ IL_0023:
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = __this->___m_SelectedWidget_10;
 		bool L_9 = ___fromNext1;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_10 = V_0;
+		NullCheck(L_8);
 		bool L_11;
 		L_11 = VirtualFuncInvoker2< bool, bool, DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* >::Invoke(6 /* System.Boolean UnityEngine.Rendering.UI.DebugUIHandlerWidget::OnSelection(System.Boolean,UnityEngine.Rendering.UI.DebugUIHandlerWidget) */, L_8, L_9, L_10);
 		if (L_11)
@@ -6764,6 +6913,7 @@ IL_0058:
 	}
 	{
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = __this->___m_SelectedWidget_10;
+		NullCheck(L_15);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_16;
 		L_16 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_15, NULL);
 		if (L_16)
@@ -6785,8 +6935,10 @@ IL_007f:
 	{
 		// m_CurrentQueryPath = m_SelectedWidget.GetWidget().queryPath;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_18 = __this->___m_SelectedWidget_10;
+		NullCheck(L_18);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_19;
 		L_19 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_18, NULL);
+		NullCheck(L_19);
 		String_t* L_20;
 		L_20 = Widget_get_queryPath_mB3729532CECC96E1EC3F3D8BF51ABA50BAEA84C9_inline(L_19, NULL);
 		__this->___m_CurrentQueryPath_11 = L_20;
@@ -6825,6 +6977,7 @@ IL_000f:
 	{
 		// var newSelection = m_SelectedWidget.Previous();
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = __this->___m_SelectedWidget_10;
+		NullCheck(L_2);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_3;
 		L_3 = VirtualFuncInvoker0< DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* >::Invoke(11 /* UnityEngine.Rendering.UI.DebugUIHandlerWidget UnityEngine.Rendering.UI.DebugUIHandlerWidget::Previous() */, L_2);
 		V_0 = L_3;
@@ -6867,6 +7020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_SelectNextPanel_mDE
 		// if (index >= m_UIPanels.Count)
 		int32_t L_1 = V_0;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_2 = __this->___m_UIPanels_8;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_2, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		if ((((int32_t)L_1) < ((int32_t)L_3)))
@@ -6884,6 +7038,7 @@ IL_0019:
 		// index = Mathf.Clamp(index, 0, m_UIPanels.Count - 1);
 		int32_t L_4 = V_0;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_5 = __this->___m_UIPanels_8;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_5, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		int32_t L_7;
@@ -6920,6 +7075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_SelectPreviousPanel
 	{
 		// index = m_UIPanels.Count - 1;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_2 = __this->___m_UIPanels_8;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_2, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
@@ -6930,6 +7086,7 @@ IL_001b:
 		// index = Mathf.Clamp(index, 0, m_UIPanels.Count - 1);
 		int32_t L_4 = V_0;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_5 = __this->___m_UIPanels_8;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_5, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		int32_t L_7;
@@ -6972,6 +7129,7 @@ IL_000f:
 	{
 		// var newSelection = m_SelectedWidget.Next();
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = __this->___m_SelectedWidget_10;
+		NullCheck(L_2);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_3;
 		L_3 = VirtualFuncInvoker0< DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* >::Invoke(12 /* UnityEngine.Rendering.UI.DebugUIHandlerWidget UnityEngine.Rendering.UI.DebugUIHandlerWidget::Next() */, L_2);
 		V_0 = L_3;
@@ -7030,6 +7188,7 @@ IL_000f:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_2;
 		L_2 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_2);
 		float L_3;
 		L_3 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_2, 7, NULL);
 		V_0 = (bool)((((int32_t)((((float)L_3) == ((float)(0.0f)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
@@ -7044,6 +7203,7 @@ IL_000f:
 		// m_SelectedWidget.OnDecrement(fast);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_5 = __this->___m_SelectedWidget_10;
 		bool L_6 = V_0;
+		NullCheck(L_5);
 		VirtualActionInvoker1< bool >::Invoke(10 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::OnDecrement(System.Boolean) */, L_5, L_6);
 		return;
 	}
@@ -7053,6 +7213,7 @@ IL_003a:
 		// m_SelectedWidget.OnIncrement(fast);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_7 = __this->___m_SelectedWidget_10;
 		bool L_8 = V_0;
+		NullCheck(L_7);
 		VirtualActionInvoker1< bool >::Invoke(9 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::OnIncrement(System.Boolean) */, L_7, L_8);
 		// }
 		return;
@@ -7087,6 +7248,7 @@ IL_000f:
 	{
 		// m_SelectedWidget.OnAction();
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = __this->___m_SelectedWidget_10;
+		NullCheck(L_2);
 		VirtualActionInvoker0::Invoke(8 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::OnAction() */, L_2);
 		// }
 		return;
@@ -7109,6 +7271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_HandleInput_m68428B
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_0;
 		L_0 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_0);
 		float L_1;
 		L_1 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_0, 1, NULL);
 		if ((((float)L_1) == ((float)(0.0f))))
@@ -7127,6 +7290,7 @@ IL_0018:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_2;
 		L_2 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_2);
 		float L_3;
 		L_3 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_2, 2, NULL);
 		if ((((float)L_3) == ((float)(0.0f))))
@@ -7145,6 +7309,7 @@ IL_0030:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_4;
 		L_4 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_4);
 		float L_5;
 		L_5 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_4, 3, NULL);
 		if ((((float)L_5) == ((float)(0.0f))))
@@ -7163,6 +7328,7 @@ IL_0048:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_6;
 		L_6 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_6);
 		float L_7;
 		L_7 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_6, 4, NULL);
 		if ((((float)L_7) == ((float)(0.0f))))
@@ -7186,8 +7352,10 @@ IL_0048:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_10;
 		L_10 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_11 = __this->___m_SelectedWidget_10;
+		NullCheck(L_11);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_12;
 		L_12 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_11, NULL);
+		NullCheck(L_10);
 		DebugManager_TogglePersistent_m053E880302A92E891DAEA5AEB7837AD0C58EA540(L_10, L_12, NULL);
 	}
 
@@ -7197,6 +7365,7 @@ IL_007d:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_13;
 		L_13 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_13);
 		float L_14;
 		L_14 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_13, 6, NULL);
 		V_0 = L_14;
@@ -7219,6 +7388,7 @@ IL_0098:
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_17;
 		L_17 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_17);
 		float L_18;
 		L_18 = DebugManager_GetAction_mF49CDA3900720779DADCA26D660A9C08DAC7741C(L_17, 5, NULL);
 		V_1 = L_18;
@@ -7277,6 +7447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_SetScrollTarget_mD3
 	{
 		int32_t L_1 = __this->___m_SelectedPanel_9;
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_2 = __this->___m_UIPanels_8;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_inline(L_2, List_1_get_Count_m237AE61D21E3033439AA12BACB8D90E250F987DE_RuntimeMethod_var);
 		if ((((int32_t)L_1) >= ((int32_t)L_3)))
@@ -7287,6 +7458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_SetScrollTarget_mD3
 	{
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_4 = __this->___m_UIPanels_8;
 		int32_t L_5 = __this->___m_SelectedPanel_9;
+		NullCheck(L_4);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_6;
 		L_6 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_4, L_5, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -7301,9 +7473,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerCanvas_SetScrollTarget_mD3
 		// m_UIPanels[m_SelectedPanel].SetScrollTarget(widget);
 		List_1_t58474FE9542ACA4091CD798BCE2CD3F27FB2D6FA* L_8 = __this->___m_UIPanels_8;
 		int32_t L_9 = __this->___m_SelectedPanel_9;
+		NullCheck(L_8);
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_10;
 		L_10 = List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843(L_8, L_9, List_1_get_Item_m7EA65C60C848B017BFDB3E6E65E48ADA5137A843_RuntimeMethod_var);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_11 = ___widget0;
+		NullCheck(L_10);
 		DebugUIHandlerPanel_SetScrollTarget_mBF5B2C49CA07FBD4E66F98A8A66B371548371E1D_inline(L_10, L_11, NULL);
 	}
 
@@ -7340,6 +7514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m97BA6E5961CD1B001BBCA205
 	}
 	{
 		U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B* L_0 = (U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B*)il2cpp_codegen_object_new(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CU3Ec__ctor_m775C4B6FC2C623756041294726B7DA41A73D4926(L_0, NULL);
 		((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t695A341F2414591F9C296CBD30C1A448BE1B9F0B_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
@@ -7360,6 +7535,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CRebuildU3Eb__12_0_m0B768BF30A
 	{
 		// if (panel.isEditorOnly || panel.children.Count(x => !x.isEditorOnly && !x.isHidden) == 0)
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_0 = ___x0;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Widget_get_isEditorOnly_m06E01DE2267BB52DB8C4E52ED2EBBF8DC9EE05AE(L_0, NULL);
 		if (L_1)
@@ -7369,6 +7545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CRebuildU3Eb__12_0_m0B768BF30A
 	}
 	{
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_2 = ___x0;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = Widget_get_isHidden_m16EEAA4800FE8ADD122631636B01FBEFBFA95DAB(L_2, NULL);
 		return (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
@@ -7385,8 +7562,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CActivatePanelU3Eb__15_0_m178D
 	{
 		// m_UIPanels.ForEach(p => p.gameObject.SetActive(false));
 		DebugUIHandlerPanel_tD1D81A5FA0B1D66A458483ED86E5D4FB81658EA1* L_0 = ___p0;
+		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
+		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
 		return;
 	}
@@ -7413,8 +7592,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CGetWidgetFr
 	{
 		// .FirstOrDefault(w => w.GetWidget().queryPath == queryPath);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_0 = ___w0;
+		NullCheck(L_0);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_1;
 		L_1 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_0, NULL);
+		NullCheck(L_1);
 		String_t* L_2;
 		L_2 = Widget_get_queryPath_mB3729532CECC96E1EC3F3D8BF51ABA50BAEA84C9_inline(L_1, NULL);
 		String_t* L_3 = __this->___queryPath_0;
@@ -7472,24 +7653,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_SetWidget_mFBE0123D5
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_4 = __this->___m_Field_17;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// fieldR.getter = () => m_Field.GetValue().r;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_6 = __this->___fieldR_13;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_7 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_7, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_0_mBAFD5BD05F214AC2AB8E17AEBEB13FA1381E17EC_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
 		L_6->___getter_12 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___getter_12), (void*)L_7);
 		// fieldR.setter = x => SetValue(x, r: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_8 = __this->___fieldR_13;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_9 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_9, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_1_m2967C435E96AB4E261D1338BA62BF4D99A6D4CE3_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
 		L_8->___setter_13 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___setter_13), (void*)L_9);
 		// fieldR.nextUIHandler = fieldG;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_10 = __this->___fieldR_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_11 = __this->___fieldG_14;
+		NullCheck(L_10);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_10, L_11, NULL);
 		// SetupSettings(fieldR);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_12 = __this->___fieldR_13;
@@ -7497,22 +7685,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_SetWidget_mFBE0123D5
 		// fieldG.getter = () => m_Field.GetValue().g;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_13 = __this->___fieldG_14;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_14 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_14, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_2_m69B6AA580A85659F23F70B1460442019B83343C6_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
 		L_13->___getter_12 = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&L_13->___getter_12), (void*)L_14);
 		// fieldG.setter = x => SetValue(x, g: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_15 = __this->___fieldG_14;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_16 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_16, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_3_m54A73A1D77BCC317E3F597AD6A2E7829739304C3_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
 		L_15->___setter_13 = L_16;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___setter_13), (void*)L_16);
 		// fieldG.previousUIHandler = fieldR;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_17 = __this->___fieldG_14;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_18 = __this->___fieldR_13;
+		NullCheck(L_17);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_17, L_18, NULL);
 		// fieldG.nextUIHandler = fieldB;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_19 = __this->___fieldG_14;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_20 = __this->___fieldB_15;
+		NullCheck(L_19);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_19, L_20, NULL);
 		// SetupSettings(fieldG);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_21 = __this->___fieldG_14;
@@ -7520,22 +7714,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_SetWidget_mFBE0123D5
 		// fieldB.getter = () => m_Field.GetValue().b;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_22 = __this->___fieldB_15;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_23 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_23);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_23, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_4_m408843B0828821EE347D7DE706C7A405F0FDC871_RuntimeMethod_var), NULL);
+		NullCheck(L_22);
 		L_22->___getter_12 = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___getter_12), (void*)L_23);
 		// fieldB.setter = x => SetValue(x, b: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_24 = __this->___fieldB_15;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_25 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_25, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_5_m436E90BB8D0498318BD2634574361FB231DFF66D_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
 		L_24->___setter_13 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___setter_13), (void*)L_25);
 		// fieldB.previousUIHandler = fieldG;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_26 = __this->___fieldB_15;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_27 = __this->___fieldG_14;
+		NullCheck(L_26);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_26, L_27, NULL);
 		// fieldB.nextUIHandler = m_Field.showAlpha ? fieldA : null;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_28 = __this->___fieldB_15;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_29 = __this->___m_Field_17;
+		NullCheck(L_29);
 		bool L_30 = L_29->___showAlpha_11;
 		G_B1_0 = L_28;
 		if (L_30)
@@ -7559,32 +7759,41 @@ IL_0131:
 
 IL_0137:
 	{
+		NullCheck(G_B3_1);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(G_B3_1, G_B3_0, NULL);
 		// SetupSettings(fieldB);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_32 = __this->___fieldB_15;
 		DebugUIHandlerColor_SetupSettings_mE3ED3D6152635D1EEB1D5076089E0588957E9E46(__this, L_32, NULL);
 		// fieldA.gameObject.SetActive(m_Field.showAlpha);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_33 = __this->___fieldA_16;
+		NullCheck(L_33);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
 		L_34 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_33, NULL);
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_35 = __this->___m_Field_17;
+		NullCheck(L_35);
 		bool L_36 = L_35->___showAlpha_11;
+		NullCheck(L_34);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_34, L_36, NULL);
 		// fieldA.getter = () => m_Field.GetValue().a;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_37 = __this->___fieldA_16;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_38 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_38);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_38, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_6_mADC9E3769B689A784BAE829BD1B84EF6F0FEFE94_RuntimeMethod_var), NULL);
+		NullCheck(L_37);
 		L_37->___getter_12 = L_38;
 		Il2CppCodeGenWriteBarrier((void**)(&L_37->___getter_12), (void*)L_38);
 		// fieldA.setter = x => SetValue(x, a: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_39 = __this->___fieldA_16;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_40 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_40);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_40, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetWidgetU3Eb__9_7_m8D466921CECBD6390902A54733F9CD84DE7C7209_RuntimeMethod_var), NULL);
+		NullCheck(L_39);
 		L_39->___setter_13 = L_40;
 		Il2CppCodeGenWriteBarrier((void**)(&L_39->___setter_13), (void*)L_40);
 		// fieldA.previousUIHandler = fieldB;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_41 = __this->___fieldA_16;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_42 = __this->___fieldB_15;
+		NullCheck(L_41);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_41, L_42, NULL);
 		// SetupSettings(fieldA);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_43 = __this->___fieldA_16;
@@ -7610,6 +7819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_SetValue_m076FEA35FD
 	{
 		// var color = m_Field.GetValue();
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_0, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
 		V_0 = L_1;
@@ -7676,6 +7886,7 @@ IL_003a:
 		// m_Field.SetValue(color);
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_10 = __this->___m_Field_17;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = V_0;
+		NullCheck(L_10);
 		Field_1_SetValue_mFB097DA502C5632B60A29A705EA4CFFCBBC43038(L_10, L_11, Field_1_SetValue_mFB097DA502C5632B60A29A705EA4CFFCBBC43038_RuntimeMethod_var);
 		// UpdateColor();
 		DebugUIHandlerColor_UpdateColor_m0D7C0E504BECE85E4E0A47F9D69DA52B2E7ABD94(__this, NULL);
@@ -7698,27 +7909,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_SetupSettings_mE3ED3
 	{
 		// field.parentUIHandler = this;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_0 = ___field0;
+		NullCheck(L_0);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_0, __this, NULL);
 		// field.incStepGetter = () => m_Field.incStep;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_1 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_2 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_2, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetupSettingsU3Eb__11_0_m1650683DE2689FA919F5F23D7B3E37C1D1C698FC_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
 		L_1->___incStepGetter_14 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___incStepGetter_14), (void*)L_2);
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_3 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_4 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_4, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetupSettingsU3Eb__11_1_mFB55DFA1E3A700E6C138C5FBC65EB9A73E7F2970_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
 		L_3->___incStepMultGetter_15 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___incStepMultGetter_15), (void*)L_4);
 		// field.decimalsGetter = () => m_Field.decimals;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_5 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_6 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_6, __this, (intptr_t)((void*)DebugUIHandlerColor_U3CSetupSettingsU3Eb__11_2_mAE4CAA0731F89269A24512B33CFDDD31CD325412_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
 		L_5->___decimalsGetter_16 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___decimalsGetter_16), (void*)L_6);
 		// field.Init();
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_7 = ___field0;
+		NullCheck(L_7);
 		DebugUIHandlerIndirectFloatField_Init_m8297DF272ED8D2435861EDB77AABF58290B96840(L_7, NULL);
 		// }
 		return;
@@ -7744,6 +7963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerColor_OnSelection_mFA64A94
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -7757,6 +7977,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -7765,6 +7986,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -7776,6 +7998,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_18;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -7787,6 +8010,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -7795,6 +8019,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_18;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -7803,6 +8028,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -7819,6 +8045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_OnDeselection_mCFF41
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -7830,6 +8057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_OnIncrement_m1591CEE
 	{
 		// valueToggle.isOn = true;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)1, NULL);
 		// }
 		return;
@@ -7841,6 +8069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_OnDecrement_m993B749
 	{
 		// valueToggle.isOn = false;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)0, NULL);
 		// }
 		return;
@@ -7853,8 +8082,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_OnAction_m2E3B5E2D0D
 		// valueToggle.isOn = !valueToggle.isOn;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0), NULL);
 		// }
 		return;
@@ -7885,8 +8116,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerColor_UpdateColor_m0D7C0E5
 		// colorImage.color = m_Field.GetValue();
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_2 = __this->___colorImage_12;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_3 = __this->___m_Field_17;
+		NullCheck(L_3);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4;
 		L_4 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_3, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_4);
 	}
 
@@ -7909,6 +8142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!valueToggle.isOn || m_Container == null)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_0, NULL);
 		if (!L_1)
@@ -7939,6 +8173,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_18;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -7986,6 +8221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetWidgetU3Eb__9
 	{
 		// fieldR.getter = () => m_Field.GetValue().r;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_0, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
 		float L_2 = L_1.___r_0;
@@ -8014,6 +8250,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetWidgetU3Eb__9
 	{
 		// fieldG.getter = () => m_Field.GetValue().g;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_0, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
 		float L_2 = L_1.___g_1;
@@ -8042,6 +8279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetWidgetU3Eb__9
 	{
 		// fieldB.getter = () => m_Field.GetValue().b;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_0, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
 		float L_2 = L_1.___b_2;
@@ -8070,6 +8308,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetWidgetU3Eb__9
 	{
 		// fieldA.getter = () => m_Field.GetValue().a;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76(L_0, Field_1_GetValue_m0968A99BCF67D6015EE73587828342E31B9F3E76_RuntimeMethod_var);
 		float L_2 = L_1.___a_3;
@@ -8092,6 +8331,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetupSettingsU3E
 	{
 		// field.incStepGetter = () => m_Field.incStep;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStep_13;
 		return L_1;
 	}
@@ -8102,6 +8342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetupSettingsU3E
 	{
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStepMult_14;
 		return L_1;
 	}
@@ -8112,6 +8353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerColor_U3CSetupSettingsU3E
 	{
 		// field.decimalsGetter = () => m_Field.decimals;
 		ColorField_t6BB20214FF8E76FBA61FE664ACF6FAAF67D7E790* L_0 = __this->___m_Field_17;
+		NullCheck(L_0);
 		int32_t L_1 = L_0->___decimals_15;
 		return ((float)L_1);
 	}
@@ -8138,6 +8380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (contentHolder.childCount == 0)
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___contentHolder_4;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_0, NULL);
 		if (L_1)
@@ -8158,6 +8401,7 @@ IL_000f:
 		V_0 = L_2;
 		// if (items.Count == 0)
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_3 = V_0;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_inline(L_3, List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_RuntimeMethod_var);
 		if (L_4)
@@ -8174,6 +8418,7 @@ IL_0020:
 	{
 		// return items[0];
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_5 = V_0;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = List_1_get_Item_mB066328AD3914851DD5A428A59F6DCA2CD74EB5A(L_5, 0, List_1_get_Item_mB066328AD3914851DD5A428A59F6DCA2CD74EB5A_RuntimeMethod_var);
 		return L_6;
@@ -8193,6 +8438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (contentHolder.childCount == 0)
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___contentHolder_4;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_0, NULL);
 		if (L_1)
@@ -8213,6 +8459,7 @@ IL_000f:
 		V_0 = L_2;
 		// if (items.Count == 0)
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_3 = V_0;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_inline(L_3, List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_RuntimeMethod_var);
 		if (L_4)
@@ -8230,8 +8477,10 @@ IL_0020:
 		// return items[items.Count - 1];
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_5 = V_0;
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_6 = V_0;
+		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_inline(L_6, List_1_get_Count_mBB6358345485EF6667A8D68E019439A33ED9B014_RuntimeMethod_var);
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8;
 		L_8 = List_1_get_Item_mB066328AD3914851DD5A428A59F6DCA2CD74EB5A(L_5, ((int32_t)il2cpp_codegen_subtract(L_7, 1)), List_1_get_Item_mB066328AD3914851DD5A428A59F6DCA2CD74EB5A_RuntimeMethod_var);
 		return L_8;
@@ -8252,14 +8501,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerContainer_IsDirectChild_mC
 	U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B* V_0 = NULL;
 	{
 		U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B* L_0 = (U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CU3Ec__DisplayClass3_0__ctor_m7C972827CF4936AA55AB609E47F79190416DDD2E(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B* L_1 = V_0;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = ___widget0;
+		NullCheck(L_1);
 		L_1->___widget_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___widget_0), (void*)L_2);
 		// if (contentHolder.childCount == 0)
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3 = __this->___contentHolder_4;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_3, NULL);
 		if (L_4)
@@ -8280,6 +8532,7 @@ IL_001c:
 		L_5 = DebugUIHandlerContainer_GetActiveChildren_mB84ADFB63E20AA9B27EF865FE730DC75432598F9(__this, NULL);
 		U3CU3Ec__DisplayClass3_0_t6EE3AAB9FD05A5DA358497C8C65E208D926C626B* L_6 = V_0;
 		Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A* L_7 = (Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A*)il2cpp_codegen_object_new(Func_2_t77F15FE5503F44ADF12EAC588D978F4A6861693A_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		Func_2__ctor_mAE687AF40F7DC0FA560FEECF1AF658EA729D07E5(L_7, L_6, (intptr_t)((void*)U3CU3Ec__DisplayClass3_0_U3CIsDirectChildU3Eb__0_mE86B269F22B9D136B3B900B71A6540059D336A60_RuntimeMethod_var), NULL);
 		int32_t L_8;
 		L_8 = Enumerable_Count_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m93E677B3B7A9B0EDE8F20290A8A9D65FE442007C(L_5, L_7, Enumerable_Count_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_m93E677B3B7A9B0EDE8F20290A8A9D65FE442007C_RuntimeMethod_var);
@@ -8310,10 +8563,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t19AF6AA21D8C846ECA36916624E1D052A893C
 	{
 		// var list = new List<DebugUIHandlerWidget>();
 		List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_0 = (List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6*)il2cpp_codegen_object_new(List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		List_1__ctor_m98790EA4982388E2CBA29DB51AD1E619828E0BDF(L_0, List_1__ctor_m98790EA4982388E2CBA29DB51AD1E619828E0BDF_RuntimeMethod_var);
 		V_0 = L_0;
 		// foreach (Transform t in contentHolder)
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_1 = __this->___contentHolder_4;
+		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_1, NULL);
 		V_1 = L_2;
@@ -8335,6 +8590,7 @@ FINALLY_004e:
 				}
 				{
 					RuntimeObject* L_5 = V_4;
+					NullCheck(L_5);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_5);
 				}
 
@@ -8354,13 +8610,16 @@ IL_0014_1:
 			{
 				// foreach (Transform t in contentHolder)
 				RuntimeObject* L_6 = V_1;
+				NullCheck(L_6);
 				RuntimeObject* L_7;
 				L_7 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_6);
 				V_2 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_7, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
 				// if (!t.gameObject.activeInHierarchy)
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = V_2;
+				NullCheck(L_8);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 				L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+				NullCheck(L_9);
 				bool L_10;
 				L_10 = GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109(L_9, NULL);
 				if (!L_10)
@@ -8371,6 +8630,7 @@ IL_0014_1:
 			{
 				// var c = t.GetComponent<DebugUIHandlerWidget>();
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = V_2;
+				NullCheck(L_11);
 				DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_12;
 				L_12 = Component_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mB470B994A0EB45EA8DF7A40004780B96EE7486B1(L_11, Component_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mB470B994A0EB45EA8DF7A40004780B96EE7486B1_RuntimeMethod_var);
 				V_3 = L_12;
@@ -8388,6 +8648,7 @@ IL_0014_1:
 				// list.Add(c);
 				List_1_t19AF6AA21D8C846ECA36916624E1D052A893C8F6* L_15 = V_0;
 				DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_16 = V_3;
+				NullCheck(L_15);
 				List_1_Add_mEDCCEB0C30ACD4172459FC1F2C2B851504736FEA_inline(L_15, L_16, List_1_Add_mEDCCEB0C30ACD4172459FC1F2C2B851504736FEA_RuntimeMethod_var);
 			}
 
@@ -8395,6 +8656,7 @@ IL_0044_1:
 			{
 				// foreach (Transform t in contentHolder)
 				RuntimeObject* L_17 = V_1;
+				NullCheck(L_17);
 				bool L_18;
 				L_18 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_17);
 				if (L_18)
@@ -8491,8 +8753,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumField_SetWidget_m87B59
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_12;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_3 = __this->___m_Field_14;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// UpdateValueLabel();
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerEnumField::UpdateValueLabel() */, __this);
@@ -8524,6 +8788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerEnumField_OnSelection_mA05
 		// nextButtonText.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nextButtonText_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 	}
 
@@ -8543,6 +8808,7 @@ IL_001f:
 		// previousButtonText.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->___previousButtonText_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_6);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_6, L_7);
 	}
 
@@ -8551,10 +8817,12 @@ IL_003e:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_8 = __this->___nameLabel_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_8);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_8, L_9);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___valueLabel_13;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		// return true;
 		return (bool)1;
@@ -8584,6 +8852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumField_OnDeselection_m8
 		// nextButtonText.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nextButtonText_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 	}
 
@@ -8603,6 +8872,7 @@ IL_001f:
 		// previousButtonText.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->___previousButtonText_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_6);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_6, L_7);
 	}
 
@@ -8611,10 +8881,12 @@ IL_003e:
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_8 = __this->___nameLabel_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_8);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_8, L_9);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___valueLabel_13;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		// }
 		return;
@@ -8646,7 +8918,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumField_OnIncrement_m433
 	{
 		// if (m_Field.enumValues.Length == 0)
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = L_0->___enumValues_11;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_000f;
@@ -8661,16 +8935,19 @@ IL_000f:
 	{
 		// var array = m_Field.enumValues;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_2 = __this->___m_Field_14;
+		NullCheck(L_2);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = L_2->___enumValues_11;
 		V_0 = L_3;
 		// int index = m_Field.currentIndex;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_4 = __this->___m_Field_14;
+		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = EnumField_get_currentIndex_m4D47B593DC586CC3A0806A2987F6464718876802(L_4, NULL);
 		V_1 = L_5;
 		// if (index == array.Length - 1)
 		int32_t L_6 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_7 = V_0;
+		NullCheck(L_7);
 		if ((!(((uint32_t)L_6) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_7)->max_length)), 1))))))
 		{
 			goto IL_0033;
@@ -8694,6 +8971,7 @@ IL_0033:
 	{
 		// var separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_9 = __this->___m_Field_14;
+		NullCheck(L_9);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_10 = L_9->___quickSeparators_12;
 		V_2 = L_10;
 		// if (separators == null)
@@ -8706,9 +8984,11 @@ IL_0033:
 	{
 		// m_Field.InitQuickSeparators();
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_12 = __this->___m_Field_14;
+		NullCheck(L_12);
 		EnumField_InitQuickSeparators_m819096798D533BAFC6541EFCDB7B9DAE8B078D1E(L_12, NULL);
 		// separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_13 = __this->___m_Field_14;
+		NullCheck(L_13);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = L_13->___quickSeparators_12;
 		V_2 = L_14;
 	}
@@ -8732,6 +9012,7 @@ IL_0064:
 		// for (; idxSup < separators.Length && index + 1 > separators[idxSup]; ++idxSup) ;
 		int32_t L_16 = V_3;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_17 = V_2;
+		NullCheck(L_17);
 		if ((((int32_t)L_16) >= ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))))
 		{
 			goto IL_0072;
@@ -8741,8 +9022,9 @@ IL_0064:
 		int32_t L_18 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_19 = V_2;
 		int32_t L_20 = V_3;
+		NullCheck(L_19);
 		int32_t L_21 = L_20;
-		int32_t L_22 = (L_19)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_21));
+		int32_t L_22 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
 		if ((((int32_t)((int32_t)il2cpp_codegen_add(L_18, 1))) > ((int32_t)L_22)))
 		{
 			goto IL_0060;
@@ -8754,6 +9036,7 @@ IL_0072:
 		// if (idxSup == separators.Length)
 		int32_t L_23 = V_3;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_24 = V_2;
+		NullCheck(L_24);
 		if ((!(((uint32_t)L_23) == ((uint32_t)((int32_t)(((RuntimeArray*)L_24)->max_length))))))
 		{
 			goto IL_007c;
@@ -8770,8 +9053,9 @@ IL_007c:
 		// index = separators[idxSup];
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25 = V_2;
 		int32_t L_26 = V_3;
+		NullCheck(L_25);
 		int32_t L_27 = L_26;
-		int32_t L_28 = (L_25)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_27));
+		int32_t L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
 		V_1 = L_28;
 		goto IL_0086;
 	}
@@ -8789,12 +9073,15 @@ IL_0086:
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_30 = __this->___m_Field_14;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_31 = V_0;
 		int32_t L_32 = V_1;
+		NullCheck(L_31);
 		int32_t L_33 = L_32;
-		int32_t L_34 = (L_31)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_33));
+		int32_t L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
+		NullCheck(L_30);
 		Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D(L_30, L_34, Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D_RuntimeMethod_var);
 		// m_Field.currentIndex = index;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_35 = __this->___m_Field_14;
 		int32_t L_36 = V_1;
+		NullCheck(L_35);
 		EnumField_set_currentIndex_mEB5CA5FE86F8F8F9E2CFD3F08EA06DBC0E794FA7(L_35, L_36, NULL);
 		// UpdateValueLabel();
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerEnumField::UpdateValueLabel() */, __this);
@@ -8819,7 +9106,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumField_OnDecrement_mADC
 	{
 		// if (m_Field.enumValues.Length == 0)
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = L_0->___enumValues_11;
+		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
 			goto IL_000f;
@@ -8834,10 +9123,12 @@ IL_000f:
 	{
 		// var array = m_Field.enumValues;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_2 = __this->___m_Field_14;
+		NullCheck(L_2);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = L_2->___enumValues_11;
 		V_0 = L_3;
 		// int index = m_Field.currentIndex;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_4 = __this->___m_Field_14;
+		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = EnumField_get_currentIndex_m4D47B593DC586CC3A0806A2987F6464718876802(L_4, NULL);
 		V_1 = L_5;
@@ -8859,6 +9150,7 @@ IL_000f:
 	{
 		// var separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_8 = __this->___m_Field_14;
+		NullCheck(L_8);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = L_8->___quickSeparators_12;
 		V_2 = L_9;
 		// if (separators == null)
@@ -8871,9 +9163,11 @@ IL_000f:
 	{
 		// m_Field.InitQuickSeparators();
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_11 = __this->___m_Field_14;
+		NullCheck(L_11);
 		EnumField_InitQuickSeparators_m819096798D533BAFC6541EFCDB7B9DAE8B078D1E(L_11, NULL);
 		// separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_12 = __this->___m_Field_14;
+		NullCheck(L_12);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = L_12->___quickSeparators_12;
 		V_2 = L_13;
 	}
@@ -8883,8 +9177,10 @@ IL_0053:
 		// index = separators[separators.Length - 1];
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = V_2;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15 = V_2;
+		NullCheck(L_15);
+		NullCheck(L_14);
 		int32_t L_16 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_15)->max_length)), 1));
-		int32_t L_17 = (L_14)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_16));
+		int32_t L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
 		V_1 = L_17;
 		goto IL_00b4;
 	}
@@ -8893,6 +9189,7 @@ IL_005d:
 	{
 		// index = array.Length - 1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_18 = V_0;
+		NullCheck(L_18);
 		V_1 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_18)->max_length)), 1));
 		goto IL_00b4;
 	}
@@ -8909,6 +9206,7 @@ IL_0065:
 	{
 		// var separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_20 = __this->___m_Field_14;
+		NullCheck(L_20);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_21 = L_20->___quickSeparators_12;
 		V_3 = L_21;
 		// if (separators == null)
@@ -8921,9 +9219,11 @@ IL_0065:
 	{
 		// m_Field.InitQuickSeparators();
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_23 = __this->___m_Field_14;
+		NullCheck(L_23);
 		EnumField_InitQuickSeparators_m819096798D533BAFC6541EFCDB7B9DAE8B078D1E(L_23, NULL);
 		// separators = m_Field.quickSeparators;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_24 = __this->___m_Field_14;
+		NullCheck(L_24);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25 = L_24->___quickSeparators_12;
 		V_3 = L_25;
 	}
@@ -8932,6 +9232,7 @@ IL_008e:
 	{
 		// int idxInf = separators.Length - 1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_26 = V_3;
+		NullCheck(L_26);
 		V_4 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_26)->max_length)), 1));
 		goto IL_009d;
 	}
@@ -8956,8 +9257,9 @@ IL_009d:
 		int32_t L_29 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_30 = V_3;
 		int32_t L_31 = V_4;
+		NullCheck(L_30);
 		int32_t L_32 = L_31;
-		int32_t L_33 = (L_30)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_32));
+		int32_t L_33 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32));
 		if ((((int32_t)L_29) <= ((int32_t)L_33)))
 		{
 			goto IL_0097;
@@ -8969,8 +9271,9 @@ IL_00a9:
 		// index = separators[idxInf];
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_34 = V_3;
 		int32_t L_35 = V_4;
+		NullCheck(L_34);
 		int32_t L_36 = L_35;
-		int32_t L_37 = (L_34)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_36));
+		int32_t L_37 = (L_34)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
 		V_1 = L_37;
 		goto IL_00b4;
 	}
@@ -8988,12 +9291,15 @@ IL_00b4:
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_39 = __this->___m_Field_14;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_40 = V_0;
 		int32_t L_41 = V_1;
+		NullCheck(L_40);
 		int32_t L_42 = L_41;
-		int32_t L_43 = (L_40)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_42));
+		int32_t L_43 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
+		NullCheck(L_39);
 		Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D(L_39, L_43, Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D_RuntimeMethod_var);
 		// m_Field.currentIndex = index;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_44 = __this->___m_Field_14;
 		int32_t L_45 = V_1;
+		NullCheck(L_44);
 		EnumField_set_currentIndex_mEB5CA5FE86F8F8F9E2CFD3F08EA06DBC0E794FA7(L_44, L_45, NULL);
 		// UpdateValueLabel();
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerEnumField::UpdateValueLabel() */, __this);
@@ -9015,6 +9321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumField_UpdateValueLabel
 	{
 		// int index = m_Field.currentIndex;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = EnumField_get_currentIndex_m4D47B593DC586CC3A0806A2987F6464718876802(L_0, NULL);
 		V_0 = L_1;
@@ -9034,15 +9341,19 @@ IL_0012:
 	{
 		// string text = m_Field.enumNames[index].text;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_3 = __this->___m_Field_14;
+		NullCheck(L_3);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_4 = L_3->___enumNames_10;
 		int32_t L_5 = V_0;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_7 = (L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		String_t* L_8;
 		L_8 = GUIContent_get_text_mC6D7981351923AD7F802AC659314BA56DF7F3ED6(L_7, NULL);
 		V_1 = L_8;
 		// if (text.Length > maxLength)
 		String_t* L_9 = V_1;
+		NullCheck(L_9);
 		int32_t L_10;
 		L_10 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_9, NULL);
 		if ((((int32_t)L_10) <= ((int32_t)((int32_t)26))))
@@ -9053,6 +9364,7 @@ IL_0012:
 	{
 		// text = text.Substring(0, maxLength - 3) + "...";
 		String_t* L_11 = V_1;
+		NullCheck(L_11);
 		String_t* L_12;
 		L_12 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_11, 0, ((int32_t)23), NULL);
 		String_t* L_13;
@@ -9065,6 +9377,7 @@ IL_0043:
 		// valueLabel.text = text;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_14 = __this->___valueLabel_13;
 		String_t* L_15 = V_1;
+		NullCheck(L_14);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_14, L_15);
 		// }
 		return;
@@ -9125,6 +9438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumHistory_SetWidget_m63D
 
 IL_000d:
 	{
+		NullCheck(G_B2_0);
 		int32_t L_2;
 		L_2 = HistoryEnumField_get_historyDepth_mD38724219D2D4B9D17E5F5799DA96AD674CCC5E7(G_B2_0, NULL);
 		G_B3_0 = L_2;
@@ -9154,8 +9468,10 @@ IL_0023:
 		L_7 = Object_Instantiate_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_m75BB91E96D4872051FDEF25E4A9E328E748F9F6E(L_5, L_6, Object_Instantiate_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_m75BB91E96D4872051FDEF25E4A9E328E748F9F6E_RuntimeMethod_var);
 		// Vector3 pos = historyValue.transform.position;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_8 = L_7;
+		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
+		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
 		V_2 = L_10;
@@ -9167,11 +9483,14 @@ IL_0023:
 		*((float*)L_12) = (float)((float)il2cpp_codegen_add(L_13, ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_add(L_14, 1))), (60.0f)))));
 		// historyValue.transform.position = pos;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_15 = L_8;
+		NullCheck(L_15);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
 		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_2;
+		NullCheck(L_16);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_16, L_17, NULL);
 		// var text = historyValue.GetComponent<Text>();
+		NullCheck(L_15);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_18;
 		L_18 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_15, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
 		V_3 = L_18;
@@ -9182,13 +9501,15 @@ IL_0023:
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_20), (uint8_t)((int32_t)110), (uint8_t)((int32_t)110), (uint8_t)((int32_t)110), (uint8_t)((int32_t)255), /*hidden argument*/NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
 		L_21 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_20, NULL);
+		NullCheck(L_19);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_19, L_21);
 		// historyValues[index] = text;
 		TextU5BU5D_t1D476A037C4542F053D17ADAFA2723F311F9A353* L_22 = __this->___historyValues_15;
 		int32_t L_23 = V_1;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_24 = V_3;
+		NullCheck(L_22);
 		ArrayElementTypeCheck (L_22, L_24);
-		(L_22)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_23), (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62*)L_24);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(L_23), (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62*)L_24);
 		// for (int index = 0; index < historyDepth; ++index)
 		int32_t L_25 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_25, 1));
@@ -9230,6 +9551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerEnumHistory_UpdateValueLab
 	{
 		// int index = m_Field.currentIndex;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_0 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)__this)->___m_Field_14;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = EnumField_get_currentIndex_m4D47B593DC586CC3A0806A2987F6464718876802(L_0, NULL);
 		V_0 = L_1;
@@ -9250,12 +9572,16 @@ IL_0012:
 		// valueLabel.text = m_Field.enumNames[index].text;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)__this)->___valueLabel_13;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_4 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)__this)->___m_Field_14;
+		NullCheck(L_4);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_5 = L_4->___enumNames_10;
 		int32_t L_6 = V_0;
+		NullCheck(L_5);
 		int32_t L_7 = L_6;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_8 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_7));
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		NullCheck(L_8);
 		String_t* L_9;
 		L_9 = GUIContent_get_text_mC6D7981351923AD7F802AC659314BA56DF7F3ED6(L_8, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_9);
 		// DebugUI.HistoryEnumField field = m_Field as DebugUI.HistoryEnumField;
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_10 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)__this)->___m_Field_14;
@@ -9275,6 +9601,7 @@ IL_0012:
 IL_0041:
 	{
 		HistoryEnumField_t3708BFF5BC85F8588A24CA70FB70BCAF188E9E08* L_12 = V_1;
+		NullCheck(L_12);
 		int32_t L_13;
 		L_13 = HistoryEnumField_get_historyDepth_mD38724219D2D4B9D17E5F5799DA96AD674CCC5E7(L_12, NULL);
 		G_B5_0 = L_13;
@@ -9293,6 +9620,7 @@ IL_004c:
 		// if (indexHistory < historyValues.Length && historyValues[indexHistory] != null)
 		int32_t L_14 = V_3;
 		TextU5BU5D_t1D476A037C4542F053D17ADAFA2723F311F9A353* L_15 = __this->___historyValues_15;
+		NullCheck(L_15);
 		if ((((int32_t)L_14) >= ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
 		{
 			goto IL_0087;
@@ -9301,8 +9629,9 @@ IL_004c:
 	{
 		TextU5BU5D_t1D476A037C4542F053D17ADAFA2723F311F9A353* L_16 = __this->___historyValues_15;
 		int32_t L_17 = V_3;
+		NullCheck(L_16);
 		int32_t L_18 = L_17;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_19 = (L_16)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_18));
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_20;
 		L_20 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_19, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -9315,18 +9644,24 @@ IL_004c:
 		// historyValues[indexHistory].text = field.enumNames[field.GetHistoryValue(indexHistory)].text;
 		TextU5BU5D_t1D476A037C4542F053D17ADAFA2723F311F9A353* L_21 = __this->___historyValues_15;
 		int32_t L_22 = V_3;
+		NullCheck(L_21);
 		int32_t L_23 = L_22;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_24 = (L_21)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_23));
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
 		HistoryEnumField_t3708BFF5BC85F8588A24CA70FB70BCAF188E9E08* L_25 = V_1;
+		NullCheck(L_25);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_26 = ((EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C*)L_25)->___enumNames_10;
 		HistoryEnumField_t3708BFF5BC85F8588A24CA70FB70BCAF188E9E08* L_27 = V_1;
 		int32_t L_28 = V_3;
+		NullCheck(L_27);
 		int32_t L_29;
 		L_29 = HistoryEnumField_GetHistoryValue_m1E43C624459622E5963762488452C94839CD738C(L_27, L_28, NULL);
+		NullCheck(L_26);
 		int32_t L_30 = L_29;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_31 = (L_26)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_30));
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_31 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
+		NullCheck(L_31);
 		String_t* L_32;
 		L_32 = GUIContent_get_text_mC6D7981351923AD7F802AC659314BA56DF7F3ED6(L_31, NULL);
+		NullCheck(L_24);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_24, L_32);
 	}
 
@@ -9381,8 +9716,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DebugUIHandlerEnumHistory_Refr
 	}
 	{
 		U3CRefreshAfterSanitizationU3Ed__4_tD36DBB20A42B258D7E2C933CEC8C5966B936A8DE* L_0 = (U3CRefreshAfterSanitizationU3Ed__4_tD36DBB20A42B258D7E2C933CEC8C5966B936A8DE*)il2cpp_codegen_object_new(U3CRefreshAfterSanitizationU3Ed__4_tD36DBB20A42B258D7E2C933CEC8C5966B936A8DE_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CRefreshAfterSanitizationU3Ed__4__ctor_mA1B6468C0591D678F9997F3BC24D9FBB77DC8C7B(L_0, 0, NULL);
 		U3CRefreshAfterSanitizationU3Ed__4_tD36DBB20A42B258D7E2C933CEC8C5966B936A8DE* L_1 = L_0;
+		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		return L_1;
@@ -9463,28 +9800,41 @@ IL_002e:
 		__this->___U3CU3E1__state_0 = (-1);
 		// m_Field.currentIndex = m_Field.getIndex();
 		DebugUIHandlerEnumHistory_t6C92A37EB746F9F9825425BE69CBA080907ADBE0* L_4 = V_1;
+		NullCheck(L_4);
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_5 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)L_4)->___m_Field_14;
 		DebugUIHandlerEnumHistory_t6C92A37EB746F9F9825425BE69CBA080907ADBE0* L_6 = V_1;
+		NullCheck(L_6);
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_7 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)L_6)->___m_Field_14;
+		NullCheck(L_7);
 		Func_1_tC288CCB64EFD1F5FD49C3F8DE91FE62905E44BCD* L_8;
 		L_8 = EnumField_get_getIndex_m9D3DADB71BE92C1B54FD5315B8C06BA2D68EE3FD_inline(L_7, NULL);
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Func_1_Invoke_mA967B67675F9F5475EF2DA67722E3876436BF72E_inline(L_8, NULL);
+		NullCheck(L_5);
 		EnumField_set_currentIndex_mEB5CA5FE86F8F8F9E2CFD3F08EA06DBC0E794FA7(L_5, L_9, NULL);
 		// valueLabel.text = m_Field.enumNames[m_Field.currentIndex].text;
 		DebugUIHandlerEnumHistory_t6C92A37EB746F9F9825425BE69CBA080907ADBE0* L_10 = V_1;
+		NullCheck(L_10);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_11 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)L_10)->___valueLabel_13;
 		DebugUIHandlerEnumHistory_t6C92A37EB746F9F9825425BE69CBA080907ADBE0* L_12 = V_1;
+		NullCheck(L_12);
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_13 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)L_12)->___m_Field_14;
+		NullCheck(L_13);
 		GUIContentU5BU5D_t98DA1EEA8D0A2C4AE42CE11C4840B627CADFC503* L_14 = L_13->___enumNames_10;
 		DebugUIHandlerEnumHistory_t6C92A37EB746F9F9825425BE69CBA080907ADBE0* L_15 = V_1;
+		NullCheck(L_15);
 		EnumField_t15C8FC0EB96499DFDCEC2B9DBB27B2BBCD5E262C* L_16 = ((DebugUIHandlerEnumField_t4EBC472237B4F353E30729BE5245DE549534089F*)L_15)->___m_Field_14;
+		NullCheck(L_16);
 		int32_t L_17;
 		L_17 = EnumField_get_currentIndex_m4D47B593DC586CC3A0806A2987F6464718876802(L_16, NULL);
+		NullCheck(L_14);
 		int32_t L_18 = L_17;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_19 = (L_14)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_18));
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_19 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
+		NullCheck(L_19);
 		String_t* L_20;
 		L_20 = GUIContent_get_text_mC6D7981351923AD7F802AC659314BA56DF7F3ED6(L_19, NULL);
+		NullCheck(L_11);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_20);
 		// }
 		return (bool)0;
@@ -9503,6 +9853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefreshAfterSanitizationU3Ed__4_Syste
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefreshAfterSanitizationU3Ed__4_System_Collections_IEnumerator_Reset_mC899145E1B57D3F7A421DBD5CA16505B7948E91A_RuntimeMethod_var)));
 	}
@@ -9544,8 +9895,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_SetWidget_mEC7E
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// UpdateValueLabel();
 		DebugUIHandlerFloatField_UpdateValueLabel_m82D62BFA0C18D2A4B2B1A6869F059FD2B7E836B1(__this, NULL);
@@ -9560,10 +9913,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerFloatField_OnSelection_m20
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -9576,10 +9931,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_OnDeselection_m
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -9628,12 +9985,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_ChangeValue_m2D
 	{
 		// float value = m_Field.GetValue();
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		float L_1;
 		L_1 = Field_1_GetValue_m469535C7CB6AA29AAFB942ED8CA01BDF6E586032(L_0, Field_1_GetValue_m469535C7CB6AA29AAFB942ED8CA01BDF6E586032_RuntimeMethod_var);
 		V_0 = L_1;
 		// value += m_Field.incStep * (fast ? m_Field.incStepMult : 1f) * multiplier;
 		float L_2 = V_0;
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		float L_4 = L_3->___incStep_12;
 		bool L_5 = ___fast0;
 		G_B1_0 = L_4;
@@ -9655,6 +10014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_ChangeValue_m2D
 IL_0022:
 	{
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_6 = __this->___m_Field_12;
+		NullCheck(L_6);
 		float L_7 = L_6->___incStepMult_13;
 		G_B3_0 = L_7;
 		G_B3_1 = G_B2_0;
@@ -9668,6 +10028,7 @@ IL_002d:
 		// m_Field.SetValue(value);
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_9 = __this->___m_Field_12;
 		float L_10 = V_0;
+		NullCheck(L_9);
 		Field_1_SetValue_m889E87C02414B0707B20D374D88ECF8C755446E8(L_9, L_10, Field_1_SetValue_m889E87C02414B0707B20D374D88ECF8C755446E8_RuntimeMethod_var);
 		// UpdateValueLabel();
 		DebugUIHandlerFloatField_UpdateValueLabel_m82D62BFA0C18D2A4B2B1A6869F059FD2B7E836B1(__this, NULL);
@@ -9690,10 +10051,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_UpdateValueLabe
 		// valueLabel.text = m_Field.GetValue().ToString("N" + m_Field.decimals);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___valueLabel_11;
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_1 = __this->___m_Field_12;
+		NullCheck(L_1);
 		float L_2;
 		L_2 = Field_1_GetValue_m469535C7CB6AA29AAFB942ED8CA01BDF6E586032(L_1, Field_1_GetValue_m469535C7CB6AA29AAFB942ED8CA01BDF6E586032_RuntimeMethod_var);
 		V_0 = L_2;
 		FloatField_t1B59A5C6B3DE8E8B696383C91240F265B89B753B* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		int32_t* L_4 = (&L_3->___decimals_14);
 		String_t* L_5;
 		L_5 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_4, NULL);
@@ -9701,6 +10064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFloatField_UpdateValueLabe
 		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9, L_5, NULL);
 		String_t* L_7;
 		L_7 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D((&V_0), L_6, NULL);
+		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_7);
 		// }
 		return;
@@ -9764,11 +10128,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_SetWidget_m828CBD3
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_4 = __this->___m_Field_12;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// int columnNumber = m_Field.columnLabels?.Length ?? 0;
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_6 = __this->___m_Field_12;
+		NullCheck(L_6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7;
 		L_7 = Foldout_get_columnLabels_m668E673185A4DFF88DCA1B1CBA7DCFA59E491F38_inline(L_6, NULL);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
@@ -9786,6 +10153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_SetWidget_m828CBD3
 
 IL_0047:
 	{
+		NullCheck(G_B2_0);
 		G_B3_0 = ((int32_t)(((RuntimeArray*)G_B2_0)->max_length));
 	}
 
@@ -9801,25 +10169,31 @@ IL_0051:
 	{
 		// var column = Instantiate(nameLabel.gameObject, GetComponent<DebugUIHandlerContainer>().contentHolder);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_9 = __this->___nameLabel_10;
+		NullCheck(L_9);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_11;
 		L_11 = Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31(__this, Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31_RuntimeMethod_var);
+		NullCheck(L_11);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_12 = L_11->___contentHolder_4;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
 		L_13 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_10, L_12, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		// column.AddComponent<LayoutElement>().ignoreLayout = true;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = L_13;
+		NullCheck(L_14);
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_15;
 		L_15 = GameObject_AddComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mCAEF1A4C92D1C856A46417BA645409AE42F005D2(L_14, GameObject_AddComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mCAEF1A4C92D1C856A46417BA645409AE42F005D2_RuntimeMethod_var);
+		NullCheck(L_15);
 		VirtualActionInvoker1< bool >::Invoke(28 /* System.Void UnityEngine.UI.LayoutElement::set_ignoreLayout(System.Boolean) */, L_15, (bool)1);
 		// var rectTransform = column.transform as RectTransform;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = L_14;
+		NullCheck(L_16);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
 		L_17 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_16, NULL);
 		// var originalTransform = nameLabel.transform as RectTransform;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_18 = __this->___nameLabel_10;
+		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_18, NULL);
 		V_2 = ((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_19, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var));
@@ -9828,17 +10202,21 @@ IL_0051:
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_21 = L_20;
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_4), (0.0f), (1.0f), NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22 = V_4;
+		NullCheck(L_21);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_21, L_22, NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23 = V_4;
+		NullCheck(L_21);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_21, L_23, NULL);
 		// rectTransform.sizeDelta = new Vector2(100, 26);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_24 = L_20;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
 		memset((&L_25), 0, sizeof(L_25));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_25), (100.0f), (26.0f), /*hidden argument*/NULL);
+		NullCheck(L_24);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_24, L_25, NULL);
 		// Vector3 pos = originalTransform.anchoredPosition;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_26 = V_2;
+		NullCheck(L_26);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
 		L_27 = RectTransform_get_anchoredPosition_m38F25A4253B0905BB058BE73DBF43C7172CE0680(L_26, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
@@ -9855,31 +10233,39 @@ IL_0051:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = V_3;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_35;
 		L_35 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_34, NULL);
+		NullCheck(L_33);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_33, L_35, NULL);
 		// rectTransform.pivot = new Vector2(0, 0.5f);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_36 = L_33;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_37;
 		memset((&L_37), 0, sizeof(L_37));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_37), (0.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_36);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_36, L_37, NULL);
 		// rectTransform.eulerAngles = new Vector3(0, 0, 13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
 		memset((&L_38), 0, sizeof(L_38));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_38), (0.0f), (0.0f), (13.0f), /*hidden argument*/NULL);
+		NullCheck(L_36);
 		Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004(L_36, L_38, NULL);
 		// var text = column.GetComponent<Text>();
+		NullCheck(L_16);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_39;
 		L_39 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_16, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
 		// text.fontSize = 15;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_40 = L_39;
+		NullCheck(L_40);
 		Text_set_fontSize_m426338B0A2CDA58609028FFD471EF5F2C9F364D4(L_40, ((int32_t)15), NULL);
 		// text.text = m_Field.columnLabels[index];
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_41 = __this->___m_Field_12;
+		NullCheck(L_41);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_42;
 		L_42 = Foldout_get_columnLabels_m668E673185A4DFF88DCA1B1CBA7DCFA59E491F38_inline(L_41, NULL);
 		int32_t L_43 = V_1;
+		NullCheck(L_42);
 		int32_t L_44 = L_43;
-		String_t* L_45 = (L_42)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_44));
+		String_t* L_45 = (L_42)->GetAt(static_cast<il2cpp_array_size_t>(L_44));
+		NullCheck(L_40);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_40, L_45);
 		// for (int index = 0; index < columnNumber; ++index)
 		int32_t L_46 = V_1;
@@ -9923,6 +10309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerFoldout_OnSelection_m03287
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -9936,6 +10323,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -9944,6 +10332,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -9955,6 +10344,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_13;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -9966,6 +10356,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -9974,6 +10365,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_13;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -9982,6 +10374,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -9998,6 +10391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_OnDeselection_mA9B
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -10009,6 +10403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_OnIncrement_m0F9F9
 	{
 		// m_Field.SetValue(true);
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		Foldout_SetValue_m9C7EA58B4CD8DB13304A7F2E23A40CEDA2A1DD7B_inline(L_0, (bool)1, NULL);
 		// UpdateValue();
 		DebugUIHandlerFoldout_UpdateValue_m8CE29D10B0F61188598331EBD881B8BA05B8B40E(__this, NULL);
@@ -10022,6 +10417,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_OnDecrement_mCB9E8
 	{
 		// m_Field.SetValue(false);
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		Foldout_SetValue_m9C7EA58B4CD8DB13304A7F2E23A40CEDA2A1DD7B_inline(L_0, (bool)0, NULL);
 		// UpdateValue();
 		DebugUIHandlerFoldout_UpdateValue_m8CE29D10B0F61188598331EBD881B8BA05B8B40E(__this, NULL);
@@ -10036,12 +10432,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_OnAction_mDEBF5919
 	{
 		// bool value = !m_Field.GetValue();
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Foldout_GetValue_m3AC0382B7AEF8DABEA86B4D8076A8ADCD21210B9_inline(L_0, NULL);
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 		// m_Field.SetValue(value);
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_2 = __this->___m_Field_12;
 		bool L_3 = V_0;
+		NullCheck(L_2);
 		Foldout_SetValue_m9C7EA58B4CD8DB13304A7F2E23A40CEDA2A1DD7B_inline(L_2, L_3, NULL);
 		// UpdateValue();
 		DebugUIHandlerFoldout_UpdateValue_m8CE29D10B0F61188598331EBD881B8BA05B8B40E(__this, NULL);
@@ -10056,8 +10454,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerFoldout_UpdateValue_m8CE29
 		// valueToggle.isOn = m_Field.GetValue();
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_1 = __this->___m_Field_12;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Foldout_GetValue_m3AC0382B7AEF8DABEA86B4D8076A8ADCD21210B9_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, L_2, NULL);
 		// }
 		return;
@@ -10076,6 +10476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!m_Field.GetValue() || m_Container == null)
 		Foldout_tB410CB76F06E3A386EA0943B8EE3A9071409A8A6* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Foldout_GetValue_m3AC0382B7AEF8DABEA86B4D8076A8ADCD21210B9_inline(L_0, NULL);
 		if (!L_1)
@@ -10106,6 +10507,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_13;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -10175,6 +10577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerGroup_SetWidget_m9D7EA85B8
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Container_13), (void*)L_2);
 		// if (string.IsNullOrEmpty(m_Field.displayName))
 		Container_t0F404B4F1A7EFE36CAD5C2A9EA0261991099D217* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
 		bool L_5;
@@ -10187,8 +10590,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerGroup_SetWidget_m9D7EA85B8
 	{
 		// header.gameObject.SetActive(false);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___header_11;
+		NullCheck(L_6);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
 		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
+		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
 		return;
 	}
@@ -10198,8 +10603,10 @@ IL_0043:
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_8 = __this->___nameLabel_10;
 		Container_t0F404B4F1A7EFE36CAD5C2A9EA0261991099D217* L_9 = __this->___m_Field_12;
+		NullCheck(L_9);
 		String_t* L_10;
 		L_10 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_9, NULL);
+		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_8, L_10);
 		// }
 		return;
@@ -10226,6 +10633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerGroup_OnSelection_mB089F2E
 	{
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_1 = __this->___m_Container_13;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = ___previous1;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_1, L_2, NULL);
 		if (L_3)
@@ -10236,6 +10644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerGroup_OnSelection_mB089F2E
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_4 = __this->___m_Container_13;
+		NullCheck(L_4);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_5;
 		L_5 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_4, NULL);
 		V_0 = L_5;
@@ -10244,6 +10653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerGroup_OnSelection_mB089F2E
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_6;
 		L_6 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_7 = V_0;
+		NullCheck(L_6);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_6, L_7, (bool)0, NULL);
 		// return true;
 		return (bool)1;
@@ -10287,6 +10697,7 @@ IL_0015:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_3 = __this->___m_Container_13;
+		NullCheck(L_3);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_4;
 		L_4 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_3, NULL);
 		V_0 = L_4;
@@ -10373,6 +10784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerHBox_OnSelection_mE4201C3C
 	{
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_1 = __this->___m_Container_10;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = ___previous1;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_1, L_2, NULL);
 		if (L_3)
@@ -10383,6 +10795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerHBox_OnSelection_mE4201C3C
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_4 = __this->___m_Container_10;
+		NullCheck(L_4);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_5;
 		L_5 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_4, NULL);
 		V_0 = L_5;
@@ -10391,6 +10804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerHBox_OnSelection_mE4201C3C
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_6;
 		L_6 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_7 = V_0;
+		NullCheck(L_6);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_6, L_7, (bool)0, NULL);
 		// return true;
 		return (bool)1;
@@ -10434,6 +10848,7 @@ IL_0015:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_3 = __this->___m_Container_10;
+		NullCheck(L_3);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_4;
 		L_4 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_3, NULL);
 		V_0 = L_4;
@@ -10494,10 +10909,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerIndirectFloatField_OnSelec
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -10510,10 +10927,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectFloatField_OnDesel
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -10555,12 +10974,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectFloatField_ChangeV
 	{
 		// float value = getter();
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_0 = __this->___getter_12;
+		NullCheck(L_0);
 		float L_1;
 		L_1 = Func_1_Invoke_m6EC66204056853EDE42F634FECB2D7D4685B54B0_inline(L_0, NULL);
 		V_0 = L_1;
 		// value += incStepGetter() * (fast ? incStepMultGetter() : 1f) * multiplier;
 		float L_2 = V_0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_3 = __this->___incStepGetter_14;
+		NullCheck(L_3);
 		float L_4;
 		L_4 = Func_1_Invoke_m6EC66204056853EDE42F634FECB2D7D4685B54B0_inline(L_3, NULL);
 		bool L_5 = ___fast0;
@@ -10583,6 +11004,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectFloatField_ChangeV
 IL_0022:
 	{
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_6 = __this->___incStepMultGetter_15;
+		NullCheck(L_6);
 		float L_7;
 		L_7 = Func_1_Invoke_m6EC66204056853EDE42F634FECB2D7D4685B54B0_inline(L_6, NULL);
 		G_B3_0 = L_7;
@@ -10597,6 +11019,7 @@ IL_002d:
 		// setter(value);
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_9 = __this->___setter_13;
 		float L_10 = V_0;
+		NullCheck(L_9);
 		Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_inline(L_9, L_10, NULL);
 		// UpdateValueLabel();
 		DebugUIHandlerIndirectFloatField_UpdateValueLabel_mC1801ED586636474218A11B89D795A6FF50E9CE8(__this, NULL);
@@ -10631,10 +11054,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectFloatField_UpdateV
 		// valueLabel.text = getter().ToString("N" + decimalsGetter());
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_3 = __this->___getter_12;
+		NullCheck(L_3);
 		float L_4;
 		L_4 = Func_1_Invoke_m6EC66204056853EDE42F634FECB2D7D4685B54B0_inline(L_3, NULL);
 		V_0 = L_4;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_5 = __this->___decimalsGetter_16;
+		NullCheck(L_5);
 		float L_6;
 		L_6 = Func_1_Invoke_m6EC66204056853EDE42F634FECB2D7D4685B54B0_inline(L_5, NULL);
 		V_1 = L_6;
@@ -10644,6 +11069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectFloatField_UpdateV
 		L_8 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9, L_7, NULL);
 		String_t* L_9;
 		L_9 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D((&V_0), L_8, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_9);
 	}
 
@@ -10685,9 +11111,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_Init_mFB221
 		DebugUIHandlerIndirectToggle_UpdateValueLabel_mECFCCF09947AA410A2D6F756F08BB6CDDCD05AAC(__this, NULL);
 		// valueToggle.onValueChanged.AddListener(OnToggleValueChanged);
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02* L_1 = L_0->___onValueChanged_23;
 		UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9* L_2 = (UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9*)il2cpp_codegen_object_new(UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		UnityAction_1__ctor_m11A393DB3C00474B4520978077E444DB6E4418DD(L_2, __this, (intptr_t)((void*)DebugUIHandlerIndirectToggle_OnToggleValueChanged_m4B8562DBAD02E683C51D2E3E293F948139D8103F_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
 		UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD(L_1, L_2, UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD_RuntimeMethod_var);
 		// }
 		return;
@@ -10701,6 +11130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_OnToggleVal
 		Action_2_t9CCF9E751EBE923D11BC558BD78BB0B1709C733D* L_0 = __this->___setter_14;
 		int32_t L_1 = __this->___index_15;
 		bool L_2 = ___value0;
+		NullCheck(L_0);
 		Action_2_Invoke_mA231C16505354E47FA706ECA0D034A5A15E2C5A0_inline(L_0, L_1, L_2, NULL);
 		// }
 		return;
@@ -10713,10 +11143,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerIndirectToggle_OnSelection
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// checkmarkImage.color = colorSelected;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_2 = __this->___checkmarkImage_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -10729,10 +11161,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_OnDeselecti
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// checkmarkImage.color = colorDefault;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_2 = __this->___checkmarkImage_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -10746,6 +11180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_OnAction_mE
 		// bool value = !getter(index);
 		Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA* L_0 = __this->___getter_13;
 		int32_t L_1 = __this->___index_15;
+		NullCheck(L_0);
 		bool L_2;
 		L_2 = Func_2_Invoke_m1543D7041BADF87D1F63EBF838B0DDCB40340C7E_inline(L_0, L_1, NULL);
 		V_0 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
@@ -10753,6 +11188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_OnAction_mE
 		Action_2_t9CCF9E751EBE923D11BC558BD78BB0B1709C733D* L_3 = __this->___setter_14;
 		int32_t L_4 = __this->___index_15;
 		bool L_5 = V_0;
+		NullCheck(L_3);
 		Action_2_Invoke_mA231C16505354E47FA706ECA0D034A5A15E2C5A0_inline(L_3, L_4, L_5, NULL);
 		// UpdateValueLabel();
 		DebugUIHandlerIndirectToggle_UpdateValueLabel_mECFCCF09947AA410A2D6F756F08BB6CDDCD05AAC(__this, NULL);
@@ -10785,8 +11221,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIndirectToggle_UpdateValue
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_2 = __this->___valueToggle_11;
 		Func_2_t63A057E8762189D8C22BF71360D00C1047680DFA* L_3 = __this->___getter_13;
 		int32_t L_4 = __this->___index_15;
+		NullCheck(L_3);
 		bool L_5;
 		L_5 = Func_2_Invoke_m1543D7041BADF87D1F63EBF838B0DDCB40340C7E_inline(L_3, L_4, NULL);
+		NullCheck(L_2);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_2, L_5, NULL);
 	}
 
@@ -10833,8 +11271,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIntField_SetWidget_mECE6C2
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// UpdateValueLabel();
 		DebugUIHandlerIntField_UpdateValueLabel_mE37F658D4F377685F119C9C2139970567BBACD79(__this, NULL);
@@ -10849,10 +11289,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerIntField_OnSelection_m6275
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -10865,10 +11307,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIntField_OnDeselection_m56
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -10917,12 +11361,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIntField_ChangeValue_mD805
 	{
 		// int value = m_Field.GetValue();
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Field_1_GetValue_m2D7709F7BB39EF71F0B71C93703602919CD5C30E(L_0, Field_1_GetValue_m2D7709F7BB39EF71F0B71C93703602919CD5C30E_RuntimeMethod_var);
 		V_0 = L_1;
 		// value += m_Field.incStep * (fast ? m_Field.intStepMult : 1) * multiplier;
 		int32_t L_2 = V_0;
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->___incStep_12;
 		bool L_5 = ___fast0;
 		G_B1_0 = L_4;
@@ -10944,6 +11390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIntField_ChangeValue_mD805
 IL_001e:
 	{
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_6 = __this->___m_Field_12;
+		NullCheck(L_6);
 		int32_t L_7 = L_6->___intStepMult_13;
 		G_B3_0 = L_7;
 		G_B3_1 = G_B2_0;
@@ -10957,6 +11404,7 @@ IL_0029:
 		// m_Field.SetValue(value);
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_9 = __this->___m_Field_12;
 		int32_t L_10 = V_0;
+		NullCheck(L_9);
 		Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D(L_9, L_10, Field_1_SetValue_mDC1D029F9B928ADC8A165ECA2A274E1536AB5C7D_RuntimeMethod_var);
 		// UpdateValueLabel();
 		DebugUIHandlerIntField_UpdateValueLabel_mE37F658D4F377685F119C9C2139970567BBACD79(__this, NULL);
@@ -10991,11 +11439,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerIntField_UpdateValueLabel_
 		// valueLabel.text = m_Field.GetValue().ToString("N0");
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		IntField_t44A28D09F4CD0658E53FCED78D08513508256A9A* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = Field_1_GetValue_m2D7709F7BB39EF71F0B71C93703602919CD5C30E(L_3, Field_1_GetValue_m2D7709F7BB39EF71F0B71C93703602919CD5C30E_RuntimeMethod_var);
 		V_0 = L_4;
 		String_t* L_5;
 		L_5 = Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9((&V_0), _stringLiteralA16A5A766620C92E70C8F0C13BC707B1DD24BB40, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_5);
 	}
 
@@ -11046,8 +11496,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerMessageBox_SetWidget_mDD74
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		MessageBox_tF18729816BE7D624001E2C5172474709BD9B54C5* L_3 = __this->___m_Field_11;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// var image = GetComponent<Image>();
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_5;
@@ -11055,6 +11507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerMessageBox_SetWidget_mDD74
 		V_0 = L_5;
 		// switch (m_Field.style)
 		MessageBox_tF18729816BE7D624001E2C5172474709BD9B54C5* L_6 = __this->___m_Field_11;
+		NullCheck(L_6);
 		int32_t L_7 = L_6->___style_7;
 		V_1 = L_7;
 		int32_t L_8 = V_1;
@@ -11082,6 +11535,7 @@ IL_0045:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_11 = ((DebugUIHandlerMessageBox_t324CB4FCA7F0B75000212BEC0B19D0C12A7F2C55_StaticFields*)il2cpp_codegen_static_fields_for(DebugUIHandlerMessageBox_t324CB4FCA7F0B75000212BEC0B19D0C12A7F2C55_il2cpp_TypeInfo_var))->___k_WarningBackgroundColor_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_12;
 		L_12 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_11, NULL);
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_12);
 		// break;
 		return;
@@ -11095,6 +11549,7 @@ IL_0056:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_14 = ((DebugUIHandlerMessageBox_t324CB4FCA7F0B75000212BEC0B19D0C12A7F2C55_StaticFields*)il2cpp_codegen_static_fields_for(DebugUIHandlerMessageBox_t324CB4FCA7F0B75000212BEC0B19D0C12A7F2C55_il2cpp_TypeInfo_var))->___k_ErrorBackgroundColor_14;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15;
 		L_15 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_14, NULL);
+		NullCheck(L_13);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_13, L_15);
 		// }
 		return;
@@ -11171,6 +11626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_OnEnable_m69DF092652
 	{
 		// m_ScrollTransform = scrollRect.GetComponent<RectTransform>();
 		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_0 = __this->___scrollRect_5;
+		NullCheck(L_0);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_1;
 		L_1 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_0, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
 		__this->___m_ScrollTransform_8 = L_1;
@@ -11178,12 +11634,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_OnEnable_m69DF092652
 		// m_ContentTransform = GetComponent<DebugUIHandlerContainer>().contentHolder;
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_2;
 		L_2 = Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31(__this, Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31_RuntimeMethod_var);
+		NullCheck(L_2);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3 = L_2->___contentHolder_4;
 		__this->___m_ContentTransform_9 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ContentTransform_9), (void*)L_3);
 		// m_MaskTransform = GetComponentInChildren<Mask>(true).rectTransform;
 		Mask_tE8E16C858EC6ECCE545C03802BD1399F7F406213* L_4;
 		L_4 = Component_GetComponentInChildren_TisMask_tE8E16C858EC6ECCE545C03802BD1399F7F406213_mEE44A9CBDCC39C40D83D0F4D158FC6EAE9B653E7(__this, (bool)1, Component_GetComponentInChildren_TisMask_tE8E16C858EC6ECCE545C03802BD1399F7F406213_mEE44A9CBDCC39C40D83D0F4D158FC6EAE9B653E7_RuntimeMethod_var);
+		NullCheck(L_4);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_5;
 		L_5 = Mask_get_rectTransform_m4D1933DACBE7B0F93B1B83F1B3B0A09F65B24209(L_4, NULL);
 		__this->___m_MaskTransform_10 = L_5;
@@ -11203,8 +11661,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_SetPanel_mC9EE00598A
 		// nameLabel.text = panel.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___nameLabel_4;
 		Panel_t3A0D2006E8AEA607A6DF5188138E463A26085295* L_2 = ___panel0;
+		NullCheck(L_2);
 		String_t* L_3;
 		L_3 = Panel_get_displayName_m186C10E927B2800035B328BD9A40D8B5FB3D4EE4_inline(L_2, NULL);
+		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_3);
 		// }
 		return;
@@ -11225,6 +11685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_SelectNextItem_mE844
 	{
 		// Canvas.SelectNextPanel();
 		DebugUIHandlerCanvas_t42F6FDECA89A5D5F3C1534DC37FABB37E1401209* L_0 = __this->___Canvas_7;
+		NullCheck(L_0);
 		DebugUIHandlerCanvas_SelectNextPanel_mDEAC3EE25EEEB60C1B1CFBDF0693F629BC6CAE36(L_0, NULL);
 		// }
 		return;
@@ -11236,6 +11697,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_SelectPreviousItem_m
 	{
 		// Canvas.SelectPreviousPanel();
 		DebugUIHandlerCanvas_t42F6FDECA89A5D5F3C1534DC37FABB37E1401209* L_0 = __this->___Canvas_7;
+		NullCheck(L_0);
 		DebugUIHandlerCanvas_SelectPreviousPanel_m8BC52AA79EF5DCDDC00BBBB42AFDB89AEB7D7F34(L_0, NULL);
 		// }
 		return;
@@ -11255,6 +11717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_OnScrollbarClicked_m
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_0;
 		L_0 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_0);
 		DebugManager_SetScrollTarget_mA81C5DD4585EF12FD3C966E898549568B603FCE9(L_0, (DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)NULL, NULL);
 		// }
 		return;
@@ -11308,6 +11771,7 @@ IL_000f:
 	{
 		// var targetTransform = m_ScrollTarget.GetComponent<RectTransform>();
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = __this->___m_ScrollTarget_11;
+		NullCheck(L_2);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3;
 		L_3 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_2, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
 		V_0 = L_3;
@@ -11323,6 +11787,7 @@ IL_000f:
 		// float normalizedDiffY = (targetY - itemY) / (m_ContentTransform.rect.size.y - m_ScrollTransform.rect.size.y);
 		float L_8 = V_1;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_9 = __this->___m_ContentTransform_9;
+		NullCheck(L_9);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_10;
 		L_10 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_9, NULL);
 		V_4 = L_10;
@@ -11330,6 +11795,7 @@ IL_000f:
 		L_11 = Rect_get_size_mFB990FFC0FE0152179C8C74A59E4AC258CB44267((&V_4), NULL);
 		float L_12 = L_11.___y_1;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13 = __this->___m_ScrollTransform_8;
+		NullCheck(L_13);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_14;
 		L_14 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_13, NULL);
 		V_4 = L_14;
@@ -11339,6 +11805,7 @@ IL_000f:
 		V_2 = ((float)(((float)il2cpp_codegen_subtract(L_7, L_8))/((float)il2cpp_codegen_subtract(L_12, L_16))));
 		// float normalizedPosY = scrollRect.verticalNormalizedPosition - normalizedDiffY;
 		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_17 = __this->___scrollRect_5;
+		NullCheck(L_17);
 		float L_18;
 		L_18 = ScrollRect_get_verticalNormalizedPosition_m4FE766F04272C1805FDE2A4B72D80F6190841FA1(L_17, NULL);
 		float L_19 = V_2;
@@ -11351,6 +11818,7 @@ IL_000f:
 		// scrollRect.verticalNormalizedPosition = Mathf.Lerp(scrollRect.verticalNormalizedPosition, normalizedPosY, Time.deltaTime * 10f);
 		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_22 = __this->___scrollRect_5;
 		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_23 = __this->___scrollRect_5;
+		NullCheck(L_23);
 		float L_24;
 		L_24 = ScrollRect_get_verticalNormalizedPosition_m4FE766F04272C1805FDE2A4B72D80F6190841FA1(L_23, NULL);
 		float L_25 = V_3;
@@ -11358,6 +11826,7 @@ IL_000f:
 		L_26 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_27;
 		L_27 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_24, L_25, ((float)il2cpp_codegen_multiply(L_26, (10.0f))), NULL);
+		NullCheck(L_22);
 		ScrollRect_set_verticalNormalizedPosition_m4AF461113925E6710BF04F46A49CF1F856F7738C(L_22, L_27, NULL);
 		// }
 		return;
@@ -11381,10 +11850,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerPanel_GetYPosInScroll_mF3
 		//     0f
 		// );
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = ___target0;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = RectTransform_get_pivot_mA8334AF05AA7FF09A173A2430F2BB9E85E5CBFFF(L_0, NULL);
 		float L_2 = L_1.___x_0;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3 = ___target0;
+		NullCheck(L_3);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_4;
 		L_4 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_3, NULL);
 		V_3 = L_4;
@@ -11392,10 +11863,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerPanel_GetYPosInScroll_mF3
 		L_5 = Rect_get_size_mFB990FFC0FE0152179C8C74A59E4AC258CB44267((&V_3), NULL);
 		float L_6 = L_5.___x_0;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_7 = ___target0;
+		NullCheck(L_7);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
 		L_8 = RectTransform_get_pivot_mA8334AF05AA7FF09A173A2430F2BB9E85E5CBFFF(L_7, NULL);
 		float L_9 = L_8.___y_1;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = ___target0;
+		NullCheck(L_10);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_11;
 		L_11 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_10, NULL);
 		V_3 = L_11;
@@ -11405,6 +11878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerPanel_GetYPosInScroll_mF3
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_0), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((0.5f), L_2)), L_6)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((0.5f), L_9)), L_13)), (0.0f), NULL);
 		// var localPos = target.localPosition + pivotOffset;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_14 = ___target0;
+		NullCheck(L_14);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_14, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_0;
@@ -11413,15 +11887,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerPanel_GetYPosInScroll_mF3
 		V_1 = L_17;
 		// var worldPos = target.parent.TransformPoint(localPos);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_18 = ___target0;
+		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_18, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_1;
+		NullCheck(L_19);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_19, L_20, NULL);
 		V_2 = L_21;
 		// return m_ScrollTransform.TransformPoint(worldPos).y;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_22 = __this->___m_ScrollTransform_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_2;
+		NullCheck(L_22);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_22, L_23, NULL);
 		float L_25 = L_24.___y_3;
@@ -11442,6 +11919,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 		//     .GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_0;
 		L_0 = Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31(__this, Component_GetComponent_TisDebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8_m8809EE5ED4C3BF4D74C7638E16D5B433D2DE2D31_RuntimeMethod_var);
+		NullCheck(L_0);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_1;
 		L_1 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_0, NULL);
 		return L_1;
@@ -11461,6 +11939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPanel_ResetDebugManager_m7
 		il2cpp_codegen_runtime_class_init_inline(DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672_il2cpp_TypeInfo_var);
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_0;
 		L_0 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
+		NullCheck(L_0);
 		DebugManager_Reset_m8F235B190A155A4748A6101C46F5654D989C42CA(L_0, NULL);
 		// }
 		return;
@@ -11506,17 +11985,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPersistentCanvas_Toggle_m2
 	DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* V_2 = NULL;
 	{
 		U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252* L_0 = (U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CU3Ec__DisplayClass3_0__ctor_m36CB7670C22CE2BC7AEBDF17C15A238D1917B014(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252* L_1 = V_0;
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_2 = ___widget0;
+		NullCheck(L_1);
 		L_1->___widget_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___widget_0), (void*)L_2);
 		// int index = m_Items.FindIndex(x => x.GetWidget() == widget);
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_3 = __this->___m_Items_6;
 		U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252* L_4 = V_0;
 		Predicate_1_t45500BA4BC285B32DA6810383551FE21816992F1* L_5 = (Predicate_1_t45500BA4BC285B32DA6810383551FE21816992F1*)il2cpp_codegen_object_new(Predicate_1_t45500BA4BC285B32DA6810383551FE21816992F1_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
 		Predicate_1__ctor_mCB7FB7EE84E9B2E0CF9301E007138B1F52A74D79(L_5, L_4, (intptr_t)((void*)U3CU3Ec__DisplayClass3_0_U3CToggleU3Eb__0_mCAEB7CF73BAB66E6DDA60AF4E42AFC9F760B4B63_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
 		int32_t L_6;
 		L_6 = List_1_FindIndex_mB927D7C11B77175700DD2C3B636EC501DDD5EAD2(L_3, L_5, List_1_FindIndex_mB927D7C11B77175700DD2C3B636EC501DDD5EAD2_RuntimeMethod_var);
 		V_1 = L_6;
@@ -11531,9 +12014,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPersistentCanvas_Toggle_m2
 		// var item = m_Items[index];
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_8 = __this->___m_Items_6;
 		int32_t L_9 = V_1;
+		NullCheck(L_8);
 		DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_10;
 		L_10 = List_1_get_Item_mA2F08089E292DE3C29D94D3EBCFC68A4A331C046(L_8, L_9, List_1_get_Item_mA2F08089E292DE3C29D94D3EBCFC68A4A331C046_RuntimeMethod_var);
 		// CoreUtils.Destroy(item.gameObject);
+		NullCheck(L_10);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
 		L_11 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_10, NULL);
 		il2cpp_codegen_runtime_class_init_inline(CoreUtils_tEE57AB2B0DAE9561F4954B08800A8F957850B038_il2cpp_TypeInfo_var);
@@ -11541,6 +12026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPersistentCanvas_Toggle_m2
 		// m_Items.RemoveAt(index);
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_12 = __this->___m_Items_6;
 		int32_t L_13 = V_1;
+		NullCheck(L_12);
 		List_1_RemoveAt_m7025835DD0910930DE97B9A1E3C11BA55A8347B1(L_12, L_13, List_1_RemoveAt_m7025835DD0910930DE97B9A1E3C11BA55A8347B1_RuntimeMethod_var);
 		// return;
 		return;
@@ -11554,27 +12040,35 @@ IL_004c:
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_16;
 		L_16 = Object_Instantiate_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_mF66F3EB4B872CF42F92542EF6364FB243FB486C9(L_14, L_15, (bool)0, Object_Instantiate_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_mF66F3EB4B872CF42F92542EF6364FB243FB486C9_RuntimeMethod_var);
+		NullCheck(L_16);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
 		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_16, NULL);
 		// go.name = widget.displayName;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = L_17;
 		U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252* L_19 = V_0;
+		NullCheck(L_19);
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_20 = L_19->___widget_0;
+		NullCheck(L_20);
 		String_t* L_21;
 		L_21 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_20, NULL);
+		NullCheck(L_18);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_18, L_21, NULL);
 		// var uiHandler = go.GetComponent<DebugUIHandlerValue>();
+		NullCheck(L_18);
 		DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_22;
 		L_22 = GameObject_GetComponent_TisDebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2_mDEFC2F9B8740E0188645330A5B0A6AAE85570924(L_18, GameObject_GetComponent_TisDebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2_mDEFC2F9B8740E0188645330A5B0A6AAE85570924_RuntimeMethod_var);
 		V_2 = L_22;
 		// uiHandler.SetWidget(widget);
 		DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_23 = V_2;
 		U3CU3Ec__DisplayClass3_0_tFFA3C83A168B164874D1DD9E772FC802A5734252* L_24 = V_0;
+		NullCheck(L_24);
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_25 = L_24->___widget_0;
+		NullCheck(L_23);
 		VirtualActionInvoker1< Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* >::Invoke(5 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerWidget::SetWidget(UnityEngine.Rendering.DebugUI/Widget) */, L_23, L_25);
 		// m_Items.Add(uiHandler);
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_26 = __this->___m_Items_6;
 		DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_27 = V_2;
+		NullCheck(L_26);
 		List_1_Add_m63F5DB7290FB30E5C2A00AF6B39F1BD1B7C9B108_inline(L_26, L_27, List_1_Add_m63F5DB7290FB30E5C2A00AF6B39F1BD1B7C9B108_RuntimeMethod_var);
 		// }
 		return;
@@ -11613,6 +12107,7 @@ IL_0009:
 	{
 		// foreach (var item in m_Items)
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_1 = __this->___m_Items_6;
+		NullCheck(L_1);
 		Enumerator_tD7AE95F6E5D88F7F238CEB18CF0127FAEA4A2289 L_2;
 		L_2 = List_1_GetEnumerator_m7178ECEC0F89EF1DA5A39A69A387A49C18208511(L_1, List_1_GetEnumerator_m7178ECEC0F89EF1DA5A39A69A387A49C18208511_RuntimeMethod_var);
 		V_0 = L_2;
@@ -11639,6 +12134,7 @@ IL_0017_1:
 				DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_3;
 				L_3 = Enumerator_get_Current_m655394E64BD4D66A3C2A32DE70EC85CEBB476988_inline((&V_0), Enumerator_get_Current_m655394E64BD4D66A3C2A32DE70EC85CEBB476988_RuntimeMethod_var);
 				// CoreUtils.Destroy(item.gameObject);
+				NullCheck(L_3);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
 				L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
 				il2cpp_codegen_runtime_class_init_inline(CoreUtils_tEE57AB2B0DAE9561F4954B08800A8F957850B038_il2cpp_TypeInfo_var);
@@ -11669,6 +12165,7 @@ IL_0041:
 	{
 		// m_Items.Clear();
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_6 = __this->___m_Items_6;
+		NullCheck(L_6);
 		List_1_Clear_m6CF84FBDB3BCF3418515B9E11B5546034F67315B_inline(L_6, List_1_Clear_m6CF84FBDB3BCF3418515B9E11B5546034F67315B_RuntimeMethod_var);
 		// }
 		return;
@@ -11687,6 +12184,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerPersistentCanvas__ctor_mA5
 	{
 		// List<DebugUIHandlerValue> m_Items = new List<DebugUIHandlerValue>();
 		List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771* L_0 = (List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771*)il2cpp_codegen_object_new(List_1_tF20C51441729CC952E62F1E3EF53FB57F4C15771_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		List_1__ctor_m440529120A541C7267ACF63629F99BD889050209(L_0, List_1__ctor_m440529120A541C7267ACF63629F99BD889050209_RuntimeMethod_var);
 		__this->___m_Items_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Items_6), (void*)L_0);
@@ -11716,6 +12214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass3_0_U3CToggleU3Eb__
 	{
 		// int index = m_Items.FindIndex(x => x.GetWidget() == widget);
 		DebugUIHandlerValue_t6FF8751421AEBD0EDC37F7F506085C3F9B40E7E2* L_0 = ___x0;
+		NullCheck(L_0);
 		Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF* L_1;
 		L_1 = DebugUIHandlerWidget_GetWidget_m2B98AD3E32CE71B3F39C93BD7E7C0BEA5897033C_inline(L_0, NULL);
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_2 = __this->___widget_0;
@@ -11776,6 +12275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerRow_Update_mBE152302B75803
 		V_0 = L_0;
 		// var table = row.parent as DebugUI.Table;
 		Row_t4263ADC980EB84EB443A525B26307F51EF796D4B* L_1 = V_0;
+		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6 /* UnityEngine.Rendering.DebugUI/IContainer UnityEngine.Rendering.DebugUI/Widget::get_parent() */, L_1);
 		V_1 = ((Table_t02C23978AEDF525D15A9D9D7A528AC5D22DE8590*)IsInstClass((RuntimeObject*)L_2, Table_t02C23978AEDF525D15A9D9D7A528AC5D22DE8590_il2cpp_TypeInfo_var));
@@ -11816,25 +12316,31 @@ IL_004e:
 		// var child = gameObject.transform.GetChild(1).GetChild(i).gameObject;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
 		L_11 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_10, NULL);
+		NullCheck(L_11);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
 		L_12 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_11, 1, NULL);
 		int32_t L_13 = V_6;
+		NullCheck(L_12);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
 		L_14 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_12, L_13, NULL);
+		NullCheck(L_14);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
 		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_14, NULL);
 		V_7 = L_15;
 		// var active = table.GetColumnVisibility(i);
 		Table_t02C23978AEDF525D15A9D9D7A528AC5D22DE8590* L_16 = V_1;
 		int32_t L_17 = V_6;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Table_GetColumnVisibility_mC3485D2148D3BA1D0E9699228A03577D0BB9A935(L_16, L_17, NULL);
 		V_8 = L_18;
 		// child.SetActive(active);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_7;
 		bool L_20 = V_8;
+		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, L_20, NULL);
 		// if (active && refreshRow)
 		bool L_21 = V_8;
@@ -11847,6 +12353,7 @@ IL_004e:
 	{
 		// if (child.TryGetComponent<DebugUIHandlerColor>(out var color))
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_7;
+		NullCheck(L_23);
 		bool L_24;
 		L_24 = GameObject_TryGetComponent_TisDebugUIHandlerColor_tA1057D3530615A086352BCFD13E51F6FFBA2A276_mD70EB25A8B7D3D90E9A9627FF4B9B14E9A8E1AF5(L_23, (&V_9), GameObject_TryGetComponent_TisDebugUIHandlerColor_tA1057D3530615A086352BCFD13E51F6FFBA2A276_mD70EB25A8B7D3D90E9A9627FF4B9B14E9A8E1AF5_RuntimeMethod_var);
 		if (!L_24)
@@ -11857,6 +12364,7 @@ IL_004e:
 	{
 		// color.UpdateColor();
 		DebugUIHandlerColor_tA1057D3530615A086352BCFD13E51F6FFBA2A276* L_25 = V_9;
+		NullCheck(L_25);
 		DebugUIHandlerColor_UpdateColor_m0D7C0E504BECE85E4E0A47F9D69DA52B2E7ABD94(L_25, NULL);
 	}
 
@@ -11864,6 +12372,7 @@ IL_0098:
 	{
 		// if (child.TryGetComponent<DebugUIHandlerToggle>(out var toggle))
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = V_7;
+		NullCheck(L_26);
 		bool L_27;
 		L_27 = GameObject_TryGetComponent_TisDebugUIHandlerToggle_tB7C5A4F2A457F27E2D62C5589272FEC0C19B1896_m600753260C2A348EB24ED8AD8A928F11763A8B64(L_26, (&V_10), GameObject_TryGetComponent_TisDebugUIHandlerToggle_tB7C5A4F2A457F27E2D62C5589272FEC0C19B1896_m600753260C2A348EB24ED8AD8A928F11763A8B64_RuntimeMethod_var);
 		if (!L_27)
@@ -11874,6 +12383,7 @@ IL_0098:
 	{
 		// toggle.UpdateValueLabel();
 		DebugUIHandlerToggle_tB7C5A4F2A457F27E2D62C5589272FEC0C19B1896* L_28 = V_10;
+		NullCheck(L_28);
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerToggle::UpdateValueLabel() */, L_28);
 	}
 
@@ -11889,8 +12399,10 @@ IL_00b0:
 		// for (int i = 0; i < row.children.Count; i++)
 		int32_t L_30 = V_6;
 		Row_t4263ADC980EB84EB443A525B26307F51EF796D4B* L_31 = V_0;
+		NullCheck(L_31);
 		ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_32;
 		L_32 = Container_get_children_mF5C23A0F324E22BEBEF2EA14CE8DA7BEA72D631B_inline(L_31, NULL);
+		NullCheck(L_32);
 		int32_t L_33;
 		L_33 = ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F(L_32, ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F_RuntimeMethod_var);
 		if ((((int32_t)L_30) < ((int32_t)L_33)))
@@ -11902,15 +12414,20 @@ IL_00b0:
 		// var item = gameObject.transform.GetChild(1).GetChild(0).gameObject;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
 		L_34 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_34);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
 		L_35 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_34, NULL);
+		NullCheck(L_35);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
 		L_36 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_35, 1, NULL);
+		NullCheck(L_36);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_37;
 		L_37 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_36, 0, NULL);
+		NullCheck(L_37);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38;
 		L_38 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_37, NULL);
 		// var itemWidget = item.GetComponent<DebugUIHandlerWidget>();
+		NullCheck(L_38);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_39;
 		L_39 = GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D(L_38, GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D_RuntimeMethod_var);
 		V_4 = L_39;
@@ -11926,10 +12443,12 @@ IL_00ed:
 		// itemWidget.previousUIHandler = previous;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_40 = V_4;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_41 = V_5;
+		NullCheck(L_40);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_40, L_41, NULL);
 		// if (table.GetColumnVisibility(i))
 		Table_t02C23978AEDF525D15A9D9D7A528AC5D22DE8590* L_42 = V_1;
 		int32_t L_43 = V_11;
+		NullCheck(L_42);
 		bool L_44;
 		L_44 = Table_GetColumnVisibility_mC3485D2148D3BA1D0E9699228A03577D0BB9A935(L_42, L_43, NULL);
 		if (!L_44)
@@ -11958,6 +12477,7 @@ IL_010f:
 		// if (table.GetColumnVisibility(j))
 		Table_t02C23978AEDF525D15A9D9D7A528AC5D22DE8590* L_47 = V_1;
 		int32_t L_48 = V_13;
+		NullCheck(L_47);
 		bool L_49;
 		L_49 = Table_GetColumnVisibility_mC3485D2148D3BA1D0E9699228A03577D0BB9A935(L_47, L_48, NULL);
 		if (!L_49)
@@ -11969,23 +12489,29 @@ IL_010f:
 		// var child = gameObject.transform.GetChild(1).GetChild(j).gameObject;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_50;
 		L_50 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_50);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51;
 		L_51 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_50, NULL);
+		NullCheck(L_51);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52;
 		L_52 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_51, 1, NULL);
 		int32_t L_53 = V_13;
+		NullCheck(L_52);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_54;
 		L_54 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_52, L_53, NULL);
+		NullCheck(L_54);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_55;
 		L_55 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_54, NULL);
 		// var childWidget = child.GetComponent<DebugUIHandlerWidget>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_56 = L_55;
+		NullCheck(L_56);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_57;
 		L_57 = GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D(L_56, GameObject_GetComponent_TisDebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1_mDDAC5639CCCD1277DED622CB58EA0D7C4626B07D_RuntimeMethod_var);
 		V_14 = L_57;
 		// itemWidget.nextUIHandler = childWidget;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_58 = V_4;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_59 = V_14;
+		NullCheck(L_58);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_58, L_59, NULL);
 		// item = child;
 		// itemWidget = childWidget;
@@ -12012,8 +12538,10 @@ IL_015d:
 		// for (int j = i + 1; j < row.children.Count; j++)
 		int32_t L_63 = V_13;
 		Row_t4263ADC980EB84EB443A525B26307F51EF796D4B* L_64 = V_0;
+		NullCheck(L_64);
 		ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_65;
 		L_65 = Container_get_children_mF5C23A0F324E22BEBEF2EA14CE8DA7BEA72D631B_inline(L_64, NULL);
+		NullCheck(L_65);
 		int32_t L_66;
 		L_66 = ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F(L_65, ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F_RuntimeMethod_var);
 		if ((((int32_t)L_63) < ((int32_t)L_66)))
@@ -12034,6 +12562,7 @@ IL_016c:
 	{
 		// itemWidget.nextUIHandler = null;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_68 = V_4;
+		NullCheck(L_68);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_68, (DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)NULL, NULL);
 		// break;
 		return;
@@ -12051,8 +12580,10 @@ IL_017f:
 		// for (int i = 0; i < row.children.Count; i++)
 		int32_t L_70 = V_11;
 		Row_t4263ADC980EB84EB443A525B26307F51EF796D4B* L_71 = V_0;
+		NullCheck(L_71);
 		ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08* L_72;
 		L_72 = Container_get_children_mF5C23A0F324E22BEBEF2EA14CE8DA7BEA72D631B_inline(L_71, NULL);
+		NullCheck(L_72);
 		int32_t L_73;
 		L_73 = ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F(L_72, ObservableList_1_get_Count_mD2C2CE93BC1DF0E8B4921EBC726F6090B4BAD96F_RuntimeMethod_var);
 		if ((((int32_t)L_70) < ((int32_t)L_73)))
@@ -12105,16 +12636,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggle_SetWidget_mB013EB6A
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_3 = __this->___m_Field_13;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// UpdateValueLabel();
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerToggle::UpdateValueLabel() */, __this);
 		// valueToggle.onValueChanged.AddListener(OnToggleValueChanged);
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02* L_6 = L_5->___onValueChanged_23;
 		UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9* L_7 = (UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9*)il2cpp_codegen_object_new(UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		UnityAction_1__ctor_m11A393DB3C00474B4520978077E444DB6E4418DD(L_7, __this, (intptr_t)((void*)DebugUIHandlerToggle_OnToggleValueChanged_m547F4E123162D824FD6BF35941CFB92DBA301B06_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
 		UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD(L_6, L_7, UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD_RuntimeMethod_var);
 		// }
 		return;
@@ -12133,6 +12669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggle_OnToggleValueChange
 		// m_Field.SetValue(value);
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_0 = __this->___m_Field_13;
 		bool L_1 = ___value0;
+		NullCheck(L_0);
 		Field_1_SetValue_m4CEC39442339F6F9B714F219196302C81D6CA6E6(L_0, L_1, Field_1_SetValue_m4CEC39442339F6F9B714F219196302C81D6CA6E6_RuntimeMethod_var);
 		// }
 		return;
@@ -12145,10 +12682,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerToggle_OnSelection_mC8CB6E
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// checkmarkImage.color = colorSelected;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_2 = __this->___checkmarkImage_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -12161,10 +12700,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggle_OnDeselection_m5DC6
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// checkmarkImage.color = colorDefault;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_2 = __this->___checkmarkImage_12;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -12184,12 +12725,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggle_OnAction_m4891CDA4A
 	{
 		// bool value = !m_Field.GetValue();
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_0 = __this->___m_Field_13;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Field_1_GetValue_m62541687AAAB2E6BD8CB30B968C5142B4F6D8CC0(L_0, Field_1_GetValue_m62541687AAAB2E6BD8CB30B968C5142B4F6D8CC0_RuntimeMethod_var);
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 		// m_Field.SetValue(value);
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_2 = __this->___m_Field_13;
 		bool L_3 = V_0;
+		NullCheck(L_2);
 		Field_1_SetValue_m4CEC39442339F6F9B714F219196302C81D6CA6E6(L_2, L_3, Field_1_SetValue_m4CEC39442339F6F9B714F219196302C81D6CA6E6_RuntimeMethod_var);
 		// UpdateValueLabel();
 		VirtualActionInvoker0::Invoke(13 /* System.Void UnityEngine.Rendering.UI.DebugUIHandlerToggle::UpdateValueLabel() */, __this);
@@ -12222,8 +12765,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggle_UpdateValueLabel_mA
 		// valueToggle.isOn = m_Field.GetValue();
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_2 = __this->___valueToggle_11;
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_3 = __this->___m_Field_13;
+		NullCheck(L_3);
 		bool L_4;
 		L_4 = Field_1_GetValue_m62541687AAAB2E6BD8CB30B968C5142B4F6D8CC0(L_3, Field_1_GetValue_m62541687AAAB2E6BD8CB30B968C5142B4F6D8CC0_RuntimeMethod_var);
+		NullCheck(L_2);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_2, L_4, NULL);
 	}
 
@@ -12289,6 +12834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggleHistory_SetWidget_mF
 
 IL_000d:
 	{
+		NullCheck(G_B2_0);
 		int32_t L_2;
 		L_2 = HistoryBoolField_get_historyDepth_m33199CA7A24CD1696636A032118D3513CDFC63A5(G_B2_0, NULL);
 		G_B3_0 = L_2;
@@ -12319,8 +12865,10 @@ IL_0026:
 		V_2 = L_7;
 		// Vector3 pos = historyToggle.transform.position;
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_8 = V_2;
+		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
+		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
 		V_3 = L_10;
@@ -12332,16 +12880,21 @@ IL_0026:
 		*((float*)L_12) = (float)((float)il2cpp_codegen_add(L_13, ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_add(L_14, 1))), (60.0f)))));
 		// historyToggle.transform.position = pos;
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_15 = V_2;
+		NullCheck(L_15);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
 		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_3;
+		NullCheck(L_16);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_16, L_17, NULL);
 		// var background = historyToggle.transform.GetChild(0).GetComponent<Image>();
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_18 = V_2;
+		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_18, NULL);
+		NullCheck(L_19);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
 		L_20 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_19, 0, NULL);
+		NullCheck(L_20);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21;
 		L_21 = Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79(L_20, Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79_RuntimeMethod_var);
 		// background.sprite = Sprite.Create(Texture2D.whiteTexture, new Rect(-1, -1, 2, 2), Vector2.zero);
@@ -12355,6 +12908,7 @@ IL_0026:
 		L_25 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_26;
 		L_26 = Sprite_Create_m827A9BDEC4566AB71966A40DB48A09BB064D81E7(L_23, L_24, L_25, NULL);
+		NullCheck(L_22);
 		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_22, L_26, NULL);
 		// background.color = new Color32(50, 50, 50, 120);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_27 = L_22;
@@ -12363,12 +12917,16 @@ IL_0026:
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_28), (uint8_t)((int32_t)50), (uint8_t)((int32_t)50), (uint8_t)((int32_t)50), (uint8_t)((int32_t)120), /*hidden argument*/NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
 		L_29 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_28, NULL);
+		NullCheck(L_27);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_27, L_29);
 		// var checkmark = background.transform.GetChild(0).GetComponent<Image>();
+		NullCheck(L_27);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30;
 		L_30 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_27, NULL);
+		NullCheck(L_30);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
 		L_31 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_30, 0, NULL);
+		NullCheck(L_31);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_32;
 		L_32 = Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79(L_31, Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79_RuntimeMethod_var);
 		// checkmark.color = new Color32(110, 110, 110, 255);
@@ -12377,15 +12935,18 @@ IL_0026:
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_33), (uint8_t)((int32_t)110), (uint8_t)((int32_t)110), (uint8_t)((int32_t)110), (uint8_t)((int32_t)255), /*hidden argument*/NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_34;
 		L_34 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_33, NULL);
+		NullCheck(L_32);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_32, L_34);
 		// historyToggles[index] = historyToggle.GetComponent<Toggle>();
 		ToggleU5BU5D_t73C98F6CC63F9D7C0B8A26533CE6D7E218D00098* L_35 = __this->___historyToggles_14;
 		int32_t L_36 = V_1;
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_37 = V_2;
+		NullCheck(L_37);
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_38;
 		L_38 = Component_GetComponent_TisToggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F_mCFD123E76114133A77ECEF96A5474F07B97F5CEE(L_37, Component_GetComponent_TisToggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F_mCFD123E76114133A77ECEF96A5474F07B97F5CEE_RuntimeMethod_var);
+		NullCheck(L_35);
 		ArrayElementTypeCheck (L_35, L_38);
-		(L_35)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_36), (Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F*)L_38);
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(L_36), (Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F*)L_38);
 		// for (int index = 0; index < historyDepth; ++index)
 		int32_t L_39 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_39, 1));
@@ -12444,6 +13005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerToggleHistory_UpdateValueL
 IL_0018:
 	{
 		HistoryBoolField_t76A4E68747D844E26F7A87751125E257F3B5D9F0* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = HistoryBoolField_get_historyDepth_m33199CA7A24CD1696636A032118D3513CDFC63A5(L_2, NULL);
 		G_B3_0 = L_3;
@@ -12462,6 +13024,7 @@ IL_0023:
 		// if (index < historyToggles.Length && historyToggles[index] != null)
 		int32_t L_4 = V_2;
 		ToggleU5BU5D_t73C98F6CC63F9D7C0B8A26533CE6D7E218D00098* L_5 = __this->___historyToggles_14;
+		NullCheck(L_5);
 		if ((((int32_t)L_4) >= ((int32_t)((int32_t)(((RuntimeArray*)L_5)->max_length)))))
 		{
 			goto IL_0052;
@@ -12470,8 +13033,9 @@ IL_0023:
 	{
 		ToggleU5BU5D_t73C98F6CC63F9D7C0B8A26533CE6D7E218D00098* L_6 = __this->___historyToggles_14;
 		int32_t L_7 = V_2;
+		NullCheck(L_6);
 		int32_t L_8 = L_7;
-		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_9 = (L_6)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_8));
+		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -12484,12 +13048,15 @@ IL_0023:
 		// historyToggles[index].isOn = field.GetHistoryValue(index);
 		ToggleU5BU5D_t73C98F6CC63F9D7C0B8A26533CE6D7E218D00098* L_11 = __this->___historyToggles_14;
 		int32_t L_12 = V_2;
+		NullCheck(L_11);
 		int32_t L_13 = L_12;
-		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		HistoryBoolField_t76A4E68747D844E26F7A87751125E257F3B5D9F0* L_15 = V_0;
 		int32_t L_16 = V_2;
+		NullCheck(L_15);
 		bool L_17;
 		L_17 = HistoryBoolField_GetHistoryValue_m2C22B47DFF7BC9E386761F54139D8DF9D7B40553(L_15, L_16, NULL);
+		NullCheck(L_14);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_14, L_17, NULL);
 	}
 
@@ -12544,8 +13111,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DebugUIHandlerToggleHistory_Re
 	}
 	{
 		U3CRefreshAfterSanitizationU3Ed__4_t37C0D010B1D44AE036E591D1A1CA70A71E2F44F6* L_0 = (U3CRefreshAfterSanitizationU3Ed__4_t37C0D010B1D44AE036E591D1A1CA70A71E2F44F6*)il2cpp_codegen_object_new(U3CRefreshAfterSanitizationU3Ed__4_t37C0D010B1D44AE036E591D1A1CA70A71E2F44F6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		U3CRefreshAfterSanitizationU3Ed__4__ctor_mE7A3146511E19C2501D1087E3FCFBE75837DCBAB(L_0, 0, NULL);
 		U3CRefreshAfterSanitizationU3Ed__4_t37C0D010B1D44AE036E591D1A1CA70A71E2F44F6* L_1 = L_0;
+		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		return L_1;
@@ -12632,13 +13201,18 @@ IL_002e:
 		__this->___U3CU3E1__state_0 = (-1);
 		// valueToggle.isOn = m_Field.getter();
 		DebugUIHandlerToggleHistory_t6CA171585CD5D13FB3D66CD9D5A14A3D32331DA4* L_4 = V_1;
+		NullCheck(L_4);
 		Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* L_5 = ((DebugUIHandlerToggle_tB7C5A4F2A457F27E2D62C5589272FEC0C19B1896*)L_4)->___valueToggle_11;
 		DebugUIHandlerToggleHistory_t6CA171585CD5D13FB3D66CD9D5A14A3D32331DA4* L_6 = V_1;
+		NullCheck(L_6);
 		BoolField_t39D6A35B4122FEB0926086FA434886E537378EAD* L_7 = ((DebugUIHandlerToggle_tB7C5A4F2A457F27E2D62C5589272FEC0C19B1896*)L_6)->___m_Field_13;
+		NullCheck(L_7);
 		Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_8;
 		L_8 = Field_1_get_getter_m8EBEAE8C20A7D95D190D9922565CECD9E9D9A8D8_inline(L_7, Field_1_get_getter_m8EBEAE8C20A7D95D190D9922565CECD9E9D9A8D8_RuntimeMethod_var);
+		NullCheck(L_8);
 		bool L_9;
 		L_9 = Func_1_Invoke_mBB7F37C468451AF57FAF31635C544D6B8C4373B2_inline(L_8, NULL);
+		NullCheck(L_5);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_5, L_9, NULL);
 		// }
 		return (bool)0;
@@ -12657,6 +13231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefreshAfterSanitizationU3Ed__4_Syste
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefreshAfterSanitizationU3Ed__4_System_Collections_IEnumerator_Reset_m97EA3023930C1F29E1086F7D141B93ED488E219C_RuntimeMethod_var)));
 	}
@@ -12698,8 +13273,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField_SetWidget_mE43AA
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// UpdateValueLabel();
 		DebugUIHandlerUIntField_UpdateValueLabel_mC8087A6A5B7CC2A625EB2B037E7C3223EF9AE72F(__this, NULL);
@@ -12714,10 +13291,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerUIntField_OnSelection_mC17
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -12730,10 +13309,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField_OnDeselection_m2
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -12782,6 +13363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField_ChangeValue_m3CC
 	{
 		// long value = m_Field.GetValue();
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_0 = __this->___m_Field_12;
+		NullCheck(L_0);
 		uint32_t L_1;
 		L_1 = Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E(L_0, Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E_RuntimeMethod_var);
 		V_0 = ((int64_t)(uint64_t)L_1);
@@ -12809,6 +13391,7 @@ IL_0015:
 		// value += m_Field.incStep * (fast ? m_Field.intStepMult : 1) * multiplier;
 		int64_t L_4 = V_0;
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_5 = __this->___m_Field_12;
+		NullCheck(L_5);
 		uint32_t L_6 = L_5->___incStep_12;
 		bool L_7 = ___fast0;
 		G_B4_0 = L_6;
@@ -12830,6 +13413,7 @@ IL_0015:
 IL_0027:
 	{
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_8 = __this->___m_Field_12;
+		NullCheck(L_8);
 		uint32_t L_9 = L_8->___intStepMult_13;
 		G_B6_0 = L_9;
 		G_B6_1 = G_B5_0;
@@ -12843,6 +13427,7 @@ IL_0032:
 		// m_Field.SetValue((uint)value);
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_11 = __this->___m_Field_12;
 		int64_t L_12 = V_0;
+		NullCheck(L_11);
 		Field_1_SetValue_m13B51A661D5CDE969175F60041C88D73D41CE9B1(L_11, ((int32_t)(uint32_t)L_12), Field_1_SetValue_m13B51A661D5CDE969175F60041C88D73D41CE9B1_RuntimeMethod_var);
 		// UpdateValueLabel();
 		DebugUIHandlerUIntField_UpdateValueLabel_mC8087A6A5B7CC2A625EB2B037E7C3223EF9AE72F(__this, NULL);
@@ -12877,11 +13462,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField_UpdateValueLabel
 		// valueLabel.text = m_Field.GetValue().ToString("N0");
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		UIntField_t0D5D8410DC6004E58515C2C503A81535DB7F5636* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		uint32_t L_4;
 		L_4 = Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E(L_3, Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E_RuntimeMethod_var);
 		V_0 = L_4;
 		String_t* L_5;
 		L_5 = UInt32_ToString_m6A665131BC9DC1F70D66117712027604B16EB6C6((&V_0), _stringLiteralA16A5A766620C92E70C8F0C13BC707B1DD24BB40, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_5);
 	}
 
@@ -12938,8 +13525,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_SetWidget_mA142AE7CC
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___nameLabel_10;
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_3 = __this->___m_Field_12;
+		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_3, NULL);
+		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
 		// }
 		return;
@@ -12952,10 +13541,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerValue_OnSelection_mEF84CDA
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// return true;
 		return (bool)1;
@@ -12968,10 +13559,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_OnDeselection_m0EA78
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// valueLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___valueLabel_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_2);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_2, L_3);
 		// }
 		return;
@@ -12984,6 +13577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_Update_mE41E37D577A4
 		// if (m_Timer >= m_Field.refreshRate)
 		float L_0 = __this->___m_Timer_13;
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_1 = __this->___m_Field_12;
+		NullCheck(L_1);
 		float L_2 = L_1->___refreshRate_8;
 		if ((!(((float)L_0) >= ((float)L_2))))
 		{
@@ -12994,14 +13588,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerValue_Update_mE41E37D577A4
 		// valueLabel.text = m_Field.GetValue().ToString();
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___valueLabel_11;
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_4 = __this->___m_Field_12;
+		NullCheck(L_4);
 		RuntimeObject* L_5;
 		L_5 = Value_GetValue_mD32191C4552B9FB57F0C048785854DBF320C9BAF(L_4, NULL);
+		NullCheck(L_5);
 		String_t* L_6;
 		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_5);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_6);
 		// m_Timer -= m_Field.refreshRate;
 		float L_7 = __this->___m_Timer_13;
 		Value_tD3281A1DB8DBD137422F643A60AE1E5F0C736457* L_8 = __this->___m_Field_12;
+		NullCheck(L_8);
 		float L_9 = L_8->___refreshRate_8;
 		__this->___m_Timer_13 = ((float)il2cpp_codegen_subtract(L_7, L_9));
 	}
@@ -13076,6 +13674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVBox_OnSelection_mF51E61D6
 	{
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_1 = __this->___m_Container_10;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_2 = ___previous1;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_1, L_2, NULL);
 		if (L_3)
@@ -13086,6 +13685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVBox_OnSelection_mF51E61D6
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_4 = __this->___m_Container_10;
+		NullCheck(L_4);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_5;
 		L_5 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_4, NULL);
 		V_0 = L_5;
@@ -13094,6 +13694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVBox_OnSelection_mF51E61D6
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_6;
 		L_6 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_7 = V_0;
+		NullCheck(L_6);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_6, L_7, (bool)0, NULL);
 		// return true;
 		return (bool)1;
@@ -13137,6 +13738,7 @@ IL_0015:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_3 = __this->___m_Container_10;
+		NullCheck(L_3);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_4;
 		L_4 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_3, NULL);
 		V_0 = L_4;
@@ -13213,24 +13815,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_SetWidget_mBC71960
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_4 = __this->___m_Field_14;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// fieldX.getter = () => m_Field.GetValue().x;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_6 = __this->___fieldX_12;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_7 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_7, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetWidgetU3Eb__6_0_m40766D6438349BCCD397A409FD47D6DF7D627E95_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
 		L_6->___getter_12 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___getter_12), (void*)L_7);
 		// fieldX.setter = x => SetValue(x, x: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_8 = __this->___fieldX_12;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_9 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_9, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetWidgetU3Eb__6_1_mDC687994C1C6D34598870969A1C929ED67C3D2AD_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
 		L_8->___setter_13 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___setter_13), (void*)L_9);
 		// fieldX.nextUIHandler = fieldY;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_10 = __this->___fieldX_12;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_11 = __this->___fieldY_13;
+		NullCheck(L_10);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_10, L_11, NULL);
 		// SetupSettings(fieldX);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_12 = __this->___fieldX_12;
@@ -13238,18 +13847,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_SetWidget_mBC71960
 		// fieldY.getter = () => m_Field.GetValue().y;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_13 = __this->___fieldY_13;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_14 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_14, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetWidgetU3Eb__6_2_mF99FF85396E7934B035370C2B77BECD5828073BF_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
 		L_13->___getter_12 = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&L_13->___getter_12), (void*)L_14);
 		// fieldY.setter = x => SetValue(x, y: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_15 = __this->___fieldY_13;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_16 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_16, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetWidgetU3Eb__6_3_mEC21ACEA4E8A9B81D5EE772B1E0117834DC3C921_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
 		L_15->___setter_13 = L_16;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___setter_13), (void*)L_16);
 		// fieldY.previousUIHandler = fieldX;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_17 = __this->___fieldY_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_18 = __this->___fieldX_12;
+		NullCheck(L_17);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_17, L_18, NULL);
 		// SetupSettings(fieldY);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_19 = __this->___fieldY_13;
@@ -13273,6 +13887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_SetValue_m62F288A9
 	{
 		// var vec = m_Field.GetValue();
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1(L_0, Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1_RuntimeMethod_var);
 		V_0 = L_1;
@@ -13309,6 +13924,7 @@ IL_0022:
 		// m_Field.SetValue(vec);
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_6 = __this->___m_Field_14;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_0;
+		NullCheck(L_6);
 		Field_1_SetValue_m6264027495914837FA8DFF47138C761C6CB0ECCB(L_6, L_7, Field_1_SetValue_m6264027495914837FA8DFF47138C761C6CB0ECCB_RuntimeMethod_var);
 		// }
 		return;
@@ -13329,27 +13945,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_SetupSettings_m030
 	{
 		// field.parentUIHandler = this;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_0 = ___field0;
+		NullCheck(L_0);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_0, __this, NULL);
 		// field.incStepGetter = () => m_Field.incStep;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_1 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_2 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_2, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetupSettingsU3Eb__8_0_mE4033438C35E72EE5CBBF1F35A04BBEE9CB4B207_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
 		L_1->___incStepGetter_14 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___incStepGetter_14), (void*)L_2);
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_3 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_4 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_4, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetupSettingsU3Eb__8_1_m5098326D73A3D982ED62D3DA8F591F1CC68DEABD_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
 		L_3->___incStepMultGetter_15 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___incStepMultGetter_15), (void*)L_4);
 		// field.decimalsGetter = () => m_Field.decimals;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_5 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_6 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_6, __this, (intptr_t)((void*)DebugUIHandlerVector2_U3CSetupSettingsU3Eb__8_2_m6024441393B4D412E29E62645E4E3AE6E41AC107_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
 		L_5->___decimalsGetter_16 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___decimalsGetter_16), (void*)L_6);
 		// field.Init();
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_7 = ___field0;
+		NullCheck(L_7);
 		DebugUIHandlerIndirectFloatField_Init_m8297DF272ED8D2435861EDB77AABF58290B96840(L_7, NULL);
 		// }
 		return;
@@ -13375,6 +13999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVector2_OnSelection_m7AFD0
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -13388,6 +14013,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -13396,6 +14022,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -13407,6 +14034,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_15;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -13418,6 +14046,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -13426,6 +14055,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_15;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -13434,6 +14064,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -13450,6 +14081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_OnDeselection_m73F
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -13461,6 +14093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_OnIncrement_m03B6B
 	{
 		// valueToggle.isOn = true;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)1, NULL);
 		// }
 		return;
@@ -13472,6 +14105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_OnDecrement_m863DA
 	{
 		// valueToggle.isOn = false;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)0, NULL);
 		// }
 		return;
@@ -13484,8 +14118,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector2_OnAction_m50C6E7AB
 		// valueToggle.isOn = !valueToggle.isOn;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0), NULL);
 		// }
 		return;
@@ -13504,6 +14140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!valueToggle.isOn || m_Container == null)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_0, NULL);
 		if (!L_1)
@@ -13534,6 +14171,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_15;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -13581,6 +14219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector2_U3CSetWidgetU3Eb_
 	{
 		// fieldX.getter = () => m_Field.GetValue().x;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1(L_0, Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1_RuntimeMethod_var);
 		float L_2 = L_1.___x_0;
@@ -13609,6 +14248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector2_U3CSetWidgetU3Eb_
 	{
 		// fieldY.getter = () => m_Field.GetValue().y;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1(L_0, Field_1_GetValue_m35BC0454EB241EF390E1AC4F4E9FFDF5286BDCA1_RuntimeMethod_var);
 		float L_2 = L_1.___y_1;
@@ -13631,6 +14271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector2_U3CSetupSettingsU
 	{
 		// field.incStepGetter = () => m_Field.incStep;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStep_10;
 		return L_1;
 	}
@@ -13641,6 +14282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector2_U3CSetupSettingsU
 	{
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStepMult_11;
 		return L_1;
 	}
@@ -13651,6 +14293,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector2_U3CSetupSettingsU
 	{
 		// field.decimalsGetter = () => m_Field.decimals;
 		Vector2Field_t5CDE5FE31ACEDA9AA41D204ABBE50392E2080816* L_0 = __this->___m_Field_14;
+		NullCheck(L_0);
 		int32_t L_1 = L_0->___decimals_12;
 		return ((float)L_1);
 	}
@@ -13698,24 +14341,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_SetWidget_m51C9378
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_4 = __this->___m_Field_15;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// fieldX.getter = () => m_Field.GetValue().x;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_6 = __this->___fieldX_12;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_7 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_7, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_0_mAB6B7CD5EB1A3BDAD9022F1E34F6B3E5FD6AB198_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
 		L_6->___getter_12 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___getter_12), (void*)L_7);
 		// fieldX.setter = v => SetValue(v, x: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_8 = __this->___fieldX_12;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_9 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_9, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_1_m6C8891791339BFC4674E7F6ACA93407BB01742E5_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
 		L_8->___setter_13 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___setter_13), (void*)L_9);
 		// fieldX.nextUIHandler = fieldY;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_10 = __this->___fieldX_12;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_11 = __this->___fieldY_13;
+		NullCheck(L_10);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_10, L_11, NULL);
 		// SetupSettings(fieldX);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_12 = __this->___fieldX_12;
@@ -13723,22 +14373,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_SetWidget_m51C9378
 		// fieldY.getter = () => m_Field.GetValue().y;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_13 = __this->___fieldY_13;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_14 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_14, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_2_mE180B24E364395A808BDAEF108C3B5CCC7B34A8F_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
 		L_13->___getter_12 = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&L_13->___getter_12), (void*)L_14);
 		// fieldY.setter = v => SetValue(v, y: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_15 = __this->___fieldY_13;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_16 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_16, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_3_mE87B8C4818974E2A09F967C07693A5EE4E279543_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
 		L_15->___setter_13 = L_16;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___setter_13), (void*)L_16);
 		// fieldY.previousUIHandler = fieldX;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_17 = __this->___fieldY_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_18 = __this->___fieldX_12;
+		NullCheck(L_17);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_17, L_18, NULL);
 		// fieldY.nextUIHandler = fieldZ;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_19 = __this->___fieldY_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_20 = __this->___fieldZ_14;
+		NullCheck(L_19);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_19, L_20, NULL);
 		// SetupSettings(fieldY);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_21 = __this->___fieldY_13;
@@ -13746,18 +14402,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_SetWidget_m51C9378
 		// fieldZ.getter = () => m_Field.GetValue().z;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_22 = __this->___fieldZ_14;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_23 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_23);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_23, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_4_m0A890E89CA123AF98F3675599F42983DFFF6BED3_RuntimeMethod_var), NULL);
+		NullCheck(L_22);
 		L_22->___getter_12 = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___getter_12), (void*)L_23);
 		// fieldZ.setter = v => SetValue(v, z: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_24 = __this->___fieldZ_14;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_25 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_25, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetWidgetU3Eb__7_5_m6F02ECC974164F8BD416D09591C0A7FC562D9E00_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
 		L_24->___setter_13 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___setter_13), (void*)L_25);
 		// fieldZ.previousUIHandler = fieldY;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_26 = __this->___fieldZ_14;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_27 = __this->___fieldY_13;
+		NullCheck(L_26);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_26, L_27, NULL);
 		// SetupSettings(fieldZ);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_28 = __this->___fieldZ_14;
@@ -13781,6 +14442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_SetValue_m4D9723FB
 	{
 		// var vec = m_Field.GetValue();
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC(L_0, Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC_RuntimeMethod_var);
 		V_0 = L_1;
@@ -13832,6 +14494,7 @@ IL_002e:
 		// m_Field.SetValue(vec);
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_8 = __this->___m_Field_15;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		NullCheck(L_8);
 		Field_1_SetValue_mD145F89C0745F3608579CDE847610C702977C33B(L_8, L_9, Field_1_SetValue_mD145F89C0745F3608579CDE847610C702977C33B_RuntimeMethod_var);
 		// }
 		return;
@@ -13852,27 +14515,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_SetupSettings_m681
 	{
 		// field.parentUIHandler = this;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_0 = ___field0;
+		NullCheck(L_0);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_0, __this, NULL);
 		// field.incStepGetter = () => m_Field.incStep;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_1 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_2 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_2, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetupSettingsU3Eb__9_0_m8A2F0E9E84CEDEF51C39FC2064AE4A567D536B5E_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
 		L_1->___incStepGetter_14 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___incStepGetter_14), (void*)L_2);
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_3 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_4 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_4, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetupSettingsU3Eb__9_1_m8817E674DE9AA44BDA955FCBAE74FCE86AE00D69_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
 		L_3->___incStepMultGetter_15 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___incStepMultGetter_15), (void*)L_4);
 		// field.decimalsGetter = () => m_Field.decimals;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_5 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_6 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_6, __this, (intptr_t)((void*)DebugUIHandlerVector3_U3CSetupSettingsU3Eb__9_2_mEF5F59D1C0046A69401A520E2EA72E08E51683A7_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
 		L_5->___decimalsGetter_16 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___decimalsGetter_16), (void*)L_6);
 		// field.Init();
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_7 = ___field0;
+		NullCheck(L_7);
 		DebugUIHandlerIndirectFloatField_Init_m8297DF272ED8D2435861EDB77AABF58290B96840(L_7, NULL);
 		// }
 		return;
@@ -13898,6 +14569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVector3_OnSelection_mC678F
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -13911,6 +14583,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -13919,6 +14592,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -13930,6 +14604,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_16;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -13941,6 +14616,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -13949,6 +14625,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_16;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -13957,6 +14634,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -13973,6 +14651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_OnDeselection_m441
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -13984,6 +14663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_OnIncrement_mC053E
 	{
 		// valueToggle.isOn = true;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)1, NULL);
 		// }
 		return;
@@ -13995,6 +14675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_OnDecrement_mD51DB
 	{
 		// valueToggle.isOn = false;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)0, NULL);
 		// }
 		return;
@@ -14007,8 +14688,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector3_OnAction_m59987EEE
 		// valueToggle.isOn = !valueToggle.isOn;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0), NULL);
 		// }
 		return;
@@ -14027,6 +14710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!valueToggle.isOn || m_Container == null)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_0, NULL);
 		if (!L_1)
@@ -14057,6 +14741,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_16;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -14104,6 +14789,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetWidgetU3Eb_
 	{
 		// fieldX.getter = () => m_Field.GetValue().x;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC(L_0, Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC_RuntimeMethod_var);
 		float L_2 = L_1.___x_2;
@@ -14132,6 +14818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetWidgetU3Eb_
 	{
 		// fieldY.getter = () => m_Field.GetValue().y;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC(L_0, Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC_RuntimeMethod_var);
 		float L_2 = L_1.___y_3;
@@ -14160,6 +14847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetWidgetU3Eb_
 	{
 		// fieldZ.getter = () => m_Field.GetValue().z;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC(L_0, Field_1_GetValue_m64B831DFD988D14A1DA8AD2548F2B1D1867218CC_RuntimeMethod_var);
 		float L_2 = L_1.___z_4;
@@ -14182,6 +14870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetupSettingsU
 	{
 		// field.incStepGetter = () => m_Field.incStep;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStep_10;
 		return L_1;
 	}
@@ -14192,6 +14881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetupSettingsU
 	{
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStepMult_11;
 		return L_1;
 	}
@@ -14202,6 +14892,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector3_U3CSetupSettingsU
 	{
 		// field.decimalsGetter = () => m_Field.decimals;
 		Vector3Field_t4019EB5DDB0C820FA72499C5F078A9BE00DCAF94* L_0 = __this->___m_Field_15;
+		NullCheck(L_0);
 		int32_t L_1 = L_0->___decimals_12;
 		return ((float)L_1);
 	}
@@ -14251,24 +14942,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetWidget_m0ACF9FA
 		// nameLabel.text = m_Field.displayName;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_4 = __this->___m_Field_16;
+		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = Widget_get_displayName_m1E7836A53BF88619C4815EA70F9243319567F0F4_inline(L_4, NULL);
+		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// fieldX.getter = () => m_Field.GetValue().x;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_6 = __this->___fieldX_12;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_7 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_7, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_0_m08BEFA85D371D04F0B038DF845898F2B2E1361CC_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
 		L_6->___getter_12 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___getter_12), (void*)L_7);
 		// fieldX.setter = x => SetValue(x, x: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_8 = __this->___fieldX_12;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_9 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_9, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_1_mB0D840131A3B9F0174D378AAB9C31B2D46EFCBA8_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
 		L_8->___setter_13 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___setter_13), (void*)L_9);
 		// fieldX.nextUIHandler = fieldY;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_10 = __this->___fieldX_12;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_11 = __this->___fieldY_13;
+		NullCheck(L_10);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_10, L_11, NULL);
 		// SetupSettings(fieldX);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_12 = __this->___fieldX_12;
@@ -14276,22 +14974,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetWidget_m0ACF9FA
 		// fieldY.getter = () => m_Field.GetValue().y;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_13 = __this->___fieldY_13;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_14 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_14, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_2_m259CA925AB02780A7FC19E6E00ECD27A8D9492EB_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
 		L_13->___getter_12 = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&L_13->___getter_12), (void*)L_14);
 		// fieldY.setter = x => SetValue(x, y: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_15 = __this->___fieldY_13;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_16 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_16, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_3_m43586D00F180DB14B0A50C3470181CE50013D28C_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
 		L_15->___setter_13 = L_16;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___setter_13), (void*)L_16);
 		// fieldY.previousUIHandler = fieldX;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_17 = __this->___fieldY_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_18 = __this->___fieldX_12;
+		NullCheck(L_17);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_17, L_18, NULL);
 		// fieldY.nextUIHandler = fieldZ;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_19 = __this->___fieldY_13;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_20 = __this->___fieldZ_14;
+		NullCheck(L_19);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_19, L_20, NULL);
 		// SetupSettings(fieldY);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_21 = __this->___fieldY_13;
@@ -14299,22 +15003,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetWidget_m0ACF9FA
 		// fieldZ.getter = () => m_Field.GetValue().z;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_22 = __this->___fieldZ_14;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_23 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_23);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_23, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_4_mEE993AC3EDBF96F1A45843A1AAC8CD4600128D19_RuntimeMethod_var), NULL);
+		NullCheck(L_22);
 		L_22->___getter_12 = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___getter_12), (void*)L_23);
 		// fieldZ.setter = x => SetValue(x, z: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_24 = __this->___fieldZ_14;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_25 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_25, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_5_m2380D05D15DD6A2D525A4465ADFF4D1C8F0C21E7_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
 		L_24->___setter_13 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___setter_13), (void*)L_25);
 		// fieldZ.previousUIHandler = fieldY;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_26 = __this->___fieldZ_14;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_27 = __this->___fieldY_13;
+		NullCheck(L_26);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_26, L_27, NULL);
 		// fieldZ.nextUIHandler = fieldW;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_28 = __this->___fieldZ_14;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_29 = __this->___fieldW_15;
+		NullCheck(L_28);
 		DebugUIHandlerWidget_set_nextUIHandler_m84F82CC75B6BCF91986150F4DE1D96D963E78CC8_inline(L_28, L_29, NULL);
 		// SetupSettings(fieldZ);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_30 = __this->___fieldZ_14;
@@ -14322,18 +15032,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetWidget_m0ACF9FA
 		// fieldW.getter = () => m_Field.GetValue().w;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_31 = __this->___fieldW_15;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_32 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_32);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_32, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_6_mB5AE87731664D5FF4407F389918BCAE29C29E66F_RuntimeMethod_var), NULL);
+		NullCheck(L_31);
 		L_31->___getter_12 = L_32;
 		Il2CppCodeGenWriteBarrier((void**)(&L_31->___getter_12), (void*)L_32);
 		// fieldW.setter = x => SetValue(x, w: true);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_33 = __this->___fieldW_15;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_34 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
+		NullCheck(L_34);
 		Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859(L_34, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetWidgetU3Eb__8_7_mFC96D46A98F25512F5BE486E12F504F4ACC1D592_RuntimeMethod_var), NULL);
+		NullCheck(L_33);
 		L_33->___setter_13 = L_34;
 		Il2CppCodeGenWriteBarrier((void**)(&L_33->___setter_13), (void*)L_34);
 		// fieldW.previousUIHandler = fieldZ;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_35 = __this->___fieldW_15;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_36 = __this->___fieldZ_14;
+		NullCheck(L_35);
 		DebugUIHandlerWidget_set_previousUIHandler_m7F60E1430A65740C8EFCCD87F1724CB08BE2F422_inline(L_35, L_36, NULL);
 		// SetupSettings(fieldW);
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_37 = __this->___fieldW_15;
@@ -14357,6 +15072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetValue_mDDE5A79F
 	{
 		// var vec = m_Field.GetValue();
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		L_1 = Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6(L_0, Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6_RuntimeMethod_var);
 		V_0 = L_1;
@@ -14423,6 +15139,7 @@ IL_003a:
 		// m_Field.SetValue(vec);
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_10 = __this->___m_Field_16;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_11 = V_0;
+		NullCheck(L_10);
 		Field_1_SetValue_mCF390C3D10ACF55785D50C31F9AF078D0CCE790A(L_10, L_11, Field_1_SetValue_mCF390C3D10ACF55785D50C31F9AF078D0CCE790A_RuntimeMethod_var);
 		// }
 		return;
@@ -14443,27 +15160,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_SetupSettings_m6E1
 	{
 		// field.parentUIHandler = this;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_0 = ___field0;
+		NullCheck(L_0);
 		DebugUIHandlerWidget_set_parentUIHandler_mF23913A3178CA556A5709A8E5782585240A4E784_inline(L_0, __this, NULL);
 		// field.incStepGetter = () => m_Field.incStep;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_1 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_2 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_2, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetupSettingsU3Eb__10_0_m2294F14B1936842ABAD989616BD8FFFB9D19960C_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
 		L_1->___incStepGetter_14 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___incStepGetter_14), (void*)L_2);
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_3 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_4 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_4, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetupSettingsU3Eb__10_1_m87F6A7549919BF2D29BED6A03DCFB2F5A5CE30D3_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
 		L_3->___incStepMultGetter_15 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___incStepMultGetter_15), (void*)L_4);
 		// field.decimalsGetter = () => m_Field.decimals;
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_5 = ___field0;
 		Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7* L_6 = (Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7*)il2cpp_codegen_object_new(Func_1_t11C3830580201E0A3A3A2C76523B7905EF40BCF7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
 		Func_1__ctor_m94E0C712F86101E026834DA318C3FFF46DE49C71(L_6, __this, (intptr_t)((void*)DebugUIHandlerVector4_U3CSetupSettingsU3Eb__10_2_m33E9FAAEBEE26FA4A43E670F562C48F3169CFEFF_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
 		L_5->___decimalsGetter_16 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___decimalsGetter_16), (void*)L_6);
 		// field.Init();
 		DebugUIHandlerIndirectFloatField_tDAC2E6339808111FDCBBBB87E11412F525C4087E* L_7 = ___field0;
+		NullCheck(L_7);
 		DebugUIHandlerIndirectFloatField_Init_m8297DF272ED8D2435861EDB77AABF58290B96840(L_7, NULL);
 		// }
 		return;
@@ -14489,6 +15214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugUIHandlerVector4_OnSelection_m13FAB
 	}
 	{
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
 		if (L_2)
@@ -14502,6 +15228,7 @@ IL_0010:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		goto IL_0069;
 	}
@@ -14510,6 +15237,7 @@ IL_0023:
 	{
 		// else if (valueToggle.isOn)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_5 = __this->___valueToggle_11;
+		NullCheck(L_5);
 		bool L_6;
 		L_6 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_5, NULL);
 		if (!L_6)
@@ -14521,6 +15249,7 @@ IL_0023:
 		// if (m_Container.IsDirectChild(previous))
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_7 = __this->___m_Container_17;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_8 = ___previous1;
+		NullCheck(L_7);
 		bool L_9;
 		L_9 = DebugUIHandlerContainer_IsDirectChild_mCD24A410A0F20F48BDCBE21A6878072614B9F7FB(L_7, L_8, NULL);
 		if (!L_9)
@@ -14532,6 +15261,7 @@ IL_0023:
 		// nameLabel.color = colorSelected;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_10 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorSelected_5;
+		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
 		goto IL_0069;
 	}
@@ -14540,6 +15270,7 @@ IL_0051:
 	{
 		// var lastItem = m_Container.GetLastItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_12 = __this->___m_Container_17;
+		NullCheck(L_12);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_13;
 		L_13 = DebugUIHandlerContainer_GetLastItem_m19783039A96D0E481190EC168D1147EA34C353FB(L_12, NULL);
 		V_0 = L_13;
@@ -14548,6 +15279,7 @@ IL_0051:
 		DebugManager_t7B02CD44432A634FA9654CC7ABE89DBA061A8672* L_14;
 		L_14 = DebugManager_get_instance_m6606C2006331B9BDE453C15E14F3747930B3FC3D(NULL);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_15 = V_0;
+		NullCheck(L_14);
 		DebugManager_ChangeSelection_m77C3E5AD1A1B7D9EEFA8C39BFD8A40B1AEEB856A(L_14, L_15, (bool)0, NULL);
 	}
 
@@ -14564,6 +15296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_OnDeselection_m848
 		// nameLabel.color = colorDefault;
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___nameLabel_10;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ((DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1*)__this)->___colorDefault_4;
+		NullCheck(L_0);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
 		// }
 		return;
@@ -14575,6 +15308,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_OnIncrement_m7C040
 	{
 		// valueToggle.isOn = true;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)1, NULL);
 		// }
 		return;
@@ -14586,6 +15320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_OnDecrement_mD7C8F
 	{
 		// valueToggle.isOn = false;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)0, NULL);
 		// }
 		return;
@@ -14598,8 +15333,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerVector4_OnAction_m0189C1E2
 		// valueToggle.isOn = !valueToggle.isOn;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_1 = __this->___valueToggle_11;
+		NullCheck(L_1);
 		bool L_2;
 		L_2 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_1, NULL);
+		NullCheck(L_0);
 		Toggle_set_isOn_m61D6AB073668E87530A9F49D990A3B3631D2061F(L_0, (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0), NULL);
 		// }
 		return;
@@ -14618,6 +15355,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F
 	{
 		// if (!valueToggle.isOn || m_Container == null)
 		UIFoldout_tEE4060406AECDD237DAA6D45B8776FAE8A636ADC* L_0 = __this->___valueToggle_11;
+		NullCheck(L_0);
 		bool L_1;
 		L_1 = Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline(L_0, NULL);
 		if (!L_1)
@@ -14648,6 +15386,7 @@ IL_0022:
 	{
 		// var firstChild = m_Container.GetFirstItem();
 		DebugUIHandlerContainer_tCC800935A2D1C8FFE9D26E8F2CE9E2CCB0C24DE8* L_5 = __this->___m_Container_17;
+		NullCheck(L_5);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6;
 		L_6 = DebugUIHandlerContainer_GetFirstItem_m6218F40059CE4BA28F39DA27F7FC12A59C225F80(L_5, NULL);
 		V_0 = L_6;
@@ -14695,6 +15434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetWidgetU3Eb_
 	{
 		// fieldX.getter = () => m_Field.GetValue().x;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		L_1 = Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6(L_0, Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6_RuntimeMethod_var);
 		float L_2 = L_1.___x_1;
@@ -14723,6 +15463,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetWidgetU3Eb_
 	{
 		// fieldY.getter = () => m_Field.GetValue().y;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		L_1 = Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6(L_0, Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6_RuntimeMethod_var);
 		float L_2 = L_1.___y_2;
@@ -14751,6 +15492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetWidgetU3Eb_
 	{
 		// fieldZ.getter = () => m_Field.GetValue().z;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		L_1 = Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6(L_0, Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6_RuntimeMethod_var);
 		float L_2 = L_1.___z_3;
@@ -14779,6 +15521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetWidgetU3Eb_
 	{
 		// fieldW.getter = () => m_Field.GetValue().w;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		L_1 = Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6(L_0, Field_1_GetValue_m36C6FCEF8084FFAC4351BB53A298145B627A4CA6_RuntimeMethod_var);
 		float L_2 = L_1.___w_4;
@@ -14801,6 +15544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetupSettingsU
 	{
 		// field.incStepGetter = () => m_Field.incStep;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStep_10;
 		return L_1;
 	}
@@ -14811,6 +15555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetupSettingsU
 	{
 		// field.incStepMultGetter = () => m_Field.incStepMult;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		float L_1 = L_0->___incStepMult_11;
 		return L_1;
 	}
@@ -14821,6 +15566,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugUIHandlerVector4_U3CSetupSettingsU
 	{
 		// field.decimalsGetter = () => m_Field.decimals;
 		Vector4Field_t9C175CACC33030F0B57C4CB016466127D28E4AD3* L_0 = __this->___m_Field_16;
+		NullCheck(L_0);
 		int32_t L_1 = L_0->___decimals_12;
 		return ((float)L_1);
 	}
@@ -15071,6 +15817,7 @@ IL_002c:
 	{
 		// var n = p.nextUIHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_6 = V_0;
+		NullCheck(L_6);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_7;
 		L_7 = DebugUIHandlerWidget_get_nextUIHandler_m2DFDEE3BE43A204B29BC39087AF60AA86D09BE90_inline(L_6, NULL);
 		V_1 = L_7;
@@ -15094,6 +15841,7 @@ IL_003e:
 	{
 		// p = p.parentUIHandler;
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_11 = V_0;
+		NullCheck(L_11);
 		DebugUIHandlerWidget_tE597C749DDA3EBA7627F38F8A77EB5A171B9E6D1* L_12;
 		L_12 = DebugUIHandlerWidget_get_parentUIHandler_m2F40C42629AB71EDAEE402C22FE160B76D78D8AE_inline(L_11, NULL);
 		V_0 = L_12;
@@ -15161,7 +15909,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIFoldout_Start_m031F3AF5DA5840E25AB29B0
 		// onValueChanged.AddListener(SetState);
 		ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02* L_0 = ((Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F*)__this)->___onValueChanged_23;
 		UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9* L_1 = (UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9*)il2cpp_codegen_object_new(UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
 		UnityAction_1__ctor_m11A393DB3C00474B4520978077E444DB6E4418DD(L_1, __this, (intptr_t)((void*)UIFoldout_SetState_m041BAB7EB961B7D84E99C388E6405D4B62FEFC32_RuntimeMethod_var), NULL);
+		NullCheck(L_0);
 		UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD(L_0, L_1, UnityEvent_1_AddListener_mE9367D4B3AA4C323EE7C35FA18CF2D8A142F43FD_RuntimeMethod_var);
 		// SetState(isOn);
 		bool L_2;
@@ -15247,6 +15997,7 @@ IL_002b:
 	{
 		// if (arrowOpened.activeSelf != state)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___arrowOpened_26;
+		NullCheck(L_6);
 		bool L_7;
 		L_7 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_6, NULL);
 		bool L_8 = ___state0;
@@ -15259,6 +16010,7 @@ IL_002b:
 		// arrowOpened.SetActive(state);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___arrowOpened_26;
 		bool L_10 = ___state0;
+		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, L_10, NULL);
 	}
 
@@ -15266,6 +16018,7 @@ IL_0045:
 	{
 		// if (arrowClosed.activeSelf == state)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___arrowClosed_27;
+		NullCheck(L_11);
 		bool L_12;
 		L_12 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_11, NULL);
 		bool L_13 = ___state0;
@@ -15278,6 +16031,7 @@ IL_0045:
 		// arrowClosed.SetActive(!state);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___arrowClosed_27;
 		bool L_15 = ___state0;
+		NullCheck(L_14);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)((((int32_t)L_15) == ((int32_t)0))? 1 : 0), NULL);
 	}
 
@@ -15285,6 +16039,7 @@ IL_0062:
 	{
 		// if (content.activeSelf != state)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___content_25;
+		NullCheck(L_16);
 		bool L_17;
 		L_17 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_16, NULL);
 		bool L_18 = ___state0;
@@ -15297,6 +16052,7 @@ IL_0062:
 		// content.SetActive(state);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___content_25;
 		bool L_20 = ___state0;
+		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, L_20, NULL);
 	}
 
@@ -15313,6 +16069,7 @@ IL_007c:
 		// LayoutRebuilder.ForceRebuildLayoutImmediate(transform.parent as RectTransform);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
 		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_22);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
 		L_23 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_22, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LayoutRebuilder_tD2269CCD93BD5A8C4A92188C66E212B976FA6564_il2cpp_TypeInfo_var);
@@ -15966,6 +16723,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
 		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
 		{
 			goto IL_0034;
@@ -15977,7 +16735,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
 		RuntimeObject* L_8 = ___item0;
-		(L_6)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
 	}
 

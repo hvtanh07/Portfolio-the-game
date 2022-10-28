@@ -5466,10 +5466,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_m93E0C4785A19CAE7F9E6AF56
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_0 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_1 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -5547,10 +5549,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_mDE93CD003B530F5045A
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_3 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -5566,9 +5571,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_mDE93CD003B530F5045A
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_9 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -5576,8 +5583,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_15 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -5590,8 +5599,10 @@ IL_0043:
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_18 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -5599,6 +5610,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_22 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -5619,8 +5631,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m20BC457DB0BA13
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_0 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -5637,16 +5651,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m20BC457DB0BA13
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_7 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -5692,12 +5710,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_mD2EDEE
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_3 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -5739,8 +5759,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_22 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -5752,6 +5774,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_27 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -5760,8 +5783,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -5769,8 +5794,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_35 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -5810,12 +5837,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_m2E38
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_3 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -5857,8 +5886,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_22 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -5870,6 +5901,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_27 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -5878,8 +5910,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -5887,8 +5921,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_35 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -5926,12 +5962,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m84B10E
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_3 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -5946,8 +5984,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m84B10E
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_15 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -5959,6 +5999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m84B10E
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_20 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -5967,8 +6008,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m84B10E
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -5976,8 +6019,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m84B10E
 IL_0082:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_28 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -6017,12 +6062,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_m562
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_3 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -6077,8 +6124,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_25 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -6090,8 +6139,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_30 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -6101,8 +6152,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_34 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -6125,8 +6178,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_39 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -6139,8 +6194,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_45 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -6154,8 +6211,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_49 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -6187,12 +6246,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_m0464
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_3 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -6259,6 +6320,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -6272,9 +6334,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -6326,10 +6390,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mA240254A1A
 	{
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_4 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -6356,8 +6423,9 @@ IL_003d_1:
 				AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_10 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -6366,13 +6434,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -6419,17 +6490,21 @@ IL_00c3:
 		AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC* L_31 = (AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -6489,10 +6564,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mF29DB0204F
 	{
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_4 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -6519,8 +6597,9 @@ IL_003d_1:
 				AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_10 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -6539,15 +6618,19 @@ IL_003d_1:
 				AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_21 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -6599,8 +6682,9 @@ IL_00d8:
 		AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC* L_38 = (AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -6613,15 +6697,19 @@ IL_00d8:
 		AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC* L_45 = (AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -6687,13 +6775,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_mA8E02CF5BBD1F4
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_m8E194F544CC50F63FB757417EC28635B3C8CFE56(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -6716,13 +6807,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_m1D532F1B0C2267B73E837C38A16A4A9287DD593D(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -6751,6 +6845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_mE63E8255714056
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -6783,7 +6878,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_1 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_5 = V_0;
@@ -6947,8 +7043,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_m80E81B0635DBA5
 		AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC* L_22 = (AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC*)(&__this->___completed_4);
 		RotateU5BU5D_tD482C518713DEC5763C34C827A9B6DB565776772* L_23 = (RotateU5BU5D_tD482C518713DEC5763C34C827A9B6DB565776772*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D*, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -6984,13 +7082,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_m1D532F1B0C2267B73E837C38A16A4A9287DD593D(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -7015,7 +7116,9 @@ IL_00fb:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_45 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_46 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_48 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_48 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D*, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -7038,7 +7141,9 @@ IL_0147:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_53 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_54 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_56 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_56 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D*, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -7057,13 +7162,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_m8E194F544CC50F63FB757417EC28635B3C8CFE56(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -7088,13 +7196,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_m8E194F544CC50F63FB757417EC28635B3C8CFE56(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -7105,7 +7216,8 @@ IL_01f4:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_81 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_82 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_84 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_84 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C L_85 = V_2;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_86 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)L_85.___startValue_0;
@@ -7116,7 +7228,9 @@ IL_01f4:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_89 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_90 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_92 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_92 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D*, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -7149,7 +7263,8 @@ IL_01f4:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_106 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_107 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_109 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_109 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -7158,7 +7273,8 @@ IL_02a5:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_110 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_111 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -7196,6 +7312,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<UnityEngine.UIElements.Rotate>::get_SameFunc() */, __this);
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_125 = ___startValue2;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_t91DB6FD7FB36205E9CF7A442EB7A337299776A3D*, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -7219,13 +7336,16 @@ IL_0313:
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C L_133 = V_2;
 		AnimationDataSet_2_Add_m854AB08CC9F631CF139516639E776AF18A034AC2(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_140 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
@@ -7249,12 +7369,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m111
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_0 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_1 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C* L_3 = V_0;
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C* L_4 = V_0;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_5 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -7268,9 +7390,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_m5AE1E21C6E1690873FD8241
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_2 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -7325,6 +7450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mC5EFBD20B07C
 	{
 		((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_0 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -7341,6 +7467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mC5EFBD20B07C
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -7366,7 +7493,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_5 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -7408,19 +7537,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -7455,6 +7588,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64* L_22 = (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t9DC16C7535A4271EA0FD763A64CD7CF84670EC64*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -7513,7 +7647,8 @@ IL_0020:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_4 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A* L_5 = (TimingDataU5BU5D_tE963FB40D15F6761CC687300F7A3EFCD58A8505A*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -7548,16 +7683,19 @@ IL_0054:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_18 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386* L_19 = (StyleDataU5BU5D_tBB18CE54D6B9B54229E01AFF7CCB44B8305F2386*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_21 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C* L_24 = V_6;
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C* L_25 = V_6;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_26 = (Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC* L_28 = (AnimationDataSet_2_tC89D9008D3FFA8DFDC3145842EFEC11F9D8EBEAC*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -7565,8 +7703,9 @@ IL_0054:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_31 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_t4FC1686BC526371087AD5A5B28DBE30D1ECDD533 L_36 = ((EmptyData_t4FC1686BC526371087AD5A5B28DBE30D1ECDD533_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_tF4F082E86CEF208DCF726577323A81818B156F1C* L_37 = V_6;
@@ -7574,23 +7713,29 @@ IL_0054:
 		AnimationDataSet_2_Add_mD9E103E35AF587C61B28AD047AE06ACDCEB0D73F(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -7623,8 +7768,9 @@ IL_012d:
 		AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA* L_62 = (AnimationDataSet_2_t0C85CDF29C591FFB68A31A73E030182698C727FA*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_t1B84258FDB622ABECA26BA9E2E8F638E1B6B213F*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -7641,6 +7787,7 @@ IL_015b:
 		TimingData_t9F5BE2ECB5F5FDBD04072B4459F64CB033858F11* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -7702,10 +7849,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_m516D4E8920F3D100B223855A
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_0 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_1 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -7783,10 +7932,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m57637FF652417D782F8
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_3 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -7802,9 +7954,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m57637FF652417D782F8
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_9 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -7812,8 +7966,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_15 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -7826,8 +7982,10 @@ IL_0043:
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_18 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -7835,6 +7993,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_22 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -7855,8 +8014,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m0134A06653AF2A
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_0 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -7873,16 +8034,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m0134A06653AF2A
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_7 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -7928,12 +8093,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_mC99E13
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_3 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -7975,8 +8142,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_22 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -7988,6 +8157,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_27 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -7996,8 +8166,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -8005,8 +8177,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_35 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -8046,12 +8220,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_m5307
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_3 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -8093,8 +8269,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_22 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -8106,6 +8284,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_27 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -8114,8 +8293,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -8123,8 +8304,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_35 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -8162,12 +8345,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m10AFCB
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_3 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -8182,8 +8367,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m10AFCB
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_15 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -8195,6 +8382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m10AFCB
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_20 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -8203,8 +8391,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m10AFCB
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -8212,8 +8402,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m10AFCB
 IL_0082:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_28 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -8253,12 +8445,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_m1AC
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_3 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -8313,8 +8507,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_25 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -8326,8 +8522,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_30 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -8337,8 +8535,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_34 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -8361,8 +8561,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_39 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -8375,8 +8577,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_45 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -8390,8 +8594,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_49 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -8423,12 +8629,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_m9F52
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_3 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -8495,6 +8703,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -8508,9 +8717,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -8562,10 +8773,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_m26BEC234B6
 	{
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_4 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -8592,8 +8806,9 @@ IL_003d_1:
 				AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_10 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -8602,13 +8817,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -8655,17 +8873,21 @@ IL_00c3:
 		AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04* L_31 = (AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -8725,10 +8947,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_m9FAE9AE0A0
 	{
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_4 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -8755,8 +8980,9 @@ IL_003d_1:
 				AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_10 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -8775,15 +9001,19 @@ IL_003d_1:
 				AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_21 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -8835,8 +9065,9 @@ IL_00d8:
 		AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04* L_38 = (AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -8849,15 +9080,19 @@ IL_00d8:
 		AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04* L_45 = (AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -8923,13 +9158,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_m2C081DEF49F412
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_mEA613B9ADF5D099846C25ABB78F1203CF846F6E4(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -8952,13 +9190,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_m2AF06B299584CF74C5B050C926BB445669280966(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -8987,6 +9228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_m7735E2AD389979
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -9019,7 +9261,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_1 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_5 = V_0;
@@ -9183,8 +9426,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_m1586A70D471513
 		AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04* L_22 = (AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04*)(&__this->___completed_4);
 		ScaleU5BU5D_tE608175710457D7343DD849244BF59B58157F0EF* L_23 = (ScaleU5BU5D_tE608175710457D7343DD849244BF59B58157F0EF*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC*, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -9220,13 +9465,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_m2AF06B299584CF74C5B050C926BB445669280966(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -9251,7 +9499,9 @@ IL_00fb:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_45 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_46 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_48 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_48 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC*, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -9274,7 +9524,9 @@ IL_0147:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_53 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_54 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_56 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_56 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC*, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -9293,13 +9545,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_mEA613B9ADF5D099846C25ABB78F1203CF846F6E4(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -9324,13 +9579,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_mEA613B9ADF5D099846C25ABB78F1203CF846F6E4(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -9341,7 +9599,8 @@ IL_01f4:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_81 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_82 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_84 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_84 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1 L_85 = V_2;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_86 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)L_85.___startValue_0;
@@ -9352,7 +9611,9 @@ IL_01f4:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_89 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_90 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_92 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_92 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC*, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -9385,7 +9646,8 @@ IL_01f4:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_106 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_107 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_109 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_109 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -9394,7 +9656,8 @@ IL_02a5:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_110 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_111 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -9432,6 +9695,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<UnityEngine.UIElements.Scale>::get_SameFunc() */, __this);
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_125 = ___startValue2;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_t21FE404F1FF5BB9658AD8FC7A60BC71347B096BC*, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -9455,13 +9719,16 @@ IL_0313:
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1 L_133 = V_2;
 		AnimationDataSet_2_Add_mFCB23F831222339F7975FBEC9D13E8C6728500E9(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_140 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
@@ -9485,12 +9752,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m936
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_0 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_1 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1* L_3 = V_0;
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1* L_4 = V_0;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_5 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -9504,9 +9773,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_m993B5C3043B13E57CF2F812
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_2 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -9561,6 +9833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mF778C45038E1
 	{
 		((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_0 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -9577,6 +9850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mF778C45038E1
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -9602,7 +9876,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_5 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -9644,19 +9920,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -9691,6 +9971,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E* L_22 = (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t25D5D3420391A40A0B978B0D5CA13F775283274E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -9749,7 +10030,8 @@ IL_0020:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_4 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269* L_5 = (TimingDataU5BU5D_t0BCD78985159E6EF1D974E34B209EDE880E06269*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -9784,16 +10066,19 @@ IL_0054:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_18 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F* L_19 = (StyleDataU5BU5D_t988DBB7FAB3D7D4E114C94A5CF2E305E3FFB2A7F*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_21 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1* L_24 = V_6;
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1* L_25 = V_6;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_26 = (Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04* L_28 = (AnimationDataSet_2_tF4CF89DB617BD2ACE24400B864B2FB32EADB9D04*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -9801,8 +10086,9 @@ IL_0054:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_31 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_t4A4F82A772FE766AA090A0628F398EA4D55646F0 L_36 = ((EmptyData_t4A4F82A772FE766AA090A0628F398EA4D55646F0_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_t81910989C0A6416625FEA66A143ED9AA9CE6EAD1* L_37 = V_6;
@@ -9810,23 +10096,29 @@ IL_0054:
 		AnimationDataSet_2_Add_m63990CDC64F0750AF20F5F0A9FA4F6AB66F07CA3(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -9859,8 +10151,9 @@ IL_012d:
 		AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE* L_62 = (AnimationDataSet_2_t295398C1274FE0EB846F0554EBF4EF36A80BCDBE*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_tD710D214E4D407A033AE57CE091D4C4FBB293714*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -9877,6 +10170,7 @@ IL_015b:
 		TimingData_t098AB9F533C2FCADF814F88C5A5C79F7AF2FCF49* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -9938,10 +10232,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_m5CE5F1D9F61E3AF72965AA1A
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_0 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_1 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -10019,10 +10315,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m48F625DCA8C583821F7
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_3 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -10038,9 +10337,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m48F625DCA8C583821F7
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_9 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -10048,8 +10349,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_15 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -10062,8 +10365,10 @@ IL_0043:
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_18 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -10071,6 +10376,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_22 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -10091,8 +10397,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m09B40FF964FB52
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_0 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -10109,16 +10417,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m09B40FF964FB52
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_7 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -10164,12 +10476,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_mBF6197
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_3 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -10211,8 +10525,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_22 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -10224,6 +10540,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_27 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -10232,8 +10549,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -10241,8 +10560,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_35 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -10282,12 +10603,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_mC721
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_3 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -10329,8 +10652,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_22 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -10342,6 +10667,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_27 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -10350,8 +10676,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -10359,8 +10687,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_35 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -10398,12 +10728,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mEE2235
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_3 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -10418,8 +10750,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mEE2235
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_15 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -10431,6 +10765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mEE2235
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_20 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -10439,8 +10774,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mEE2235
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -10448,8 +10785,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mEE2235
 IL_0082:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_28 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -10489,12 +10828,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_mF88
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_3 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -10549,8 +10890,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_25 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -10562,8 +10905,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_30 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -10573,8 +10918,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_34 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -10597,8 +10944,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_39 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -10611,8 +10960,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_45 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -10626,8 +10977,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_49 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -10659,12 +11012,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_m5621
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_3 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -10731,6 +11086,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -10744,9 +11100,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -10798,10 +11156,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_m61C56D059B
 	{
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_4 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -10828,8 +11189,9 @@ IL_003d_1:
 				AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_10 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -10838,13 +11200,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -10891,17 +11256,21 @@ IL_00c3:
 		AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530* L_31 = (AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -10961,10 +11330,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mD32D2AE6C8
 	{
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_4 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -10991,8 +11363,9 @@ IL_003d_1:
 				AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_10 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -11011,15 +11384,19 @@ IL_003d_1:
 				AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_21 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -11071,8 +11448,9 @@ IL_00d8:
 		AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530* L_38 = (AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -11085,15 +11463,19 @@ IL_00d8:
 		AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530* L_45 = (AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -11159,13 +11541,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_mD566B1EA883F2F
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_m5766CF2758F130DD4FA62F8AA4EB56EBED13A706(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -11188,13 +11573,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_m0E1264ABBC60AACF0AA492A23D82FF434A3B3791(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -11223,6 +11611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_m02118E83647E15
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -11255,7 +11644,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_1 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_5 = V_0;
@@ -11419,8 +11809,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_m3C0D45057DDEC0
 		AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530* L_22 = (AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530*)(&__this->___completed_4);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_23 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		float L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		float L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E*, float, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -11456,13 +11848,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_m0E1264ABBC60AACF0AA492A23D82FF434A3B3791(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -11487,7 +11882,9 @@ IL_00fb:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_45 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_46 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		float L_48 = (float)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		float L_48 = (float)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E*, float, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -11510,7 +11907,9 @@ IL_0147:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_53 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_54 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		float L_56 = (float)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		float L_56 = (float)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E*, float, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -11529,13 +11928,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_m5766CF2758F130DD4FA62F8AA4EB56EBED13A706(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -11560,13 +11962,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_m5766CF2758F130DD4FA62F8AA4EB56EBED13A706(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -11577,7 +11982,8 @@ IL_01f4:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_81 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_82 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		float L_84 = (float)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		float L_84 = (float)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976 L_85 = V_2;
 		float L_86 = (float)L_85.___startValue_0;
@@ -11588,7 +11994,9 @@ IL_01f4:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_89 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_90 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		float L_92 = (float)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		float L_92 = (float)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E*, float, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -11621,7 +12029,8 @@ IL_01f4:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_106 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_107 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		float L_109 = (float)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		float L_109 = (float)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -11630,7 +12039,8 @@ IL_02a5:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_110 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_111 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -11668,6 +12078,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<System.Single>::get_SameFunc() */, __this);
 		float L_125 = ___startValue2;
 		float L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_tA9AA477D8A5A68C7DC26AE4792295B80F920E61E*, float, float, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -11691,13 +12102,16 @@ IL_0313:
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976 L_133 = V_2;
 		AnimationDataSet_2_Add_m34B0B94E9E449DE805FD683546261D5E0688BE0F(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_140 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
@@ -11721,12 +12135,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m6DE
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_0 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_1 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976* L_3 = V_0;
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976* L_4 = V_0;
 		float L_5 = (float)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -11740,9 +12156,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_mE9EB8481ABD382442587731
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_2 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -11797,6 +12216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_m71985EEE2EF9
 	{
 		((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_0 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -11813,6 +12233,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_m71985EEE2EF9
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -11838,7 +12259,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_5 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -11880,19 +12303,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -11927,6 +12354,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C* L_22 = (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t864A52D0F7726A4F4C2C667BCB56E8A745F7340C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -11985,7 +12413,8 @@ IL_0020:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_4 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0* L_5 = (TimingDataU5BU5D_t370B0476A79A76456F04BA6664A963CC579E9CD0*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -12020,16 +12449,19 @@ IL_0054:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_18 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E* L_19 = (StyleDataU5BU5D_t73D276E94B9F65AFF0A22B0D465D05D5E9438F5E*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_21 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976* L_24 = V_6;
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976* L_25 = V_6;
 		float L_26 = (float)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530* L_28 = (AnimationDataSet_2_t37FCD741F1DDE73FBF7D33FB969BB39D5F0EB530*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -12037,8 +12469,9 @@ IL_0054:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_31 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_t43DE49ADBBE9CFA603DCA7C5CDC998DE6DC976A1 L_36 = ((EmptyData_t43DE49ADBBE9CFA603DCA7C5CDC998DE6DC976A1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_t3B3F0F1CEB43B375FD26CB3095AAC800DC07A976* L_37 = V_6;
@@ -12046,23 +12479,29 @@ IL_0054:
 		AnimationDataSet_2_Add_mADE24EA57209B05958464BB5D068586D1FFA1D4F(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -12095,8 +12534,9 @@ IL_012d:
 		AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32* L_62 = (AnimationDataSet_2_t6CCD1B60CF99FF9003A6D1D5C5902EC074711A32*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_t0E31EAA5A590859BBD863FE74A3208C8F5722AA1*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -12113,6 +12553,7 @@ IL_015b:
 		TimingData_t7E5D81E44DD38F0BFB0350F529E539BB94000C7A* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -12174,10 +12615,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_mDBBD3320F73277C566561C33
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_0 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_1 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -12255,10 +12698,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m5B9233C83292DFC4F57
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_3 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -12274,9 +12720,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m5B9233C83292DFC4F57
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_9 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -12284,8 +12732,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_15 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -12298,8 +12748,10 @@ IL_0043:
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_18 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -12307,6 +12759,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_22 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -12327,8 +12780,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m1CD9B5F915E070
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_0 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -12345,16 +12800,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m1CD9B5F915E070
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_7 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -12400,12 +12859,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_m46449C
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_3 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -12447,8 +12908,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_22 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -12460,6 +12923,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_27 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -12468,8 +12932,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -12477,8 +12943,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_35 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -12518,12 +12986,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_m1F70
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_3 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -12565,8 +13035,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_22 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -12578,6 +13050,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_27 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -12586,8 +13059,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -12595,8 +13070,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_35 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -12634,12 +13111,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m9E6AFA
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_3 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -12654,8 +13133,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m9E6AFA
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_15 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -12667,6 +13148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m9E6AFA
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_20 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -12675,8 +13157,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m9E6AFA
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -12684,8 +13168,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m9E6AFA
 IL_0082:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_28 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -12725,12 +13211,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_m19C
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_3 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -12785,8 +13273,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_25 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -12798,8 +13288,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_30 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -12809,8 +13301,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_34 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -12833,8 +13327,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_39 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -12847,8 +13343,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_45 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -12862,8 +13360,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_49 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -12895,12 +13395,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_m174A
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_3 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -12967,6 +13469,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -12980,9 +13483,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -13034,10 +13539,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_m6B1C53AD76
 	{
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_4 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -13064,8 +13572,9 @@ IL_003d_1:
 				AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_10 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -13074,13 +13583,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -13127,17 +13639,21 @@ IL_00c3:
 		AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340* L_31 = (AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -13197,10 +13713,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mA756584381
 	{
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_4 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -13227,8 +13746,9 @@ IL_003d_1:
 				AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_10 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -13247,15 +13767,19 @@ IL_003d_1:
 				AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_21 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -13307,8 +13831,9 @@ IL_00d8:
 		AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340* L_38 = (AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -13321,15 +13846,19 @@ IL_00d8:
 		AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340* L_45 = (AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -13395,13 +13924,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_mBE8AB208762B6A
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_m70DD59930F29CD6243B848B22E00D3267B0D4B9A(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -13424,13 +13956,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_mEEAF46703BAB6FCCB2881EAE1E520F9B538F4909(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -13459,6 +13994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_mA95D6A640F7718
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -13491,7 +14027,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_1 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_5 = V_0;
@@ -13655,8 +14192,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_m88AE4FE13A7781
 		AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340* L_22 = (AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340*)(&__this->___completed_4);
 		TextShadowU5BU5D_tF37C87EBD3D8745BEDABCE2EA499DE16C15B5D8C* L_23 = (TextShadowU5BU5D_tF37C87EBD3D8745BEDABCE2EA499DE16C15B5D8C*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502*, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -13692,13 +14231,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_mEEAF46703BAB6FCCB2881EAE1E520F9B538F4909(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -13723,7 +14265,9 @@ IL_00fb:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_45 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_46 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_48 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_48 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502*, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -13746,7 +14290,9 @@ IL_0147:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_53 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_54 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_56 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_56 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502*, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -13765,13 +14311,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_m70DD59930F29CD6243B848B22E00D3267B0D4B9A(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -13796,13 +14345,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_m70DD59930F29CD6243B848B22E00D3267B0D4B9A(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -13813,7 +14365,8 @@ IL_01f4:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_81 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_82 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_84 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_84 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8 L_85 = V_2;
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_86 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)L_85.___startValue_0;
@@ -13824,7 +14377,9 @@ IL_01f4:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_89 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_90 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_92 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_92 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502*, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -13857,7 +14412,8 @@ IL_01f4:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_106 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_107 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_109 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_109 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -13866,7 +14422,8 @@ IL_02a5:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_110 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_111 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -13904,6 +14461,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<UnityEngine.UIElements.TextShadow>::get_SameFunc() */, __this);
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_125 = ___startValue2;
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_t6745994E8BE66E70CABFC83E108BB6BB52414502*, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -13927,13 +14485,16 @@ IL_0313:
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8 L_133 = V_2;
 		AnimationDataSet_2_Add_m7C37AAD558B517D7ABE5946CA1ECE3CF5ED7D2CE(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_140 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
@@ -13957,12 +14518,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m7B6
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_0 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_1 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8* L_3 = V_0;
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8* L_4 = V_0;
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_5 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -13976,9 +14539,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_mCB4694392A64A4B5F8D4DCC
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_2 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -14033,6 +14599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mAD0140C80303
 	{
 		((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_0 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -14049,6 +14616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mAD0140C80303
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -14074,7 +14642,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_5 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -14116,19 +14686,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -14163,6 +14737,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2* L_22 = (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t896507B4A758D8F131A06984765BA0F57C8939A2*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -14221,7 +14796,8 @@ IL_0020:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_4 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14* L_5 = (TimingDataU5BU5D_tE92E1403336542C4CF4B76824A22545D0EB14E14*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -14256,16 +14832,19 @@ IL_0054:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_18 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263* L_19 = (StyleDataU5BU5D_t597C3C3BF0BFFC87AB6037E85E0829D999602263*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_21 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8* L_24 = V_6;
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8* L_25 = V_6;
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_26 = (TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340* L_28 = (AnimationDataSet_2_t41E105586D98932D715A57A47A3E21B5C3A7B340*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -14273,8 +14852,9 @@ IL_0054:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_31 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_tA8769B9E6E130745DA8CFF6D496ED462ED74B44F L_36 = ((EmptyData_tA8769B9E6E130745DA8CFF6D496ED462ED74B44F_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_t8550AC117CD613FE87B52CC3540296500B7F3DF8* L_37 = V_6;
@@ -14282,23 +14862,29 @@ IL_0054:
 		AnimationDataSet_2_Add_mDA837FDF49CA3C5F5DA416D5C07792FA79FB9189(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -14331,8 +14917,9 @@ IL_012d:
 		AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437* L_62 = (AnimationDataSet_2_t9B3435A0C6251F2602B478702F4F7EC8CEDBC437*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_tFB112CD52331C038F6B928FEAFAB19A06FD2F62C*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -14349,6 +14936,7 @@ IL_015b:
 		TimingData_t70F8D4FF0A51972717A1ED53525241240EF457FE* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -14410,10 +14998,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_mFFEF26A8BD0E03F73FCD1306
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_0 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_1 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -14491,10 +15081,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m2AD5564C68E511D43AA
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_3 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -14510,9 +15103,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_m2AD5564C68E511D43AA
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_9 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -14520,8 +15115,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_15 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -14534,8 +15131,10 @@ IL_0043:
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_18 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -14543,6 +15142,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_22 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -14563,8 +15163,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_mD695B9606DB293
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_0 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -14581,16 +15183,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_mD695B9606DB293
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_7 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -14636,12 +15242,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_m414898
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_3 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -14683,8 +15291,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_22 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -14696,6 +15306,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_27 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -14704,8 +15315,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -14713,8 +15326,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_35 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -14754,12 +15369,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_mF337
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_3 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -14801,8 +15418,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_22 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -14814,6 +15433,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_27 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -14822,8 +15442,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -14831,8 +15453,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_35 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -14870,12 +15494,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m4D3F97
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_3 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -14890,8 +15516,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m4D3F97
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_15 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -14903,6 +15531,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m4D3F97
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_20 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -14911,8 +15540,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m4D3F97
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -14920,8 +15551,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_m4D3F97
 IL_0082:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_28 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -14961,12 +15594,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_m766
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_3 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -15021,8 +15656,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_25 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -15034,8 +15671,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_30 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -15045,8 +15684,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_34 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -15069,8 +15710,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_39 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -15083,8 +15726,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_45 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -15098,8 +15743,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_49 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -15131,12 +15778,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_m89AF
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_3 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -15203,6 +15852,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -15216,9 +15866,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -15270,10 +15922,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mD98B364720
 	{
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_4 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -15300,8 +15955,9 @@ IL_003d_1:
 				AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_10 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -15310,13 +15966,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -15363,17 +16022,21 @@ IL_00c3:
 		AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33* L_31 = (AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -15433,10 +16096,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mAED2AB1571
 	{
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_4 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -15463,8 +16129,9 @@ IL_003d_1:
 				AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_10 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -15483,15 +16150,19 @@ IL_003d_1:
 				AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_21 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -15543,8 +16214,9 @@ IL_00d8:
 		AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33* L_38 = (AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -15557,15 +16229,19 @@ IL_00d8:
 		AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33* L_45 = (AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -15631,13 +16307,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_m3EAA45F2C2215C
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_m9E41325A15B6036BBF27657A85E4BF1D715722A7(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -15660,13 +16339,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_m89008B22BB674A031A879DB9393278C0372B2DA1(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -15695,6 +16377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_m981451BDC2EE7F
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -15727,7 +16410,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_1 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_5 = V_0;
@@ -15891,8 +16575,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_m2EB0388DA0B740
 		AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33* L_22 = (AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33*)(&__this->___completed_4);
 		TransformOriginU5BU5D_t0BDBC9C8F1888009152284DC2903B3C289F826DA* L_23 = (TransformOriginU5BU5D_t0BDBC9C8F1888009152284DC2903B3C289F826DA*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F*, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -15928,13 +16614,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_m89008B22BB674A031A879DB9393278C0372B2DA1(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -15959,7 +16648,9 @@ IL_00fb:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_45 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_46 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_48 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_48 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F*, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -15982,7 +16673,9 @@ IL_0147:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_53 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_54 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_56 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_56 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F*, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -16001,13 +16694,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_m9E41325A15B6036BBF27657A85E4BF1D715722A7(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -16032,13 +16728,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_m9E41325A15B6036BBF27657A85E4BF1D715722A7(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -16049,7 +16748,8 @@ IL_01f4:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_81 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_82 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_84 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_84 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167 L_85 = V_2;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_86 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)L_85.___startValue_0;
@@ -16060,7 +16760,9 @@ IL_01f4:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_89 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_90 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_92 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_92 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F*, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -16093,7 +16795,8 @@ IL_01f4:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_106 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_107 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_109 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_109 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -16102,7 +16805,8 @@ IL_02a5:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_110 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_111 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -16140,6 +16844,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<UnityEngine.UIElements.TransformOrigin>::get_SameFunc() */, __this);
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_125 = ___startValue2;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_tB92C805F866D2EB9A48A2CC06AAF77E333340E9F*, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -16163,13 +16868,16 @@ IL_0313:
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167 L_133 = V_2;
 		AnimationDataSet_2_Add_mFC43682BD1D4942D7EEFFD206CA5820B5F9D22CC(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_140 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
@@ -16193,12 +16901,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m56B
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_0 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_1 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167* L_3 = V_0;
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167* L_4 = V_0;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_5 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -16212,9 +16922,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_m905AB960B7F90A434496035
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_2 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -16269,6 +16982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mE0EB759497C0
 	{
 		((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_0 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -16285,6 +16999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_mE0EB759497C0
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -16310,7 +17025,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_5 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -16352,19 +17069,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -16399,6 +17120,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF* L_22 = (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t7FB3FD474018D429F5F1EE705EF9ADA6F197EDEF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -16457,7 +17179,8 @@ IL_0020:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_4 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E* L_5 = (TimingDataU5BU5D_t1C0E9B6D937D57C27438BFA33BC2DB905EE4973E*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -16492,16 +17215,19 @@ IL_0054:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_18 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC* L_19 = (StyleDataU5BU5D_tDCCCED3D71A0A84CDB77E5222463121D4EB611CC*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_21 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167* L_24 = V_6;
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167* L_25 = V_6;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_26 = (TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33* L_28 = (AnimationDataSet_2_t4532152E7A78B3E14F61FA9CA7C80BC1C3269D33*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -16509,8 +17235,9 @@ IL_0054:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_31 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_t2CB75995D335E22F6BF31D1CB979DB1067C5025E L_36 = ((EmptyData_t2CB75995D335E22F6BF31D1CB979DB1067C5025E_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_tDA8B8711D8BD18C0D6EB99A929976DDC956DD167* L_37 = V_6;
@@ -16518,23 +17245,29 @@ IL_0054:
 		AnimationDataSet_2_Add_m56F3AABBD2662721C07FCACFA55FB556DBB4D50A(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -16567,8 +17300,9 @@ IL_012d:
 		AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513* L_62 = (AnimationDataSet_2_t51062A50DDCEFF7458A164F033D211C9E0701513*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_t4B3725FE6B9D8A60439FC42ABC27E2FAE91ACBA5*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -16585,6 +17319,7 @@ IL_015b:
 		TimingData_t0F88AE7B3D3525F39CAAED92C1983CCCF4961B92* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -16646,10 +17381,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1__ctor_m6C0823FA2DEF3358FC7605F4
 	{
 		__this->___m_CurrentTimeMs_0 = ((int64_t)0);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_0 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_0);
 		((  void (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_CurrentFrameEventsState_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFrameEventsState_1), (void*)L_0);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_1 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		NullCheck(L_1);
 		((  void (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		__this->___m_NextFrameEventsState_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NextFrameEventsState_2), (void*)L_1);
@@ -16727,10 +17464,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_mDB9110D6D3403B8AB7F
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_0 = ___evt0;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_1 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_1.___element_1;
+		NullCheck(L_0);
 		EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2(L_0, (RuntimeObject*)L_2, NULL);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_3 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_3);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_4 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_3->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_5 = ___epp1;
+		NullCheck(L_4);
 		bool L_6;
 		L_6 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_4, L_5, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
@@ -16746,9 +17486,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueEvent_mDB9110D6D3403B8AB7F
 		L_8 = ((  Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* (*) (const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))(il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		V_0 = L_8;
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_9 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_9);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_10 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_9->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_11 = ___epp1;
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_12 = V_0;
+		NullCheck(L_10);
 		Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337(L_10, L_11, L_12, Dictionary_2_Add_m4D0C3095996E7B1D88B163C7DA308689CCA71337_RuntimeMethod_var);
 	}
 
@@ -16756,8 +17498,10 @@ IL_0043:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_0;
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14 = ___evt0;
+		NullCheck(L_13);
 		Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE(L_13, L_14, Queue_1_Enqueue_mC0C477097247ABAE611BD10D005CBADBED88FCAE_RuntimeMethod_var);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_15 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		RuntimeObject* L_16 = (RuntimeObject*)L_15->___panel_3;
 		V_2 = (bool)((((RuntimeObject*)(RuntimeObject*)L_16) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_17 = V_2;
@@ -16770,8 +17514,10 @@ IL_0043:
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_18 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_19 = ___epp1;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_19.___element_1;
+		NullCheck(L_20);
 		RuntimeObject* L_21;
 		L_21 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_20, NULL);
+		NullCheck(L_18);
 		L_18->___panel_3 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___panel_3), (void*)L_21);
 	}
@@ -16779,6 +17525,7 @@ IL_0043:
 IL_0073:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_22 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		((  void (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		return;
 	}
@@ -16799,8 +17546,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m34C219EB74A61C
 	bool V_2 = false;
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_0 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_0);
 		Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_1 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_0->___elementPropertyQueuedEvents_2;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_2 = ___epp0;
+		NullCheck(L_1);
 		bool L_3;
 		L_3 = Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C(L_1, L_2, (&V_0), Dictionary_2_TryGetValue_mE96E09123A2A4922CFD74DE71611B083A2A0CA8C_RuntimeMethod_var);
 		V_1 = L_3;
@@ -16817,16 +17566,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ClearEventQueue_m34C219EB74A61C
 IL_001b:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_5 = V_0;
+		NullCheck(L_5);
 		EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_6;
 		L_6 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_5, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
+		NullCheck(L_6);
 		VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_6);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_7 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_7);
 		((  void (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 	}
 
 IL_0035:
 	{
 		Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_8 = V_0;
+		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_8, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 		V_2 = (bool)((((int32_t)L_9) > ((int32_t)0))? 1 : 0);
@@ -16872,12 +17625,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionRunEvent_mA20C9D
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_3 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -16919,8 +17674,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_m5A4FB9CF00193D3079D46E507D66AB77C1F4A66A_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_22 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -16932,6 +17689,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_27 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -16940,8 +17698,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|1)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -16949,8 +17709,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_35 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)1, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -16990,12 +17752,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionStartEvent_mB09A
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_3 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_8 = V_0;
 		int32_t L_9 = (int32_t)L_8->___delayMs_6;
@@ -17037,8 +17801,10 @@ IL_0045:
 		L_21 = TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61(L_19, ((double)((float)(((float)L_20)/(1000.0f)))), TransitionEventBase_1_GetPooled_mFD665DFD6C012691EA5BE90A0AF28D3BE715ED61_RuntimeMethod_var);
 		V_4 = L_21;
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_22 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_22);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_23 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_22->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_3;
+		NullCheck(L_23);
 		bool L_25;
 		L_25 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_23, L_24, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_5 = L_25;
@@ -17050,6 +17816,7 @@ IL_0045:
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_27 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_27);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_28 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_27->___elementPropertyStateDelta_1;
 		V_6 = L_28;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_29 = V_3;
@@ -17058,8 +17825,10 @@ IL_0045:
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_31 = V_7;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_32 = V_6;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_33 = V_7;
+		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_32, L_33, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_30);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_30, L_31, (int32_t)((int32_t)((int32_t)L_34|2)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_00b6;
 	}
@@ -17067,8 +17836,10 @@ IL_0045:
 IL_00a3:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_35 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_35);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_36 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_35->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_37 = V_3;
+		NullCheck(L_36);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_36, L_37, (int32_t)2, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -17106,12 +17877,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mA80A93
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_3 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = ___ve0;
 		int32_t L_9 = V_1;
@@ -17126,8 +17899,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mA80A93
 		L_14 = TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA(L_11, ((double)((float)(((float)L_13)/(1000.0f)))), TransitionEventBase_1_GetPooled_m57317A5C89342419B0A31E8FBB622786C7C283CA_RuntimeMethod_var);
 		V_3 = L_14;
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_15 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_15);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_16 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_15->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_17 = V_2;
+		NullCheck(L_16);
 		bool L_18;
 		L_18 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_16, L_17, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_4 = L_18;
@@ -17139,6 +17914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mA80A93
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_20 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_20);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_21 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_20->___elementPropertyStateDelta_1;
 		V_5 = L_21;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_22 = V_2;
@@ -17147,8 +17923,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mA80A93
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_24 = V_6;
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_25 = V_5;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_26 = V_6;
+		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_25, L_26, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
+		NullCheck(L_23);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_23, L_24, (int32_t)((int32_t)((int32_t)L_27|4)), Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		goto IL_0095;
 	}
@@ -17156,8 +17934,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionEndEvent_mA80A93
 IL_0082:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_28 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_28);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_29 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_28->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_30 = V_2;
+		NullCheck(L_29);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_29, L_30, (int32_t)4, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 	}
 
@@ -17197,12 +17977,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_QueueTransitionCancelEvent_m08D
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_3 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -17257,8 +18039,10 @@ IL_005b:
 		L_24 = TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5(L_22, ((double)((float)(((float)L_23)/(1000.0f)))), TransitionEventBase_1_GetPooled_m141ADA9CE40AFD36915186550F3844EF391EBBB5_RuntimeMethod_var);
 		V_4 = L_24;
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_25 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_25);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_26 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_25->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_27 = V_3;
+		NullCheck(L_26);
 		bool L_28;
 		L_28 = Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D(L_26, L_27, Dictionary_2_ContainsKey_m1F6F26B63AD2C4DE1866B46E3C63CB5FAC81DD8D_RuntimeMethod_var);
 		V_6 = L_28;
@@ -17270,8 +18054,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_30 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_30);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_31 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_30->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_32 = V_3;
+		NullCheck(L_31);
 		int32_t L_33;
 		L_33 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_31, L_32, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		if (!L_33)
@@ -17281,8 +18067,10 @@ IL_005b:
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_34 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_34);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_35 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_34->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_36 = V_3;
+		NullCheck(L_35);
 		int32_t L_37;
 		L_37 = Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860(L_35, L_36, Dictionary_2_get_Item_m2FE872DD22D236B9AB53D268E99610A31D84A860_RuntimeMethod_var);
 		G_B9_0 = ((((int32_t)((int32_t)((int32_t)L_37&8))) == ((int32_t)8))? 1 : 0);
@@ -17305,8 +18093,10 @@ IL_00b5:
 	}
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_39 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_39);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_40 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_39->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_41 = V_3;
+		NullCheck(L_40);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_40, L_41, (int32_t)8, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_42 = V_3;
 		((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_42, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -17319,8 +18109,10 @@ IL_00b5:
 IL_00e4:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_45 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_45);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_46 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_45->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_47 = V_3;
+		NullCheck(L_46);
 		Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93(L_46, L_47, (int32_t)0, Dictionary_2_set_Item_mC5EF29B75FEA18F591C5F729F9FD4D0557AA7F93_RuntimeMethod_var);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_48 = V_3;
 		((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
@@ -17334,8 +18126,10 @@ IL_0101:
 IL_0104:
 	{
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_49 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_49);
 		Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F* L_50 = (Dictionary_2_t731456A92F8CDAA2E97323EC2790F375A9A6C71F*)L_49->___elementPropertyStateDelta_1;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_51 = V_3;
+		NullCheck(L_50);
 		Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4(L_50, L_51, (int32_t)8, Dictionary_2_Add_m4F698997DD64E85444AFF9F4E7E15CEC3FF1D2A4_RuntimeMethod_var);
 		TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_52 = V_4;
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_53 = V_3;
@@ -17367,12 +18161,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_SendTransitionCancelEvent_mF8CC
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___runningIndex1;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_3 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_4 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_3->___properties_1;
 		int32_t L_5 = ___runningIndex1;
+		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		int32_t L_7 = (int32_t)(L_4)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		int32_t L_7 = (int32_t)(L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = (int32_t)L_7;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_8 = V_0;
 		bool L_9 = (bool)L_8->___isStarted_5;
@@ -17439,6 +18235,7 @@ FINALLY_007c:
 				}
 				{
 					TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_24 = V_4;
+					NullCheck((RuntimeObject*)L_24);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)L_24);
 				}
 
@@ -17452,9 +18249,11 @@ IL_0088:
 		{// begin try (depth: 1)
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_25 = V_4;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = ___ve0;
+			NullCheck((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25);
 			EventBase_set_target_mBDBE0FB1321254FEDFC4B0EF34DBDA8105FFCBA2((EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_25, (RuntimeObject*)L_26, NULL);
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27 = ___ve0;
 			TransitionCancelEvent_t74AA81A33FC7DA4C0E6E22C5D16B7BC51C94CF69* L_28 = V_4;
+			NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27);
 			VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_27, (EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C*)L_28);
 			goto IL_0089;
 		}// end try (depth: 1)
@@ -17506,10 +18305,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_m3ECD2F4E19
 	{
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_4 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -17536,8 +18338,9 @@ IL_003d_1:
 				AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_10 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				V_5 = L_14;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_5;
 				int32_t L_16 = V_4;
@@ -17546,13 +18349,16 @@ IL_003d_1:
 				int32_t L_18 = V_4;
 				((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_18, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19 = V_5;
+				NullCheck(L_19);
 				RuntimeObject* L_20;
 				L_20 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_19, NULL);
 				RuntimeObject* L_21 = L_20;
+				NullCheck(L_21);
 				int32_t L_22;
 				L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21);
 				V_6 = L_22;
 				int32_t L_23 = V_6;
+				NullCheck(L_21);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_21, ((int32_t)il2cpp_codegen_subtract(L_23, 1)));
 				int32_t L_24 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_24, 1));
@@ -17599,17 +18405,21 @@ IL_00c3:
 		AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8* L_31 = (AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_32 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_31->___elements_0;
 		int32_t L_33 = V_8;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_36 = V_9;
+		NullCheck(L_36);
 		RuntimeObject* L_37;
 		L_37 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_36, NULL);
 		RuntimeObject* L_38 = L_37;
+		NullCheck(L_38);
 		int32_t L_39;
 		L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38);
 		V_6 = L_39;
 		int32_t L_40 = V_6;
+		NullCheck(L_38);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_38, ((int32_t)il2cpp_codegen_subtract(L_40, 1)));
 		int32_t L_41 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_41, 1));
@@ -17669,10 +18479,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAllAnimations_mA76FCA3CF9
 	{
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_4 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_5 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_4->___elements_0;
+		NullCheck(L_5);
 		int32_t L_6 = 0;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_6));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
 		RuntimeObject* L_8;
 		L_8 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1(L_7, NULL);
+		NullCheck(L_8);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_9;
 		L_9 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_8);
 		EventDispatcherGate__ctor_mF02241D3AB4F068E3F0493D2E407C344C66810A9((&V_3), L_9, NULL);
@@ -17699,8 +18512,9 @@ IL_003d_1:
 				AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_10 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_11 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_10->___elements_0;
 				int32_t L_12 = V_4;
+				NullCheck(L_11);
 				int32_t L_13 = L_12;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_13));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = ___ve0;
 				V_5 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_14) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_15))? 1 : 0);
 				bool L_16 = V_5;
@@ -17719,15 +18533,19 @@ IL_003d_1:
 				AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_21 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 				VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 				int32_t L_23 = V_4;
+				NullCheck(L_22);
 				int32_t L_24 = L_23;
-				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_24));
+				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+				NullCheck(L_25);
 				RuntimeObject* L_26;
 				L_26 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_25, NULL);
 				RuntimeObject* L_27 = L_26;
+				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27);
 				V_6 = L_28;
 				int32_t L_29 = V_6;
+				NullCheck(L_27);
 				InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_27, ((int32_t)il2cpp_codegen_subtract(L_29, 1)));
 			}
 
@@ -17779,8 +18597,9 @@ IL_00d8:
 		AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8* L_38 = (AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_39 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_38->___elements_0;
 		int32_t L_40 = V_8;
+		NullCheck(L_39);
 		int32_t L_41 = L_40;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_41));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = ___ve0;
 		V_9 = (bool)((((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_42) == ((RuntimeObject*)(VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)L_43))? 1 : 0);
 		bool L_44 = V_9;
@@ -17793,15 +18612,19 @@ IL_00d8:
 		AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8* L_45 = (AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8*)(&__this->___completed_4);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_46 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_45->___elements_0;
 		int32_t L_47 = V_8;
+		NullCheck(L_46);
 		int32_t L_48 = L_47;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_48));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
+		NullCheck(L_49);
 		RuntimeObject* L_50;
 		L_50 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_49, NULL);
 		RuntimeObject* L_51 = L_50;
+		NullCheck(L_51);
 		int32_t L_52;
 		L_52 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51);
 		V_6 = L_52;
 		int32_t L_53 = V_6;
+		NullCheck(L_51);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_51, ((int32_t)il2cpp_codegen_subtract(L_53, 1)));
 	}
 
@@ -17867,13 +18690,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_CancelAnimation_mE54077F5CF16E5
 		int32_t L_10 = V_0;
 		AnimationDataSet_2_Remove_mF04E0E503EA69586523C53BA40D31CD7A1EF6912(L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = ___ve0;
+		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_11, NULL);
 		RuntimeObject* L_13 = L_12;
+		NullCheck(L_13);
 		int32_t L_14;
 		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13);
 		V_3 = L_14;
 		int32_t L_15 = V_3;
+		NullCheck(L_13);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_13, ((int32_t)il2cpp_codegen_subtract(L_15, 1)));
 	}
 
@@ -17896,13 +18722,16 @@ IL_0050:
 		int32_t L_22 = V_1;
 		AnimationDataSet_2_Remove_m370CAE7A13600678BF6C510E9F6A0616E7DFF78A(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_23 = ___ve0;
+		NullCheck(L_23);
 		RuntimeObject* L_24;
 		L_24 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_23, NULL);
 		RuntimeObject* L_25 = L_24;
+		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25);
 		V_3 = L_26;
 		int32_t L_27 = V_3;
+		NullCheck(L_25);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_25, ((int32_t)il2cpp_codegen_subtract(L_27, 1)));
 	}
 
@@ -17931,6 +18760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_UpdateAnimation_m00EA1C0C5B3AA2
 	}
 	{
 		int32_t L_5 = V_0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_5);
 	}
 
@@ -17963,7 +18793,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Values_1_ComputeReversingShorteningFact
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_1 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_0->___timing_2;
 		int32_t L_2 = ___oldIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_3 = V_0;
 		float L_4 = (float)L_3->___easedProgress_3;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_5 = V_0;
@@ -18127,8 +18958,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Values_1_StartTransition_mDC5EE7C18C19B6
 		AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8* L_22 = (AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8*)(&__this->___completed_4);
 		TranslateU5BU5D_t9199DFD72A8EC5FA4C33D75E5F85242F9F97E358* L_23 = (TranslateU5BU5D_t9199DFD72A8EC5FA4C33D75E5F85242F9F97E358*)L_22->___style_3;
 		int32_t L_24 = V_4;
+		NullCheck(L_23);
 		int32_t L_25 = L_24;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_26 = (L_23)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_25));
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		NullCheck(L_20);
 		bool L_27;
 		L_27 = ((  bool (*) (Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6*, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_20, L_21, L_26, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_9 = L_27;
@@ -18164,13 +18997,16 @@ IL_00d4:
 		int32_t L_32 = V_4;
 		AnimationDataSet_2_Remove_m370CAE7A13600678BF6C510E9F6A0616E7DFF78A(L_31, L_32, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_33 = ___owner0;
+		NullCheck(L_33);
 		RuntimeObject* L_34;
 		L_34 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_33, NULL);
 		RuntimeObject* L_35 = L_34;
+		NullCheck(L_35);
 		int32_t L_36;
 		L_36 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35);
 		V_12 = L_36;
 		int32_t L_37 = V_12;
+		NullCheck(L_35);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_35, ((int32_t)il2cpp_codegen_subtract(L_37, 1)));
 	}
 
@@ -18195,7 +19031,9 @@ IL_00fb:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_45 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_46 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_45->___style_3;
 		int32_t L_47 = V_5;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_48 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_46)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_46);
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_48 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_47)))->___endValue_1;
+		NullCheck(L_43);
 		bool L_49;
 		L_49 = ((  bool (*) (Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6*, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_43, L_44, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_14 = L_49;
@@ -18218,7 +19056,9 @@ IL_0147:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_53 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_54 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_53->___style_3;
 		int32_t L_55 = V_5;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_56 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_54)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_54);
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_56 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___currentValue_3;
+		NullCheck(L_51);
 		bool L_57;
 		L_57 = ((  bool (*) (Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6*, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_51, L_52, L_56, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_15 = L_57;
@@ -18237,13 +19077,16 @@ IL_0147:
 		int32_t L_63 = V_5;
 		AnimationDataSet_2_Remove_mF04E0E503EA69586523C53BA40D31CD7A1EF6912(L_62, L_63, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_64 = ___owner0;
+		NullCheck(L_64);
 		RuntimeObject* L_65;
 		L_65 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_64, NULL);
 		RuntimeObject* L_66 = L_65;
+		NullCheck(L_66);
 		int32_t L_67;
 		L_67 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66);
 		V_12 = L_67;
 		int32_t L_68 = V_12;
+		NullCheck(L_66);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_66, ((int32_t)il2cpp_codegen_subtract(L_68, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -18268,13 +19111,16 @@ IL_01ac:
 		int32_t L_75 = V_5;
 		AnimationDataSet_2_Remove_mF04E0E503EA69586523C53BA40D31CD7A1EF6912(L_74, L_75, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_76 = ___owner0;
+		NullCheck(L_76);
 		RuntimeObject* L_77;
 		L_77 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_76, NULL);
 		RuntimeObject* L_78 = L_77;
+		NullCheck(L_78);
 		int32_t L_79;
 		L_79 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78);
 		V_12 = L_79;
 		int32_t L_80 = V_12;
+		NullCheck(L_78);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_78, ((int32_t)il2cpp_codegen_subtract(L_80, 1)));
 		V_10 = (bool)0;
 		goto IL_0355;
@@ -18285,7 +19131,8 @@ IL_01f4:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_81 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_82 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_81->___style_3;
 		int32_t L_83 = V_5;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_84 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_82)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
+		NullCheck(L_82);
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_84 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___currentValue_3;
 		(&V_2)->___startValue_0 = L_84;
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23 L_85 = V_2;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_86 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)L_85.___startValue_0;
@@ -18296,7 +19143,9 @@ IL_01f4:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_89 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_90 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_89->___style_3;
 		int32_t L_91 = V_5;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_92 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_90)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_90);
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_92 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_91)))->___startValue_0;
+		NullCheck(L_87);
 		bool L_93;
 		L_93 = ((  bool (*) (Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6*, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_87, L_88, L_92, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_17 = L_93;
@@ -18329,7 +19178,8 @@ IL_01f4:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_106 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_107 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_106->___style_3;
 		int32_t L_108 = V_5;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_109 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
+		NullCheck(L_107);
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_109 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)((L_107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_108)))->___endValue_1;
 		(&V_2)->___reversingAdjustedStartValue_2 = L_109;
 	}
 
@@ -18338,7 +19188,8 @@ IL_02a5:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_110 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_111 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_110->___timing_2;
 		int32_t L_112 = V_5;
-		((L_111)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
+		NullCheck(L_111);
+		((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___isStarted_5 = (bool)0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_113 = ___owner0;
 		int32_t L_114 = V_5;
 		int64_t L_115 = ___currentTimeMs7;
@@ -18376,6 +19227,7 @@ IL_02fa:
 		L_124 = VirtualFuncInvoker0< Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6* >::Invoke(13 /* System.Func`3<T,T,System.Boolean> UnityEngine.UIElements.StylePropertyAnimationSystem/Values`1<UnityEngine.UIElements.Translate>::get_SameFunc() */, __this);
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_125 = ___startValue2;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_126 = ___endValue3;
+		NullCheck(L_124);
 		bool L_127;
 		L_127 = ((  bool (*) (Func_3_t5853662BEAC371606CF3B0A970C0C364071786A6*, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 28)))(L_124, L_125, L_126, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		V_21 = L_127;
@@ -18399,13 +19251,16 @@ IL_0313:
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23 L_133 = V_2;
 		AnimationDataSet_2_Add_m12A0277CC8254FEA9074BB833C612001E871AD7C(L_129, L_130, L_131, L_132, L_133, il2cpp_rgctx_method(method->klass->rgctx_data, 34));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_134 = ___owner0;
+		NullCheck(L_134);
 		RuntimeObject* L_135;
 		L_135 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_134, NULL);
 		RuntimeObject* L_136 = L_135;
+		NullCheck(L_136);
 		int32_t L_137;
 		L_137 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136);
 		V_12 = L_137;
 		int32_t L_138 = V_12;
+		NullCheck(L_136);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_136, ((int32_t)il2cpp_codegen_add(L_138, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_139 = ___owner0;
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_140 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
@@ -18429,12 +19284,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ForceComputedStyleEndValue_m496
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_0 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_1 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_0->___style_3;
 		int32_t L_2 = ___runningIndex0;
-		V_0 = ((L_1)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2)));
+		NullCheck(L_1);
+		V_0 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2)));
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23* L_3 = V_0;
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23* L_4 = V_0;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_5 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)L_4->___endValue_1;
 		L_3->___currentValue_3 = L_5;
 		int32_t L_6 = ___runningIndex0;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_6);
 		return;
 	}
@@ -18448,9 +19305,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_Update_mAEDB1DB167CA7652B7603E5
 		__this->___m_CurrentTimeMs_0 = L_0;
 		int64_t L_1 = ___currentTimeMs0;
 		((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, int64_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 35)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(10 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateValues() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker0::Invoke(11 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle() */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_2 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_NextFrameEventsState_2;
+		NullCheck(L_2);
 		bool L_3;
 		L_3 = ((  bool (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 36)))(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 36));
 		V_0 = L_3;
@@ -18505,6 +19365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_m8FBA418337B4
 	{
 		((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
 		TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_0 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_CurrentFrameEventsState_1;
+		NullCheck(L_0);
 		RuntimeObject* L_1 = (RuntimeObject*)L_0->___panel_3;
 		RuntimeObject* L_2 = L_1;
 		G_B1_0 = L_2;
@@ -18521,6 +19382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Values_1_ProcessEventQueue_m8FBA418337B4
 
 IL_001a:
 	{
+		NullCheck(G_B2_0);
 		EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* L_3;
 		L_3 = InterfaceFuncInvoker0< EventDispatcher_t9BC38CC96E93EAD1D818EE751260FE4687B0D398* >::Invoke(1 /* UnityEngine.UIElements.EventDispatcher UnityEngine.UIElements.IPanel::get_dispatcher() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, G_B2_0);
 		G_B3_0 = L_3;
@@ -18546,7 +19408,9 @@ FINALLY_00bf:
 		{// begin try (depth: 1)
 			{
 				TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_5 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_5);
 				Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC* L_6 = (Dictionary_2_t20D3FBF479F4FB227466705D2A6CB607B0AB35AC*)L_5->___elementPropertyQueuedEvents_2;
+				NullCheck(L_6);
 				Enumerator_tF4EF35C56109CA74211BE62C520550AE12C8D17A L_7;
 				L_7 = Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD(L_6, Dictionary_2_GetEnumerator_m79F6C0EFBDFE88091B6165AE7813EECFDCB9F5CD_RuntimeMethod_var);
 				V_2 = L_7;
@@ -18588,19 +19452,23 @@ IL_003d_2:
 IL_0068_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_13 = V_5;
+						NullCheck(L_13);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_14;
 						L_14 = Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D(L_13, Queue_1_Dequeue_m676E2D4B5B1B1EBF97F7F54FE6CA6CF5BB6F856D_RuntimeMethod_var);
 						V_7 = L_14;
 						VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = V_6;
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_16 = V_7;
+						NullCheck((CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15);
 						VirtualActionInvoker1< EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* >::Invoke(6 /* System.Void UnityEngine.UIElements.CallbackEventHandler::SendEvent(UnityEngine.UIElements.EventBase) */, (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*)L_15, L_16);
 						EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C* L_17 = V_7;
+						NullCheck(L_17);
 						VirtualActionInvoker0::Invoke(14 /* System.Void UnityEngine.UIElements.EventBase::Dispose() */, L_17);
 					}
 
 IL_0085_2:
 					{
 						Queue_1_tBF8103756AAB084350499FF2F31BF5D872AD7910* L_18 = V_5;
+						NullCheck(L_18);
 						int32_t L_19;
 						L_19 = Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_inline(L_18, Queue_1_get_Count_mD86D9A3F3D912C8F87E78D084C53181A9D218604_RuntimeMethod_var);
 						V_8 = (bool)((((int32_t)L_19) > ((int32_t)0))? 1 : 0);
@@ -18635,6 +19503,7 @@ IL_0096_2:
 IL_00b0_1:
 			{
 				TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC* L_22 = (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*)__this->___m_CurrentFrameEventsState_1;
+				NullCheck(L_22);
 				((  void (*) (TransitionEventsFrameState_t3F9A8EB2B33780D3F2037BFEED0A3C6A03B03FEC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 39)))(L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 39));
 				goto IL_00ce;
 			}
@@ -18693,7 +19562,8 @@ IL_0020:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_4 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3* L_5 = (TimingDataU5BU5D_t634CA6261A1EDA23867D38722881D8D9610065E3*)L_4->___timing_2;
 		int32_t L_6 = V_2;
-		V_3 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)));
+		NullCheck(L_5);
+		V_3 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int64_t L_7 = ___currentTimeMs0;
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_8 = V_3;
 		int64_t L_9 = (int64_t)L_8->___startTimeMs_0;
@@ -18728,16 +19598,19 @@ IL_0054:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_18 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822* L_19 = (StyleDataU5BU5D_tAD21796096D8CBCE199118430F1C659AA1DFB822*)L_18->___style_3;
 		int32_t L_20 = V_2;
-		V_6 = ((L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_20)));
+		NullCheck(L_19);
+		V_6 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)));
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_21 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_22 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_21->___elements_0;
 		int32_t L_23 = V_2;
-		V_7 = ((L_22)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_23)));
+		NullCheck(L_22);
+		V_7 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)));
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23* L_24 = V_6;
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23* L_25 = V_6;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_26 = (Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E)L_25->___endValue_1;
 		L_24->___currentValue_3 = L_26;
 		int32_t L_27 = V_2;
+		NullCheck((Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this);
 		VirtualActionInvoker1< int32_t >::Invoke(12 /* System.Void UnityEngine.UIElements.StylePropertyAnimationSystem/Values::UpdateComputedStyle(System.Int32) */, (Values_t810A8E7A95A5716F91CE1BDC1EE3AD25FE329E24*)__this, L_27);
 		AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8* L_28 = (AnimationDataSet_2_t9D395E96FBE02DA4D17B2E175F9B5C297C1BBAA8*)(&__this->___completed_4);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_29 = V_7;
@@ -18745,8 +19618,9 @@ IL_0054:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_31 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359* L_32 = (StylePropertyIdU5BU5D_t6A118EB2D7976A5AE0C4E89D3F53D4454EC7E359*)L_31->___properties_1;
 		int32_t L_33 = V_2;
+		NullCheck(L_32);
 		int32_t L_34 = L_33;
-		int32_t L_35 = (int32_t)(L_32)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_34));
+		int32_t L_35 = (int32_t)(L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 40));
 		EmptyData_tED1BB22234DD4A2FBA90416759D025535300EDCB L_36 = ((EmptyData_tED1BB22234DD4A2FBA90416759D025535300EDCB_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 40)))->___Default_0;
 		StyleData_t516B303180A937637806C9C217FE06E3AACDEE23* L_37 = V_6;
@@ -18754,23 +19628,29 @@ IL_0054:
 		AnimationDataSet_2_Add_m36BE698F7030A37373E2B5DE7069FD77CD48D725(L_28, L_30, (int32_t)L_35, L_36, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_39 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_39);
+		NullCheck(L_40);
 		RuntimeObject* L_41;
 		L_41 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_40, NULL);
 		RuntimeObject* L_42 = L_41;
+		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = InterfaceFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_runningAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42);
 		V_8 = L_43;
 		int32_t L_44 = V_8;
+		NullCheck(L_42);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_runningAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_42, ((int32_t)il2cpp_codegen_subtract(L_44, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_45 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_46 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_45);
+		NullCheck(L_46);
 		RuntimeObject* L_47;
 		L_47 = VisualElement_get_styleAnimation_m34C349374229002AAF42A7DAD49AA9615EA154F1(L_46, NULL);
 		RuntimeObject* L_48 = L_47;
+		NullCheck(L_48);
 		int32_t L_49;
 		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 UnityEngine.UIElements.IStylePropertyAnimations::get_completedAnimationCount() */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48);
 		V_8 = L_49;
 		int32_t L_50 = V_8;
+		NullCheck(L_48);
 		InterfaceActionInvoker1< int32_t >::Invoke(20 /* System.Void UnityEngine.UIElements.IStylePropertyAnimations::set_completedAnimationCount(System.Int32) */, IStylePropertyAnimations_tB90A36DDFC6923EE285E54A51D9B78316CE06764_il2cpp_TypeInfo_var, L_48, ((int32_t)il2cpp_codegen_add(L_50, 1)));
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115** L_51 = V_7;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_52 = *((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115**)L_51);
@@ -18803,8 +19683,9 @@ IL_012d:
 		AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880* L_62 = (AnimationDataSet_2_t22FC41AC7166F393727321C212FD541AA7DC4880*)(&__this->___running_3);
 		VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF* L_63 = (VisualElementU5BU5D_tCAE8038767BF0FBEE26B3470C0FC4AE60E5229DF*)L_62->___elements_0;
 		int32_t L_64 = V_2;
+		NullCheck(L_63);
 		int32_t L_65 = L_64;
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67 = V_2;
 		((  void (*) (Values_1_tF515CA326AF84CBBA1A40F1C76BC6D39AA409215*, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 43)))(__this, L_66, L_67, il2cpp_rgctx_method(method->klass->rgctx_data, 43));
 	}
@@ -18821,6 +19702,7 @@ IL_015b:
 		TimingData_tD402D38A47B4E24DECDDD6B9725E579AD10131F3* L_74 = V_3;
 		Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2* L_75 = (Func_2_t2A7432CC4F64D0DF6D8629208B154CF139B39AF2*)L_74->___easingCurve_2;
 		float L_76 = V_9;
+		NullCheck(L_75);
 		float L_77;
 		L_77 = Func_2_Invoke_m5728ECFB038CFC6FEF889DC2D566EEF49D0E24B9_inline(L_75, L_76, NULL);
 		L_73->___easedProgress_3 = L_77;
@@ -19186,6 +20068,7 @@ IL_014c:
 IL_016b:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_55 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_55);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_55, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_55, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_InitializeCount_m43BBDDA05FDAB290038584331DB79CB33C523B83_RuntimeMethod_var)));
 	}
@@ -21012,6 +21895,7 @@ IL_03c0:
 IL_03ce:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_190 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_190);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_190, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_190, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1__ctor_m8212BCFF76673CC904541B2D9AF39E5FF124B359_RuntimeMethod_var)));
 	}
@@ -21105,6 +21989,7 @@ IL_000c:
 		String_t* L_6;
 		L_6 = SR_Format_m9E8DC9AEFDC34AC67473EFAEAB78C5066C1A0D09(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral491788442E76F5D7830F0DBFCF8EDD98854F636F)), L_5, NULL);
 		IndexOutOfRangeException_t7ECB35264FB6CA8FAA516BD958F4B2ADC78E8A82* L_7 = (IndexOutOfRangeException_t7ECB35264FB6CA8FAA516BD958F4B2ADC78E8A82*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IndexOutOfRangeException_t7ECB35264FB6CA8FAA516BD958F4B2ADC78E8A82_il2cpp_TypeInfo_var)));
+		NullCheck(L_7);
 		IndexOutOfRangeException__ctor_mFD06819F05B815BE2D6E826D4E04F4C449D0A425(L_7, L_6, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_get_Item_m248FFF521980A3A43D237B8C5CA2ABD5C62D4D27_RuntimeMethod_var)));
 	}
@@ -21392,6 +22277,7 @@ IL_0230:
 IL_026c:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_128 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_128);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_128, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_128, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_get_Item_m248FFF521980A3A43D237B8C5CA2ABD5C62D4D27_RuntimeMethod_var)));
 	}
@@ -22429,6 +23315,7 @@ IL_07df:
 IL_07e1:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_389 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_389);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_389, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_389, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_Equals_m729FD34A0F43A7C8A8DF285BCED9B5B31D579FE8_RuntimeMethod_var)));
 	}
@@ -23064,6 +23951,7 @@ IL_0334:
 IL_033f:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_161 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_161);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_161, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_161, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_GetHashCode_m3C7CFE908C6BB2DC94F94F7615F2D1AF0E2777D9_RuntimeMethod_var)));
 	}
@@ -23819,6 +24707,7 @@ IL_0a1b:
 IL_0a66:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_552 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_552);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_552, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_552, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_GetHashCode_m3C7CFE908C6BB2DC94F94F7615F2D1AF0E2777D9_RuntimeMethod_var)));
 	}
@@ -23875,15 +24764,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vector_1_ToString_mA9FEB41834880EF7
 	int32_t V_2 = 0;
 	{
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		V_0 = L_0;
 		RuntimeObject* L_1 = ___formatProvider1;
 		NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* L_2;
 		L_2 = NumberFormatInfo_GetInstance_m705987E5E7D3E5EC5C5DD2D088FBC9BCBA0FC31F(L_1, NULL);
+		NullCheck(L_2);
 		String_t* L_3;
 		L_3 = NumberFormatInfo_get_NumberGroupSeparator_m0556B092AA471513B1EDC31C047712226D39BEB6_inline(L_2, NULL);
 		V_1 = L_3;
 		StringBuilder_t* L_4 = V_0;
+		NullCheck(L_4);
 		StringBuilder_t* L_5;
 		L_5 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_4, (Il2CppChar)((int32_t)60), NULL);
 		V_2 = 0;
@@ -23902,13 +24794,16 @@ IL_001f:
 		RuntimeObject* L_12 = ___formatProvider1;
 		String_t* L_13;
 		L_13 = InterfaceFuncInvoker2< String_t*, String_t*, RuntimeObject* >::Invoke(0 /* System.String System.IFormattable::ToString(System.String,System.IFormatProvider) */, IFormattable_t235A539BD9771E1E118DB99384BA8385D2F971CA_il2cpp_TypeInfo_var, (RuntimeObject*)L_10, L_11, L_12);
+		NullCheck(L_6);
 		StringBuilder_t* L_14;
 		L_14 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_6, L_13, NULL);
 		StringBuilder_t* L_15 = V_0;
 		String_t* L_16 = V_1;
+		NullCheck(L_15);
 		StringBuilder_t* L_17;
 		L_17 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_15, L_16, NULL);
 		StringBuilder_t* L_18 = V_0;
+		NullCheck(L_18);
 		StringBuilder_t* L_19;
 		L_19 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_18, (Il2CppChar)((int32_t)32), NULL);
 		int32_t L_20 = V_2;
@@ -23939,12 +24834,15 @@ IL_0053:
 		RuntimeObject* L_29 = ___formatProvider1;
 		String_t* L_30;
 		L_30 = InterfaceFuncInvoker2< String_t*, String_t*, RuntimeObject* >::Invoke(0 /* System.String System.IFormattable::ToString(System.String,System.IFormatProvider) */, IFormattable_t235A539BD9771E1E118DB99384BA8385D2F971CA_il2cpp_TypeInfo_var, (RuntimeObject*)L_27, L_28, L_29);
+		NullCheck(L_23);
 		StringBuilder_t* L_31;
 		L_31 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_23, L_30, NULL);
 		StringBuilder_t* L_32 = V_0;
+		NullCheck(L_32);
 		StringBuilder_t* L_33;
 		L_33 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_32, (Il2CppChar)((int32_t)62), NULL);
 		StringBuilder_t* L_34 = V_0;
+		NullCheck((RuntimeObject*)L_34);
 		String_t* L_35;
 		L_35 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, (RuntimeObject*)L_34);
 		return L_35;
@@ -25240,6 +26138,7 @@ IL_042b:
 IL_043c:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_201 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_201);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_201, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_201, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_Equals_m6F913845CB1E8A1A753B3C187A8EB840C36F5ADF_RuntimeMethod_var)));
 	}
@@ -27458,6 +28357,7 @@ IL_0fe7:
 IL_0ff4:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_724 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_724);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_724, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_724, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_Equals_m6F913845CB1E8A1A753B3C187A8EB840C36F5ADF_RuntimeMethod_var)));
 	}
@@ -27753,6 +28653,7 @@ IL_01d4:
 IL_0208:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_110 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_110);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_110, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_110, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_ScalarEquals_m4E13E30219B0D2AADB58AD6E5CB2B54B9FCBFAAE_RuntimeMethod_var)));
 	}
@@ -28008,6 +28909,7 @@ IL_0165:
 IL_0194:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_70 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_70);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_70, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_70, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_GetOneValue_m7E814AFD17E4D390C12EF731DA01203D262D9953_RuntimeMethod_var)));
 	}
@@ -28283,6 +29185,7 @@ IL_0183:
 IL_01ae:
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_80 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_80);
 		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_80, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE310274B02A605A3985345944A620D7D2E019A1A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_80, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Vector_1_GetAllBitsSetValue_m854DE079EA89F97089D3EF29D7C31F081F420580_RuntimeMethod_var)));
 	}

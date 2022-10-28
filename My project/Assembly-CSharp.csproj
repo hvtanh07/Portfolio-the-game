@@ -89,6 +89,13 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
+     <Compile Include="Assets\Scripts\SceneManager\GameManager.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\Scripts\WebGLHandler.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\IntroForest\Changelog.txt" />

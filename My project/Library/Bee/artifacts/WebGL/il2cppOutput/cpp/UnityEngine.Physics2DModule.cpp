@@ -741,8 +741,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PhysicsScene2D_ToString_mACA22EF575
 		int32_t L_2 = __this->___m_Handle_0;
 		int32_t L_3 = L_2;
 		RuntimeObject* L_4 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_1);
 		ArrayElementTypeCheck (L_1, L_4);
-		(L_1)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
 		String_t* L_5;
 		L_5 = UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85(_stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC, L_1, NULL);
 		V_0 = L_5;
@@ -1801,6 +1802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics2D__cctor_m7B7A8EEEE744CE27534A7A
 	}
 	{
 		List_1_tCD5F926D25FC8BFAF39E4BE6F879C1FA11501C76* L_0 = (List_1_tCD5F926D25FC8BFAF39E4BE6F879C1FA11501C76*)il2cpp_codegen_object_new(List_1_tCD5F926D25FC8BFAF39E4BE6F879C1FA11501C76_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
 		List_1__ctor_m18046D64FD3FA546A46227B43826992EE5D5F434(L_0, List_1__ctor_m18046D64FD3FA546A46227B43826992EE5D5F434_RuntimeMethod_var);
 		((Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_StaticFields*)il2cpp_codegen_static_fields_for(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var))->___m_LastDisabledRigidbody2D_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_StaticFields*)il2cpp_codegen_static_fields_for(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var))->___m_LastDisabledRigidbody2D_0), (void*)L_0);
