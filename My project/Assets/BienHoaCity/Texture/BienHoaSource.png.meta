@@ -81,7 +81,7 @@ TextureImporter:
       213: -746748547655942631
     second: TreePot_2
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -141,6 +141,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -156,6 +157,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1051,6 +1088,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Air_Con_Shop
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 458
+        width: 118
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddf15a2ce04d7246a1f2417a98a5b5e
+      internalID: 281851724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parked_bike
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 401
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae13b1e029243ce47b43406a4655d254
+      internalID: 603171263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1063,46 +1142,48 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       FlagL_6: -5869744095917063172
-      Computer_Store: 3707480733232715257
       FlagL_5: 153588611266824494
       Crane_body: -384878877
-      BienHoaSource_19: 2111345586045139681
-      Car_3: -1070919434
-      Car_2: 1944268992
-      TreePot_1: -8242314896349842971
-      FlagR_3: -7348894754106457117
-      Motorbike_5: -1325069292
       Motorbike_1: 731390892
+      Car_2: 1944268992
+      FlagR_3: -7348894754106457117
       Crane_base: -4945242
-      FlagL_3: -8372757414094695541
       TreePot_2: -746748547655942631
       Road_Fence: -1430473681
-      Motorbike_4: 561517770
       Motorbike_3: -504049229
-      FlagL_7: 2839162262935118608
+      Parking_Truck: 1022114827
       FlagL_4: -690731753856635271
       Platform_hanging: -2012613128
-      Parking_Truck: 1022114827
-      FlagR_6: -3046690415410845407
       FlagL_1: -6016305211874235331
-      Salon: -6239782627634498423
-      Car_1: -142837557
       ElectricBox: 4705231195173064206
-      Jewery_store: -253453787
-      Book_Store: -3218249740690659526
       FlagR_4: 306228082631618781
       FlagR_5: 1051206075924505283
-      FlagR_7: -391684188491784881
-      House_1: 1376303494356346373
       FlagR_2: 8561723942767982102
       Entrance: -5112817991886673917
-      Platform: -748916360097660898
       Gas_Store: -7806213124361135667
       Electric_clock: -1899470250
-      FlagR_1: -3472796351286134947
-      Motorbike_2: -1335839647
       Drug_Store: -1687307600040292553
       FlagL_2: 2026176389366088793
+      Computer_Store: 3707480733232715257
+      BienHoaSource_19: 2111345586045139681
+      Car_3: -1070919434
+      TreePot_1: -8242314896349842971
+      Motorbike_5: -1325069292
+      FlagL_3: -8372757414094695541
+      Motorbike_4: 561517770
+      FlagL_7: 2839162262935118608
+      FlagR_6: -3046690415410845407
+      Salon: -6239782627634498423
+      Car_1: -142837557
+      Jewery_store: -253453787
+      Book_Store: -3218249740690659526
+      FlagR_7: -391684188491784881
+      House_1: 1376303494356346373
+      parked_bike: 603171263
+      Air_Con_Shop: 281851724
+      Platform: -748916360097660898
+      FlagR_1: -3472796351286134947
+      Motorbike_2: -1335839647
       Garbage_bin: 469634868
   spritePackingTag: 
   pSDRemoveMatte: 0
