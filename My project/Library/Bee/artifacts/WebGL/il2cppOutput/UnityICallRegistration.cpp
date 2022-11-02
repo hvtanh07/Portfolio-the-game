@@ -2692,6 +2692,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.ParticleSystem
 
+	//Start Registrations for type : UnityEngine.ParticleSystem/MainModule
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&,System.Int32)
+		void Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
+
+	//End Registrations for type : UnityEngine.ParticleSystem/MainModule
+
 	//Start Registrations for type : UnityEngine.ParticleSystemRenderer
 
 		//System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
@@ -3769,6 +3777,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.Rigidbody
 
 	//Start Registrations for type : UnityEngine.Rigidbody2D
+
+		//System.Void UnityEngine.Rigidbody2D::AddForce_Injected(UnityEngine.Vector2&,UnityEngine.ForceMode2D)
+		void Register_UnityEngine_Rigidbody2D_AddForce_Injected();
+		Register_UnityEngine_Rigidbody2D_AddForce_Injected();
 
 		//System.Void UnityEngine.Rigidbody2D::get_position_Injected(UnityEngine.Vector2&)
 		void Register_UnityEngine_Rigidbody2D_get_position_Injected();
