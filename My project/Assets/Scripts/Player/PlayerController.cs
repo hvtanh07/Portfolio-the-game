@@ -141,7 +141,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("a");
         if (other.gameObject.CompareTag("Platform"))
         {
             standingPlatform = other.gameObject;
@@ -149,7 +148,6 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        print("b");
         if (other.gameObject.CompareTag("Platform"))
         {
             standingPlatform = null;

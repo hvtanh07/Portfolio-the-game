@@ -96,6 +96,9 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
+     <Compile Include="Assets\Scripts\MapMechanic\BouncingBall.cs" />
+     <Compile Include="Assets\Scripts\MapMechanic\SpaceShip.cs" />
+     <Compile Include="Assets\Scripts\MapMechanic\LaunchButton.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\IntroForest\Changelog.txt" />
