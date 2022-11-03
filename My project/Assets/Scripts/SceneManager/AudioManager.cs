@@ -58,4 +58,14 @@ public class AudioManager : MonoBehaviour
         }
         Debug.LogWarning("AudioManager: Sound name not found in list: " + name);
     }
+    public void DimBGM(float duration){
+        print("gotit");
+        Ambient_Sound s = Array.Find(m_sounds, sound => sound.name == "BGM");
+        if(s != null){
+            print("dimming");
+            LeanSmooth.linear(s.m_source.volume,0f,1f);
+            return;
+        }
+        Debug.LogWarning("AudioManager: Sound name not found in list: " + name);
+    }
 }

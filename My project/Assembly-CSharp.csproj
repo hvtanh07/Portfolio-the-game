@@ -72,9 +72,9 @@
      <Compile Include="Assets\Scripts\MapMechanic\LaunchButton.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraShake.cs" />
      <Compile Include="Assets\Scripts\MapMechanic\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\SceneManager\AudioManager_PrototypeHero.cs" />
-     <Compile Include="Assets\Scripts\Player\CameraShake.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
     <Reference Include="UnityEngine">

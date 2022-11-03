@@ -5,6 +5,7 @@ using UnityEngine;
 public class SceneTransition : MonoBehaviour
 {
     public Animator anim;
+    [SerializeField] AudioManager au;
     public float timeBeforeLoadNextScene = 3f;
     public string sceneName;
     public bool autoMove;
@@ -16,6 +17,7 @@ public class SceneTransition : MonoBehaviour
         }
     }
     public void LoadNewScene(){
+        au.DimBGM(timeBeforeLoadNextScene);
         StartCoroutine(LoadingScene());
     }
 

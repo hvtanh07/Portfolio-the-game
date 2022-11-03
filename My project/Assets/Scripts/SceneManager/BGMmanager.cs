@@ -9,7 +9,6 @@ public class BGMmanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         FindObjectOfType<AudioManager>().PlaySound(SongName);
     }
     
