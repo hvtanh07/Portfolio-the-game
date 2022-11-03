@@ -17,14 +17,15 @@ public class Key : MonoBehaviour
         Green
     }
     private void Awake() {
+        
         Transparency = 1;
         Acquired = false;
         sprite = GetComponent<SpriteRenderer>();
     }
     public void AcquireKey(){
+        if(Acquired) return;
         FindObjectOfType<AudioManager>().PlaySound(SoundName);
         Acquired = true;
-        GetComponent<Collider2D>().enabled = false;
         Destroy(gameObject,5f);
     }
     public KeyType GetKeyType(){

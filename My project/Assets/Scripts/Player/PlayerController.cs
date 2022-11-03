@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Joystick joystick;
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadious, whatIsGround);
+        
         anim.SetBool("Grounded", isGrounded);
 
 
@@ -207,6 +209,7 @@ public class PlayerController : MonoBehaviour
 
     void AE_Landing()
     {
+        //shakeEffect.Shake(1f);
         audioManager.PlaySound("Landing");
         // Spawn Dust
         SpawnDustEffect(m_LandingDust);

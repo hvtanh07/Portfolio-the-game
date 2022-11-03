@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Joystick: {fileID: 0}
   JumpButton: {fileID: 0}
+  nextText: {fileID: 0}
   controller: {fileID: 0}

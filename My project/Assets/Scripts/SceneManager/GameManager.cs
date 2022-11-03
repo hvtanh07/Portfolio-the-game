@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             Joystick.SetActive(true);
             JumpButton.SetActive(true);
             controller.mobileOS = true;
-            nextText.text = "[Close]";
+            nextText.text = "[Next]";
         }
         else
         {

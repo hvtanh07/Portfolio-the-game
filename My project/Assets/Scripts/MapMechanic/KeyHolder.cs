@@ -26,7 +26,6 @@ public class KeyHolder : MonoBehaviour
         if(key != null){
             AddKey(key.GetKeyType());
             key.AcquireKey();
-            
         }
 
         KeyDoor keydoor = other.GetComponent<KeyDoor>();

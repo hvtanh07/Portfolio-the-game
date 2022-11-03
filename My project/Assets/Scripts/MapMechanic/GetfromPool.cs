@@ -6,6 +6,7 @@ public class GetfromPool : MonoBehaviour
     public float minTimeToMove, maxTimeToMove;
     public Transform endpoint;
     public bool flip;
+    public int sortingLayer;
 
     private void Start() {
         Invoke("SpawnVehicle", 0.2f);        
@@ -21,6 +22,7 @@ public class GetfromPool : MonoBehaviour
         if (obj != null) {
             float timetoMove = Random.Range(minTimeToMove, maxTimeToMove);
             //set position & rotation
+            obj.GetComponent<SpriteRenderer>().sortingOrder = sortingLayer;
             obj.transform.position = transform.position;
             obj.transform.rotation  = transform.rotation;                    
             obj.GetComponent<ReturnPool>().SetDestination(endpoint.position,flip,timetoMove);
