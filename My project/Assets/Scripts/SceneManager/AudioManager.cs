@@ -17,6 +17,7 @@ public class Ambient_Sound
     [HideInInspector]
     public AudioSource m_source;
 
+
     public void SetSource(AudioSource source)
     {
         m_source = source;
@@ -36,10 +37,13 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField]
     Ambient_Sound[] m_sounds;
+    private bool dimming;
+    
 
     private void Awake()
     {
-        foreach ( Ambient_Sound s in m_sounds){
+        foreach (Ambient_Sound s in m_sounds)
+        {
             s.m_source = gameObject.AddComponent<AudioSource>();
             s.m_source.clip = s.clip;
 
@@ -49,23 +53,34 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySound (string name)
+    public void PlaySound(string name)
     {
         Ambient_Sound s = Array.Find(m_sounds, sound => sound.name == name);
-        if(s != null){
-            s.m_source.Play(); 
+        if (s != null)
+        {
+            s.m_source.Play();
             return;
         }
         Debug.LogWarning("AudioManager: Sound name not found in list: " + name);
     }
-    public void DimBGM(float duration){
-        print("gotit");
-        Ambient_Sound s = Array.Find(m_sounds, sound => sound.name == "BGM");
-        if(s != null){
-            print("dimming");
-            LeanSmooth.linear(s.m_source.volume,0f,1f);
-            return;
-        }
-        Debug.LogWarning("AudioManager: Sound name not found in list: " + name);
+
+    
+
+    public void DimBGM(float duration, string name)
+    {
+        Ambient_Sound bgm = Array.Find(m_sounds, sound => sound.name == name);
+        if (bgm != null)
+        {
+            LeanTween.value(gameObject, bgm.m_source.volume, 0f, duration)
+            .setEaseLinear()
+            .setOnUpdate((value) =>
+            {
+                bgm.m_source.volume = value;
+            });
+
+        //dimming = true;
+        return;
+    }
+    Debug.LogWarning("No background Music");
     }
 }

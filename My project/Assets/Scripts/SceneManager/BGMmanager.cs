@@ -12,4 +12,7 @@ public class BGMmanager : MonoBehaviour
         FindObjectOfType<AudioManager>().PlaySound(SongName);
     }
     
+    public void DimAudio(float duration){
+        FindObjectOfType<AudioManager>().DimBGM(duration, SongName);
+    }
 }
