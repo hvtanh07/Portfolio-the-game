@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb747e7b7ae0384a90e53fc2fda79c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyType: 0
+  keyType: 1
   SoundName: PickUpKey
 --- !u!50 &-245463652981214426
 Rigidbody2D:

@@ -10,21 +10,34 @@ public class KeyDoor : MonoBehaviour
     public float speed;
     private Vector3 targetDir;
     [SerializeField] private Key.KeyType keyType;
-    private void Start() {
+    private void Start()
+    {
         au = GetComponent<AudioSource>();
         unlocked = false;
         targetDir = transform.position + moveDirection;
     }
-    public void OpenDoor(){
+    public void OpenDoor()
+    {
+        if (keyType == Key.KeyType.Red)
+        {
+            LeanTween.move(this.gameObject, targetDir, speed).setOnComplete(stopAudio);
+            au.Play();
+        }
+        else if (keyType == Key.KeyType.Blue)
+        {
+            LeanTween.rotateAroundLocal(this.gameObject, Vector3.forward,90, speed);
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
         unlocked = true;
-        LeanTween.move(this.gameObject,targetDir,speed).setOnComplete(stopAudio);
-        au.Play();
-       
+
+
     }
-    public void stopAudio(){
+    public void stopAudio()
+    {
         au.Stop();
     }
-    public Key.KeyType GetKeyType(){
+    public Key.KeyType GetKeyType()
+    {
         return keyType;
     }
 }

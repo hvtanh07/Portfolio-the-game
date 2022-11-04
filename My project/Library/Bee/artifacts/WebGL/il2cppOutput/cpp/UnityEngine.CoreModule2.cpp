@@ -6114,12 +6114,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_EnableScissorRect_Injected
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_Texture_Injected_m0EF8CBBAE32EE946114C6A5806849C8BBECA528A (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___source0, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B* ___dest1, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___mat2, int32_t ___pass3, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___scale4, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___offset5, int32_t ___sourceDepthSlice6, int32_t ___destDepthSlice7, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rendering.CommandBuffer::Blit_Identifier_Injected(UnityEngine.Rendering.RenderTargetIdentifier&,UnityEngine.Rendering.RenderTargetIdentifier&,UnityEngine.Material,System.Int32,UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_Identifier_Injected_m9FEA565924CC1D6ACA839C7AABCB731384816E06 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B* ___source0, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B* ___dest1, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___mat2, int32_t ___pass3, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___scale4, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___offset5, int32_t ___sourceDepthSlice6, int32_t ___destDepthSlice7, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32,System.Boolean,UnityEngine.RenderTextureMemoryless,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, bool ___enableRandomWrite7, int32_t ___memorylessMode8, bool ___useDynamicScale9, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32,System.Boolean,UnityEngine.RenderTextureMemoryless)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_m9742BDC20FEFF9A68AF98677A6DB09883D46DF0B (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, bool ___enableRandomWrite7, int32_t ___memorylessMode8, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_m591B84D5B3CF39F1C4160A7043DF6E766E72EB08 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRTWithDescriptor_Injected(System.Int32,UnityEngine.RenderTextureDescriptor&,UnityEngine.FilterMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRTWithDescriptor_Injected_m0F3B4A0914057C6BA6218CDC15BE57EEEB88F5A0 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* ___desc1, int32_t ___filter2, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRTWithDescriptor(System.Int32,UnityEngine.RenderTextureDescriptor,UnityEngine.FilterMode)
@@ -6188,8 +6182,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m71815DBD5A0CD2EA1BE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_ReleaseBuffer_mF04481C3507E1D69582E220227AB0CA2481F963C (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, const RuntimeMethod* method) ;
 // System.IntPtr UnityEngine.Rendering.CommandBuffer::InitBuffer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CommandBuffer_InitBuffer_m1F54F8E01753E8B22A2D8541A982D917BAE38C9A (const RuntimeMethod* method) ;
-// System.Void UnityEngine.Rendering.CommandBuffer::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Dispose_m9A5E7A3CA09B3E3F9D199FC7C9E7B27CD9CFADF3 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, const RuntimeMethod* method) ;
 // UnityEngine.Rendering.GraphicsFence UnityEngine.Rendering.CommandBuffer::CreateGraphicsFence(UnityEngine.Rendering.GraphicsFenceType,UnityEngine.Rendering.SynchronisationStageFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsFence_t199180163AEDE0C1BE868F8E1314A47610B1FABB CommandBuffer_CreateGraphicsFence_m568044F3AD127EC1960F7B869E7A64C4210A8948 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___fenceType0, int32_t ___stage1, const RuntimeMethod* method) ;
 // System.IntPtr UnityEngine.Rendering.CommandBuffer::CreateGPUFence_Internal(UnityEngine.Rendering.GraphicsFenceType,UnityEngine.Rendering.SynchronisationStageFlags)
@@ -12021,61 +12013,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_Identifier_mE66E33DE9
 		return;
 	}
 }
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32,System.Boolean,UnityEngine.RenderTextureMemoryless,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, bool ___enableRandomWrite7, int32_t ___memorylessMode8, bool ___useDynamicScale9, const RuntimeMethod* method) 
-{
-	typedef void (*CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC_ftn) (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, bool, int32_t, bool);
-	static CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32,System.Boolean,UnityEngine.RenderTextureMemoryless,System.Boolean)");
-	_il2cpp_icall_func(__this, ___nameID0, ___width1, ___height2, ___depthBuffer3, ___filter4, ___format5, ___antiAliasing6, ___enableRandomWrite7, ___memorylessMode8, ___useDynamicScale9);
-}
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32,System.Boolean,UnityEngine.RenderTextureMemoryless)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_m9742BDC20FEFF9A68AF98677A6DB09883D46DF0B (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, bool ___enableRandomWrite7, int32_t ___memorylessMode8, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = ___nameID0;
-		int32_t L_1 = ___width1;
-		int32_t L_2 = ___height2;
-		int32_t L_3 = ___depthBuffer3;
-		int32_t L_4 = ___filter4;
-		int32_t L_5 = ___format5;
-		int32_t L_6 = ___antiAliasing6;
-		bool L_7 = ___enableRandomWrite7;
-		int32_t L_8 = ___memorylessMode8;
-		CommandBuffer_GetTemporaryRT_mB2F7C83C134494A72EB806A11B663D38413182CC(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, (bool)0, NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_m591B84D5B3CF39F1C4160A7043DF6E766E72EB08 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, int32_t ___antiAliasing6, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = ___nameID0;
-		int32_t L_1 = ___width1;
-		int32_t L_2 = ___height2;
-		int32_t L_3 = ___depthBuffer3;
-		int32_t L_4 = ___filter4;
-		int32_t L_5 = ___format5;
-		int32_t L_6 = ___antiAliasing6;
-		CommandBuffer_GetTemporaryRT_m9742BDC20FEFF9A68AF98677A6DB09883D46DF0B(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, (bool)0, 0, NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRT(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.FilterMode,UnityEngine.Experimental.Rendering.GraphicsFormat)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRT_mA07D7C9517C09E5C166236915C16F6085C9A6D2E (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, int32_t ___width1, int32_t ___height2, int32_t ___depthBuffer3, int32_t ___filter4, int32_t ___format5, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = ___nameID0;
-		int32_t L_1 = ___width1;
-		int32_t L_2 = ___height2;
-		int32_t L_3 = ___depthBuffer3;
-		int32_t L_4 = ___filter4;
-		int32_t L_5 = ___format5;
-		CommandBuffer_GetTemporaryRT_m591B84D5B3CF39F1C4160A7043DF6E766E72EB08(__this, L_0, L_1, L_2, L_3, L_4, L_5, 1, NULL);
-		return;
-	}
-}
 // System.Void UnityEngine.Rendering.CommandBuffer::GetTemporaryRTWithDescriptor(System.Int32,UnityEngine.RenderTextureDescriptor,UnityEngine.FilterMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_GetTemporaryRTWithDescriptor_m3886473CB22CF744AFB1459C75AA8F62419440AC (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, int32_t ___nameID0, RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___desc1, int32_t ___filter2, const RuntimeMethod* method) 
 {
@@ -13025,14 +12962,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer__ctor_m9445F1606331B732FCA
 		return;
 	}
 }
-// System.Void UnityEngine.Rendering.CommandBuffer::Release()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Release_m7D3C99D5B1598F727BD2E0E115FAD6A4E1A123A6 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, const RuntimeMethod* method) 
-{
-	{
-		CommandBuffer_Dispose_m9A5E7A3CA09B3E3F9D199FC7C9E7B27CD9CFADF3(__this, NULL);
-		return;
-	}
-}
 // UnityEngine.Rendering.GraphicsFence UnityEngine.Rendering.CommandBuffer::CreateAsyncGraphicsFence()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsFence_t199180163AEDE0C1BE868F8E1314A47610B1FABB CommandBuffer_CreateAsyncGraphicsFence_m2B01B3001DD758EC43A7F99772E8A7F473783B73 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, const RuntimeMethod* method) 
 {
@@ -13750,25 +13679,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_DrawOcclusionMesh_m3975752
 		return;
 	}
 }
-// System.Void UnityEngine.Rendering.CommandBuffer::Blit(UnityEngine.Texture,UnityEngine.Rendering.RenderTargetIdentifier)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_m8E6E60FA1AEC18E0B12428E2F45594AF30CE965F (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___source0, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___dest1, const RuntimeMethod* method) 
-{
-	{
-		bool L_0;
-		L_0 = CommandBuffer_ValidateAgainstExecutionFlags_mA5F027DDA6B0DCD8BC9AE296C3A6D8E1BD244FEF(__this, 0, 2, NULL);
-		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_1 = ___source0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
-		memset((&L_2), 0, sizeof(L_2));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_2), (1.0f), (1.0f), /*hidden argument*/NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
-		memset((&L_3), 0, sizeof(L_3));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3), (0.0f), (0.0f), /*hidden argument*/NULL);
-		int32_t L_4;
-		L_4 = Texture2DArray_get_allSlices_m0169C1056C030F5A6B28B11D45CFA09F30D6B40D(NULL);
-		CommandBuffer_Blit_Texture_m8B439BC65FB89C00E4DCE10EF9B92D17C0F8B3D5(__this, L_1, (&___dest1), (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)NULL, (-1), L_2, L_3, L_4, 0, NULL);
-		return;
-	}
-}
 // System.Void UnityEngine.Rendering.CommandBuffer::Blit(UnityEngine.Texture,UnityEngine.Rendering.RenderTargetIdentifier,UnityEngine.Material)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_m067EA6B3B00F78DDF43887B565A3208164F84FC3 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___source0, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___dest1, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___mat2, const RuntimeMethod* method) 
 {
@@ -13786,24 +13696,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_m067EA6B3B00F78DDF438
 		int32_t L_5;
 		L_5 = Texture2DArray_get_allSlices_m0169C1056C030F5A6B28B11D45CFA09F30D6B40D(NULL);
 		CommandBuffer_Blit_Texture_m8B439BC65FB89C00E4DCE10EF9B92D17C0F8B3D5(__this, L_1, (&___dest1), L_2, (-1), L_3, L_4, L_5, 0, NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Rendering.CommandBuffer::Blit(UnityEngine.Rendering.RenderTargetIdentifier,UnityEngine.Rendering.RenderTargetIdentifier)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_Blit_mDD1E2CA1DBB6E424AF1C384AC9C8490258C8B938 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___source0, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___dest1, const RuntimeMethod* method) 
-{
-	{
-		bool L_0;
-		L_0 = CommandBuffer_ValidateAgainstExecutionFlags_mA5F027DDA6B0DCD8BC9AE296C3A6D8E1BD244FEF(__this, 0, 2, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
-		memset((&L_1), 0, sizeof(L_1));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_1), (1.0f), (1.0f), /*hidden argument*/NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
-		memset((&L_2), 0, sizeof(L_2));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_2), (0.0f), (0.0f), /*hidden argument*/NULL);
-		int32_t L_3;
-		L_3 = Texture2DArray_get_allSlices_m0169C1056C030F5A6B28B11D45CFA09F30D6B40D(NULL);
-		CommandBuffer_Blit_Identifier_mE66E33DE91F04B963515421839502854299CFC28(__this, (&___source0), (&___dest1), (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)NULL, (-1), L_1, L_2, L_3, 0, NULL);
 		return;
 	}
 }

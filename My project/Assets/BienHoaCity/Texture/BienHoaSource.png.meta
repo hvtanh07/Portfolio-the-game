@@ -1235,6 +1235,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FeeGate_Back
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 406
+        width: 69
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95ddd15a7587504d94b480ddbc6c7c6
+      internalID: 2011243290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FeeGate_Fence
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 408
+        width: 62
+        height: 5
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7042dfcfed0fc644a4ee24c42433c5a
+      internalID: -1127951709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FeeGate_Front
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 406
+        width: 68
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b29dbfcca3ff04498229ae006c5f9c
+      internalID: 1522780381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1262,6 +1325,7 @@ TextureImporter:
       FlagL_1: -6016305211874235331
       Power_line: 495443229
       ElectricBox: 4705231195173064206
+      FeeGate_Front: 1522780381
       FlagR_4: 306228082631618781
       FlagR_5: 1051206075924505283
       FlagR_2: 8561723942767982102
@@ -1277,16 +1341,19 @@ TextureImporter:
       Car_3: -1070919434
       TreePot_1: -8242314896349842971
       Motorbike_5: -1325069292
+      BienHoaSource_2: -706476584
       FlagL_3: -8372757414094695541
       Motorbike_4: 561517770
       FlagL_7: 2839162262935118608
       Spaceship: -1703186041
       FlagR_6: -3046690415410845407
       Salon: -6239782627634498423
+      FeeGate_Fence: -1127951709
       Car_1: -142837557
       Launch_Clicked: 1125669797
       Jewery_store: -253453787
       Book_Store: -3218249740690659526
+      FeeGate_Back: 2011243290
       FlagR_7: -391684188491784881
       House_1: 1376303494356346373
       parked_bike: 603171263
