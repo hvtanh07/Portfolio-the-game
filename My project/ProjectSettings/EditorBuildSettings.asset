@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IntroScene.unity
+    path: Assets/Scenes/Intro.unity
     guid: 37990555bf4571941b0267d3974bd356
   - enabled: 1
-    path: Assets/Scenes/BienHoaScene.unity
+    path: Assets/Scenes/BienHoa.unity
     guid: 8efa242588c1a26449298ede12deb713
+  - enabled: 1
+    path: Assets/Scenes/HoChiMinh.unity
+    guid: 1a2cfbbd753139b459cd0c9ccf10864d
   m_configObjects: {}
